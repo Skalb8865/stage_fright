@@ -4,31 +4,34 @@
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$19",
-        "place": "The King Of Clubs",
-        "buttonid": "open-modal"
+        "venue": "The King Of Clubs",
+        "buttonid": "open-modal",
+        "bg_identifier": "ckos"
     },
     {
         "date": "Mar 1st - 2nd",
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$18",
-        "place": "SKULLYS MUSIC DINER",
-        "buttonid": "open-modal2"
+        "venue": "Columbus Commons",
+        "buttonid": "open-modal2",
+        "bg_identifier": "ccc"
     },
     {
         "date": "Mar 5th - 6th",
         "location": "Philadelphia,<br> PA,<br> United States",
         "modalLocation": "Philadelphia, PA, United States",
         "ticketsPrice": "$20",
-        "place": "Underground Arts",
-        "buttonid": "open-modal3"
+        "venue": "Underground Arts",
+        "buttonid": "open-modal3",
+        "bg_identifier": "pua"
     },
     {
         "date": "Mar 7th - 8th",
         "location": "Philadelphia,<br> PA,<br> United States",
         "modalLocation": "Philadelphia, PA, United States",
         "ticketsPrice": "$20",
-        "place": "Franklin Music Hall",
+        "venue": "Franklin Music Hall",
         "buttonid": "open-modal4"
     },
     {
@@ -36,7 +39,7 @@
         "location": "Brooklyn,<br> NY,<br> United States",
         "modalLocation": "rooklyn, NY, United States",
         "ticketsPrice": "$19",
-        "place": "Brooklyn Paramount",
+        "venue": "Brooklyn Paramount",
         "buttonid": "open-modal5"
     },
     {
@@ -44,7 +47,7 @@
         "location": "Lewiston,<br> NY,<br> United States",
         "modalLocation": "Lewiston, NY, United States",
         "ticketsPrice": "$19",
-        "place": "Artpark",
+        "venue": "Artpark",
         "buttonid": "open-modal6"
     },
     {
@@ -52,7 +55,7 @@
         "location": "Jericho,<br> NY,<br> United States",
         "modalLocation": "Jericho, NY, United States",
         "ticketsPrice": "$18",
-        "place": "Flagstar at Westbury Music Fair",
+        "venue": "Flagstar at Westbury Music Fair",
         "buttonid": "open-modal7"
     },
     {
@@ -60,7 +63,7 @@
         "location": "Queens,<br> NY,<br> United States",
         "modalLocation": "Queens, NY, United States",
         "ticketsPrice": "$19",
-        "place": "Forest Hills Stadium",
+        "venue": "Forest Hills Stadium",
         "buttonid": "open-modal8"
     },
     {
@@ -68,7 +71,7 @@
         "location": "Queens,<br> NY,<br> United States",
         "modalLocation": "Queens, NY, United States",
         "ticketsPrice": "$20",
-        "place": "Radio City Music Hall",
+        "venue": "Radio City Music Hall",
         "buttonid": "open-modal9"
     },
     {
@@ -76,7 +79,7 @@
         "location": "Norfolk,<br> VA,<br> United States",
         "modalLocation": "Norfork, VA, United States",
         "ticketsPrice": "$18",
-        "place": "The NorVa",
+        "venue": "The NorVa",
         "buttonid": "open-modal9"
     },
     {
@@ -84,7 +87,7 @@
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$19",
-        "place": "The Summit Music Hall",
+        "venue": "The Summit Music Hall",
         "buttonid": "open-modal11"
     },
     {
@@ -92,7 +95,7 @@
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$18",
-        "place": "KEMBA Live!",
+        "venue": "KEMBA Live!",
         "buttonid": "open-modal12"
     }
 ]

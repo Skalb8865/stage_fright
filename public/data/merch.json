@@ -3,114 +3,133 @@
     "name": "Prometheus Vinyl",
     "link": "/html/Merch/Media/prometheus_vinyl.html",
     "price": "$27.99",
+    "sort_attribute": "vinyls",
     "image": "/merch/Prometheusvinyl.webp"
   },
   {
     "name": "Acantha Vinyl",
     "link": "/html/Merch/Media/acantha_vinyl.html",
     "price": "$27.99",
+    "sort_attribute": "vinyls",
     "image": "/merch/Acanthavinyl.webp"
   },
   {
     "name": "NYX Vinyl",
     "link": "/html/Merch/Media/nyx_vinyl.html",
     "price": "$27.99",
+    "sort_attribute": "vinyls",
     "image": "/merch/Nyxvinyl.webp"
   },
   {
     "name": "Hephaestus Vinyl",
     "link": "/html/Merch/Media/hephaestus_vinyl.html",
     "price": "$27.99",
+    "sort_attribute": "vinyls",
     "image": "/merch/HephaestusVinyl.webp"
   },
   {
     "name": "Stage Fright Black Logo Hoodie",
     "link": "/html/Merch/Apparel/black_logo_hoodie.html",
     "price": "$24.99",
+    "sort_attribute": "apparel",
     "image": "/merch/boy_Hoodie.webp"
   },
   {
     "name": "Stage Fright White Long Sleeve",
     "link": "/html/Merch/Apparel/white_long_sleeve.html",
     "price": "$22.99",
+    "sort_attribute": "apparel",
     "image": "/merch/SFwhitelongsleeve.webp"
   },
   {
     "name": "Black Motto Sweatpants",
     "link": "/html/Merch/Apparel/black_motto_sweatpants.html",
     "price": "$16.99",
+    "sort_attribute": "apparel",
     "image": "/merch/pants.webp"
   },
   {
     "name": "Black Logo Beanie",
     "link": "/html/Merch/Apparel/black_logo_beanie.html",
     "price": "$12.99",
+    "sort_attribute": "apparel",
     "image": "/merch/Beanie.webp"
   },
   {
     "name": "Prometheus Black Hoodie",
     "link": "/html/Merch/Apparel/prometheus_black_hoodie.html",
     "price": "$24.99",
+    "sort_attribute": "apparel",
     "image": "/merch/Prometheushood.webp"
   },
   {
     "name": "Prometheus Black T-Shirt",
     "link": "/html/Merch/Apparel/prometheus_T-shirt.html",
     "price": "$18.99",
+    "sort_attribute": "apparel",
     "image": "/merch/PrometheusShirt.webp"
   },
   {
     "name": "Acantha Black Hoodie",
     "link": "/html/Merch/Apparel/acantha_black_hoodie.html",
     "price": "$24.99",
+    "sort_attribute": "apparel",
     "image": "/merch/AcanthaHood.webp"
   },
   {
     "name": "Acantha Black T-Shirt",
     "link": "/html/Merch/Apparel/acantha_T-shirt.html",
     "price": "$18.99",
+    "sort_attribute": "apparel",
     "image": "/merch/AcanthaShirt.webp"
   },
   {
     "name": "NYX Black Hoodie",
     "link": "/html/Merch/Apparel/nyx_black_hoodie.html",
     "price": "$24.99",
+    "sort_attribute": "apparel",
     "image": "/merch/Nyxhood.webp"
   },
   {
     "name": "NYX Black T-Shirt",
     "link": "/html/Merch/Apparel/nyx_T-shirt.html",
     "price": "$18.99",
+    "sort_attribute": "apparel",
     "image": "/merch/NyxShirt.webp"
   },
   {
     "name": "Hephaestus Black Hoodie",
     "link": "/html/Merch/Apparel/hephaestus_black_hoodie.html",
     "price": "$24.99",
+    "sort_attribute": "apparel",
     "image": "/merch/HephaestusHoodie.webp"
   },
   {
     "name": "Hephaestus Black T-Shirt",
     "link": "/html/Merch/Apparel/hephaestus_T-shirt.html",
     "price": "$18.99",
+    "sort_attribute": "apparel",
     "image": "/merch/HephaestusShirt.webp"
   },
   {
     "name": "Stage Fright White Hat",
     "link": "/html/Merch/Apparel/white_logo_hat.html",
     "price": "$12.99",
+    "sort_attribute": "apparel",
     "image": "/merch/hatMerch.webp"
   },
   {
     "name": "Black Motto iPhone Case",
     "link": "/html/Merch/Accessories/motto_phone_case.html",
     "price": "$9.99",
+    "sort_attribute": "accessories",
     "image": "/merch/Phone_Case.webp"
   },
   {
     "name": "Logo White Airpod Case",
     "link": "/html/Merch/Accessories/logo_white_airpod_case.html",
     "price": "$7.99",
+    "sort_attribute": "accessories",
     "image": "/merch/backAirpod.webp"
   }
 ]

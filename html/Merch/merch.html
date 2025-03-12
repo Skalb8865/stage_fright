@@ -16,13 +16,70 @@
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     </noscript>
-    <link rel="stylesheet" href="/styles/menu.css">
+
+    <style>
+        .hero_credittttttttt {
+            position: absolute;
+            bottom: 0;
+            font-size: var(--size-sm);
+            color: var(--clr-grey);
+            margin-bottom: 5px;
+        }
+
+        .hero_credittttttttt a:hover {
+            border-bottom: 1px solid var(--clr-grey);
+        }
+    </style>
 
     <!-- ======== -->
     <!-- JS Links -->
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/merch.js"></script>
+    <script type="module" src="/src/merch_sorter.js"></script>
+    <!-- Sort JS -->
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("merch_sort");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const merchSortElements = document.getElementsByClassName('merch_sort');
+
+            for (let i = 0; i < merchSortElements.length; i++) {
+                merchSortElements[i].classList.add('show');
+            }
+        });
+    </script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
 
     <meta name="description" content="Stage Fright Website">
@@ -32,7 +89,10 @@
 <body>
     <a class="scroll_up--button" id="scroll_up--button" href="#top" aria-label="Scroll to Top" inert><i
             class="ri-arrow-up-line"></i></a>
-    <header class="container" id="top">
+
+
+    <!-- Navbar -->
+    <header class="navbar-container" id="top">
         <nav class="navbar">
             <div class="nav-left--section">
                 <div class="hamburger" id="hamburger" aria-label="open menu" aria-controls="menu" aria-expanded="false"
@@ -141,11 +201,44 @@
     </div>
 
     <main class="main">
+        <!-- Hero -->
+        <div class="merch-hero">
+            <h1 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0">Store
+            </h1>
+            <p class="hero_credittttttttt">Source: <a
+                    href="https://www.etsy.com/listing/1174534503/classic-rock-vintage-band-tshirt-mystery" target="_blank">https://www.etsy.com/listing/1174534503/classic-rock-vintage-band-tshirt-mystery</a>
+            </p>
+        </div>
         <!-- Shop Section -->
         <section class="shop-container section">
-            <h2 class="section-title" data-aos="fade-down">Store</h2>
-            <div class="shop-content">
-                <!-- JSON Cards Loaded Here -->
+            <!-- https://developer.mozilla.org/en-US/blog/html-details-exclusive-accordions/ -->
+            <div class="shop-wrapper">
+                <!-- Merch Sorter Section -->
+                <div class="sort_section">
+                    <h1 class="sort_header">Sort By</h1>
+                    <details name="Category">
+                        <summary>Category</summary>
+                        <div id="myBtnContainer">
+                            <button class="sort_btn active" onclick="filterSelection('all')">Show all</button>
+                            <button class="sort_btn" onclick="filterSelection('apparel')">Apparel</button>
+                            <button class="sort_btn" onclick="filterSelection('vinyls')">Vinyls</button>
+                            <button class="sort_btn" onclick="filterSelection('accessories')">Accessories</button>
+                        </div>
+                    </details>
+                    <details name="Category">
+                        <summary>Type</summary>
+                        <div id="myBtnContainer">
+                            <button class="sort_btn active" onclick="filterSelection('all')">Logo Merch</button>
+                            <button class="sort_btn" onclick="filterSelection('apparel')">Prometheus Merch</button>
+                            <button class="sort_btn" onclick="filterSelection('vinyls')">Acantha Merch</button>
+                            <button class="sort_btn" onclick="filterSelection('accessories')">Nyx Merch</button>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="shop-content">
+                    <!-- JSON Cards Loaded Here -->
+                </div>
             </div>
         </section>
         <!-- Order Confirmation Modal -->

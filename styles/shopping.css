@@ -7,6 +7,11 @@
     padding-right: 0.5rem;
 }
 
+.shop-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
 #cart-icon {
     display: flex;
     font-size: 1.875rem;
@@ -212,7 +217,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
-    padding-top: 20px;
 }
 
 .info-section {
@@ -335,7 +339,7 @@
     top: -205px;
     right: -240px;
     color: var(--clr-grey);
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s;
@@ -354,7 +358,7 @@
 
 .order_checkmark i {
     color: #1faa50;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 
 .checkmark-background {

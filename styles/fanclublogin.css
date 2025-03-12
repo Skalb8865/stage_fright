@@ -63,13 +63,13 @@
   .cover .text .text-1,
   .cover .text .text-2 {
     z-index: 20;
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 600;
     color: #fff;
     text-align: center;
   }
   .cover .text .text-2 {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 500;
   }
   .account_container .forms {
@@ -88,7 +88,7 @@
   }
   .forms .form-content .title {
     position: relative;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #333;
   }
@@ -121,7 +121,7 @@
     outline: none;
     border: none;
     padding: 0 30px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -138,10 +138,10 @@
   .form-content .input-box i {
     position: absolute;
     color: var(--clr-red);
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
   .forms .form-content .text {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 500;
     color: #333;
   }

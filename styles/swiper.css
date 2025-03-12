@@ -119,7 +119,7 @@
 /* Changes the color of the arrows */
 .swiper-button-next,
 .swiper-button-prev {
-    font-size: 1px;
+    font-size: 0.0625rem;
     height: 5px;
     color: var(--clr-light);
     transition: color 0.3s;

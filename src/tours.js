@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((response) => response.json())
         .then((data) => {
             data.forEach((tour) => {
-                const { date, location, place, buttonid } = tour;
+                const { date, location, venue, buttonid, bg_identifier } = tour;
                 tourCards.innerHTML += `
-            <div class="tour-card">
+            <div class="tour-card" id="${bg_identifier}">
                 <p class="tour-dates">${date}</p>
                 <p class="tour-location">${location}</p>
-                <p class="tour-place">${place}</p>
+                <p class="tour-venue">${venue}</p>
                 <button class="tours-btn" data-id="${buttonid}">Buy Tickets</button>
             </div>
             `;
