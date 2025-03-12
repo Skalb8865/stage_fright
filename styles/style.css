@@ -71,6 +71,10 @@ button {
     min-height: 63dvh;
 }
 
+.login_page{
+    margin: auto;
+}
+
 .account {
     display: flex;
     justify-content: center;
@@ -1129,8 +1133,12 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     transition: border 0.3s;
-    filter: grayscale(1);
     height: 400px;
+}
+
+.tour_card-overlay {
+    position: fixed;
+    background: red;
 }
 
 #ckos {
@@ -2290,10 +2298,11 @@ section .image img {
 
 
 .merch-hero,
-.music-hero {
+.music-hero,
+.about-hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2306,7 +2315,6 @@ section .image img {
     position: absolute;
     inset: 0;
     background: url('/res/hero_images/merch_hero-image.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
     z-index: -2;
 }
 
@@ -2315,12 +2323,20 @@ section .image img {
     position: absolute;
     inset: 0;
     background: url('/res/hero_images/music_hero-image.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
+    z-index: -2;
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/res/0cave1.webp') no-repeat center center/cover;
     z-index: -2;
 }
 
 .merch-hero::after,
-.music-hero::after {
+.music-hero::after,
+.about-hero::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -2329,7 +2345,8 @@ section .image img {
 }
 
 .merch-hero h1,
-.music-hero h1 {
+.music-hero h1,
+.about-hero h1 {
     font-size: 10vw;
     font-family: 'Sentient', serif;
     font-weight: bold;
@@ -2340,6 +2357,18 @@ section .image img {
     z-index: 1;
 }
 
+
+.hero_credittttttttt {
+    position: absolute;
+    bottom: 0;
+    font-size: var(--size-sm);
+    color: var(--clr-grey);
+    margin-bottom: 5px;
+}
+
+.hero_credittttttttt a:hover {
+    border-bottom: 1px solid var(--clr-grey);
+}
 
 
 #myBtnContainer {
