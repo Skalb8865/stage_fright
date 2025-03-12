@@ -41,12 +41,10 @@
     scroll-behavior: smooth;
 }
 
-html {
-    cursor: url("cursor.ico"), default;
-}
-
-
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background: var(--clr-dark);
     line-height: calc(1em + 0.5rem);
