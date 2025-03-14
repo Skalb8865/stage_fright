@@ -1,31 +1,39 @@
 [
   {
+    "id": "1",
     "name": "Prometheus Vinyl",
     "link": "/html/Merch/Media/prometheus_vinyl.html",
     "price": "$27.99",
     "sort_attribute": "vinyls",
-    "image": "/merch/Prometheusvinyl.webp"
+    "image": "/merch/Prometheusvinyl.webp",
+    "hoverimage": "/merch/AcanthaHood.webp"
   },
   {
+    "id": "2",
     "name": "Acantha Vinyl",
     "link": "/html/Merch/Media/acantha_vinyl.html",
     "price": "$27.99",
     "sort_attribute": "vinyls",
-    "image": "/merch/Acanthavinyl.webp"
+    "image": "/merch/Acanthavinyl.webp",
+    "hoverimage": "/merch/backAirpod.webp"
   },
   {
+    "id": "3",
     "name": "NYX Vinyl",
     "link": "/html/Merch/Media/nyx_vinyl.html",
     "price": "$27.99",
     "sort_attribute": "vinyls",
-    "image": "/merch/Nyxvinyl.webp"
+    "image": "/merch/Nyxvinyl.webp",
+    "hoverimage": "/merch/Beanie.webp"
   },
   {
+    "id": "4",
     "name": "Hephaestus Vinyl",
     "link": "/html/Merch/Media/hephaestus_vinyl.html",
     "price": "$27.99",
     "sort_attribute": "vinyls",
-    "image": "/merch/HephaestusVinyl.webp"
+    "image": "/merch/HephaestusVinyl.webp",
+    "hoverimage": "/merch/Fanclub_Shirt.webp"
   },
   {
     "name": "Stage Fright Black Logo Hoodie",
