@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let cartBoxes = document.querySelectorAll(".cart-box");
   // end of section for cart and merch products
 
-  const scrollUpButton = document.getElementById('scroll_up--button');
+  const scrollUpButton = document.getElementById("scroll_up--button");
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     if (window.scrollY > 75) {
-      scrollUpButton.style.opacity = '1';
+      scrollUpButton.style.opacity = "1";
       scrollUpButton.removeAttribute("inert");
     } else {
-      scrollUpButton.style.opacity = '0';
+      scrollUpButton.style.opacity = "0";
       scrollUpButton.setAttribute("inert", "");
     }
   });
@@ -28,14 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const disableScroll = window.innerWidth <= 640;
     const isCartOpen = cart.classList.contains("active");
 
-    if (disableScroll && (isCartOpen)) {
+    if (disableScroll && isCartOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
 
     // Add event listener for window resize
-    window.addEventListener('resize', () => {
+    window.addEventListener("resize", () => {
       if (disableScroll && isCartOpen) {
         document.body.style.overflow = "hidden";
       } else {
@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cartOverlay.addEventListener("click", () => {
       closesCart();
     });
-
 
     document.addEventListener("DOMContentLoaded", updateCartDisplay);
 
@@ -243,23 +242,25 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function removeFromCart() {
-    // retrieves the current cart from local storage and if the cart is empty it returns an empty array
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    // selects the closest cart-box with the click remove from cart icon
-    let cartBox = this.closest(".cart-box");
-    // selects the title and size from the cart-box
-    let title = cartBox.querySelector(".cart-product-title").innerHTML;
-    let sizeElement = cartBox.querySelector(".cart-size");
-    // selects the size elemnt and uses the split method to split the string at the colon and space, then selecs the
-    // second part of the array and if the merch doesnt have a size it sets it to null
-    let size = sizeElement ? sizeElement.innerHTML.split(": ")[1] : null;
-    // filters the cart array to remove the item that matches the extracted title and size.
-    cart = cart.filter((el) => !(el.title == title && el.size == size));
-    localStorage.setItem("cart", JSON.stringify(cart));
+    setTimeout(() => {
+      // retrieves the current cart from local storage and if the cart is empty it returns an empty array
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      // selects the closest cart-box with the click remove from cart icon
+      let cartBox = this.closest(".cart-box");
+      // selects the title and size from the cart-box
+      let title = cartBox.querySelector(".cart-product-title").innerHTML;
+      let sizeElement = cartBox.querySelector(".cart-size");
+      // selects the size elemnt and uses the split method to split the string at the colon and space, then selecs the
+      // second part of the array and if the merch doesnt have a size it sets it to null
+      let size = sizeElement ? sizeElement.innerHTML.split(": ")[1] : null;
+      // filters the cart array to remove the item that matches the extracted title and size.
+      cart = cart.filter((el) => !(el.title == title && el.size == size));
+      localStorage.setItem("cart", JSON.stringify(cart));
 
-    updateCartDisplay();
-    updateTotal();
-    updateTotalItems();
+      updateCartDisplay();
+      updateTotal();
+      updateTotalItems();
+    }, 500);
   }
 
   function updateTotal() {
@@ -293,21 +294,24 @@ document.addEventListener("DOMContentLoaded", () => {
       loaderContainer.style.display = "flex";
       loader.style.display = "block";
       document.body.style.overflow = "hidden";
-    }, 150);
+    }, 250);
 
     setTimeout(() => {
       loaderContainer.style.display = "none";
       loader.style.display = "none";
-
       modal.style.display = "flex";
       document.body.style.overflow = "hidden";
-    }, 1500);
+    }, 3750);
 
+    setTimeout(() => {
+      updateCartDisplay();
+      updateTotal();
+      updateTotalItems();
+    }, 2000);
 
-    updateCartDisplay();
-    updateTotal();
-    updateTotalItems();
-    closesCart();
+    setTimeout(() => {
+      closesCart();
+    }, 3000);
   }
 
   // Close the modal when the user clicks on the x
@@ -334,7 +338,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-
   function displayMessage() {
     const cartContent = document.querySelector(".cart-content");
     cartContent.innerHTML = `
@@ -353,12 +356,14 @@ document.addEventListener("DOMContentLoaded", () => {
                      <div class="cart-product-title">${item.title}</div>
                      <div class="cart-price">$${item.price.toFixed(2)}</div>
                  </div>
-                 ${item.size
-        ? `<div class="cart-size">Size: ${item.size}</div>`
-        : ""
-      }
-                 <div class="cart-quantity" data-quantity="${item.quantity
-      }">Quantity: ${item.quantity}</div>
+                 ${
+                   item.size
+                     ? `<div class="cart-size">Size: ${item.size}</div>`
+                     : ""
+                 }
+                 <div class="cart-quantity" data-quantity="${
+                   item.quantity
+                 }">Quantity: ${item.quantity}</div>
              </div>
              <i class="fa-regular fa-trash-can cart-remove"></i>
          </div>`;
