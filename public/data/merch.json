@@ -71,11 +71,13 @@
     "image": "/merch/Prometheushood.webp"
   },
   {
+    "id": "10",
     "name": "Prometheus Black T-Shirt",
     "link": "/html/Merch/Apparel/prometheus_T-shirt.html",
     "price": "$18.99",
     "sort_attribute": "apparel",
-    "image": "/merch/PrometheusShirt.webp"
+    "image": "/merch/PrometheusShirt.webp",
+    "hoverimage": "/merch/promeShirtBack.webp"
   },
   {
     "name": "Acantha Black Hoodie",
@@ -99,11 +101,13 @@
     "image": "/merch/Nyxhood.webp"
   },
   {
+    "id": "14",
     "name": "NYX Black T-Shirt",
     "link": "/html/Merch/Apparel/nyx_T-shirt.html",
     "price": "$18.99",
     "sort_attribute": "apparel",
-    "image": "/merch/NyxShirt.webp"
+    "image": "/merch/NyxShirt.webp",
+    "hoverimage": "/merch/nyxShirtBack.webp"
   },
   {
     "name": "Hephaestus Black Hoodie",
@@ -113,11 +117,13 @@
     "image": "/merch/HephaestusHoodie.webp"
   },
   {
+    "id": "16",
     "name": "Hephaestus Black T-Shirt",
     "link": "/html/Merch/Apparel/hephaestus_T-shirt.html",
     "price": "$18.99",
     "sort_attribute": "apparel",
-    "image": "/merch/HephaestusShirt.webp"
+    "image": "/merch/HephaestusShirt.webp",
+    "hoverimage": "/merch/hephaestusShirtBack.webp"
   },
   {
     "name": "Stage Fright White Hat",
