@@ -22,6 +22,18 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
 
 
     <meta name="description" content="Stage Fright Website">
@@ -142,7 +154,15 @@
         <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
             <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/PrometheusShirt.webp" alt="Prometheus Black T-Shirt">
+                <div class="thumbnails">
+                    <img src="/merch/PrometheusShirt.webp" alt="Merch 1" class="selected" onclick="changeImage(this)" role="button">
+                    <img src="/merch/promeShirtBack.webp" alt="Merch 3" onclick="changeImage(this)" role="button">
+                </div>
+                <div class="merch_img--card" style="display: none;">
+                    <img src="/merch/PrometheusShirt.webp" alt="Main Merch">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/PrometheusShirt.webp" alt="Main Merch">
                 </div>
             </div>
             <div class="merch_content">

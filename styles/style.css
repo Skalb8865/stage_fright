@@ -1046,7 +1046,7 @@ button {
 .merch_img--container {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    gap: 10px;
 }
 
 .merch_img--card {
@@ -2054,7 +2054,13 @@ section .image img {
     }
 
     .merch_img--container {
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    .thumbnails{
+        flex-direction: row;
     }
 
     .section-title {
