@@ -550,6 +550,7 @@
     flex-direction: column;
     gap: 10px;
 }
+
 .thumbnails img {
     width: 80px;
     height: 80px;
@@ -558,14 +559,22 @@
     transition: border 0.2s ease;
     border: 2px solid transparent;
 }
+
 .thumbnails img.selected {
     border: 2px solid var(--clr-grey);
 }
 
 
 @media (max-width: 1024px) {
-    .thumbnails{
+    .thumbnails {
         align-self: flex-start;
         flex-direction: row;
+    }
+}
+
+@media (max-width: 1179px) {
+    .shop-wrapper {
+        align-items: flex-end;
+        flex-direction: column;
     }
 }

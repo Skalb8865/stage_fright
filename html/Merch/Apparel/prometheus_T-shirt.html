@@ -155,14 +155,15 @@
         <div class="merch-container product-box container">
             <div class="merch_img--container">
                 <div class="thumbnails">
-                    <img src="/merch/PrometheusShirt.webp" alt="Merch 1" class="selected" onclick="changeImage(this)" role="button">
-                    <img src="/merch/promeShirtBack.webp" alt="Merch 3" onclick="changeImage(this)" role="button">
+                    <img src="/merch/PrometheusShirt.webp" alt="Prometheus Black T-Shirt" class="selected" onclick="changeImage(this)"
+                        role="button">
+                    <img src="/merch/promeShirtBack.webp" alt="Prometheus Black T-Shirt Back" onclick="changeImage(this)" role="button">
                 </div>
                 <div class="merch_img--card" style="display: none;">
-                    <img src="/merch/PrometheusShirt.webp" alt="Main Merch">
+                    <img src="/merch/PrometheusShirt.webp" alt="Prometheus Black T-Shirt">
                 </div>
                 <div class="merch_img--card">
-                    <img id="displayedImage" src="/merch/PrometheusShirt.webp" alt="Main Merch">
+                    <img id="displayedImage" src="/merch/PrometheusShirt.webp" alt="Prometheus Black T-Shirt">
                 </div>
             </div>
             <div class="merch_content">
@@ -232,8 +233,10 @@
                 </div>
                 <!-- BOX 2 -->
                 <div class="merch-box">
-                    <a href="../Media/prometheus_vinyl.html" aria-label="Prometheus Vinyl"><img
-                            src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl" class="product-img"></a>
+                    <a href="../Media/prometheus_vinyl.html" aria-label="Prometheus Vinyl"><img id="suggestion_1"
+                            src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl" class="product-img"
+                            onmouseover="document.getElementById('suggestion_1').src='/merch/PrometheusvinylCover.webp'"
+                            onmouseleave="document.getElementById('suggestion_1').src='/merch/Prometheusvinyl.webp'"></a>
                     <div class="info-section">
                         <h2 class="product-title">Prometheus Vinyl</h2>
                         <span class="product-price">$27.99</span>
