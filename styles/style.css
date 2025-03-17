@@ -2444,3 +2444,52 @@ summary {
     padding: 1.5rem;
     cursor: pointer;
 }
+
+.autoBlur{
+    animation: autoBlurAnimation both;
+    animation-timeline: view();
+}
+
+.autoHide{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(100%);
+    transition: all 1s ease;
+}
+
+.autoShow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(20px);
+    }
+    40%, 45%, 50%, 55%, 60%, 65%{
+        filter: blur(0);
+    }
+    100%{
+        filter: blur(20px);
+    }
+} 
+
+@media (prefers-reduced-motion){
+    @keyframes autoBlurAnimation{
+        0%{
+            filter: blur(0);
+        }
+        40%, 45%, 50%, 55%, 60%, 65%{
+            filter: blur(0);
+        }
+        100%{
+            filter: blur(0);
+        }
+    }
+
+    .autoHide{
+        transition: none;
+    }
+}
