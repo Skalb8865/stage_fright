@@ -242,25 +242,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function removeFromCart() {
-    setTimeout(() => {
-      // retrieves the current cart from local storage and if the cart is empty it returns an empty array
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      // selects the closest cart-box with the click remove from cart icon
-      let cartBox = this.closest(".cart-box");
-      // selects the title and size from the cart-box
-      let title = cartBox.querySelector(".cart-product-title").innerHTML;
-      let sizeElement = cartBox.querySelector(".cart-size");
-      // selects the size elemnt and uses the split method to split the string at the colon and space, then selecs the
-      // second part of the array and if the merch doesnt have a size it sets it to null
-      let size = sizeElement ? sizeElement.innerHTML.split(": ")[1] : null;
-      // filters the cart array to remove the item that matches the extracted title and size.
-      cart = cart.filter((el) => !(el.title == title && el.size == size));
-      localStorage.setItem("cart", JSON.stringify(cart));
+    // retrieves the current cart from local storage and if the cart is empty it returns an empty array
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    // selects the closest cart-box with the click remove from cart icon
+    let cartBox = this.closest(".cart-box");
+    // selects the title and size from the cart-box
+    let title = cartBox.querySelector(".cart-product-title").innerHTML;
+    let sizeElement = cartBox.querySelector(".cart-size");
+    // selects the size elemnt and uses the split method to split the string at the colon and space, then selecs the
+    // second part of the array and if the merch doesnt have a size it sets it to null
+    let size = sizeElement ? sizeElement.innerHTML.split(": ")[1] : null;
+    // filters the cart array to remove the item that matches the extracted title and size.
+    cart = cart.filter((el) => !(el.title == title && el.size == size));
+    localStorage.setItem("cart", JSON.stringify(cart));
 
-      updateCartDisplay();
-      updateTotal();
-      updateTotalItems();
-    }, 500);
+    updateCartDisplay();
+    updateTotal();
+    updateTotalItems();
   }
 
   function updateTotal() {
@@ -356,14 +354,12 @@ document.addEventListener("DOMContentLoaded", () => {
                      <div class="cart-product-title">${item.title}</div>
                      <div class="cart-price">$${item.price.toFixed(2)}</div>
                  </div>
-                 ${
-                   item.size
-                     ? `<div class="cart-size">Size: ${item.size}</div>`
-                     : ""
-                 }
-                 <div class="cart-quantity" data-quantity="${
-                   item.quantity
-                 }">Quantity: ${item.quantity}</div>
+                 ${item.size
+        ? `<div class="cart-size">Size: ${item.size}</div>`
+        : ""
+      }
+                 <div class="cart-quantity" data-quantity="${item.quantity
+      }">Quantity: ${item.quantity}</div>
              </div>
              <i class="fa-regular fa-trash-can cart-remove"></i>
          </div>`;

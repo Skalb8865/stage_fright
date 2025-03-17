@@ -1029,13 +1029,15 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 100px 100px 70px 100px;
     gap: 50px;
     text-transform: uppercase;
 }
 
 .merch_content {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1044,7 +1046,7 @@ button {
 .merch_img--container {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    gap: 10px;
 }
 
 .merch_img--card {
@@ -2052,7 +2054,13 @@ section .image img {
     }
 
     .merch_img--container {
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    .thumbnails{
+        flex-direction: row;
     }
 
     .section-title {
