@@ -5,6 +5,7 @@ import '../styles/shopping.css'
 
 import './utils.js'
 import './menu.js'
+import './animations.js'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
