@@ -143,9 +143,10 @@ button {
 }
 
 .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 40dvh;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
     background: var(--clr-dark-grey);
 }
 
@@ -2399,14 +2400,14 @@ section .image img {
     border: none;
     outline: none;
     padding: 12px 16px;
-    background-color: var(--clr-light);
+    background: transparent;
+    color: var(--clr-light);
     cursor: pointer;
     transition: all 0.25s;
 }
 
 .sort_btn:hover {
     background-color: var(--clr-red);
-    color: var(--clr-light);
     transition: all 0.25s;
 }
 
@@ -2416,7 +2417,6 @@ section .image img {
 }
 
 .sort_btn.active {
-    background-color: var(--clr-dark-rose);
     color: white;
 }
 
@@ -2452,6 +2452,9 @@ summary {
     padding: 1.5rem;
     cursor: pointer;
 }
+
+
+
 
 .autoBlur{
     animation: autoBlurAnimation both;
