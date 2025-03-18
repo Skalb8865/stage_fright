@@ -7,6 +7,10 @@
   }
   
   #info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     color: #2d3667;
     font-size: 16px;
     text-align: center;
@@ -15,6 +19,10 @@
   }
   
   form {
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; */
     width: 300px;
     height: 42px;
     margin: 100px auto 0 auto;
