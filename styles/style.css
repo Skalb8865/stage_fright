@@ -2517,7 +2517,7 @@ summary {
     }
 }
 
-select {
+.sort_box {
   min-width: 250px;
   text-align: left;
   background: none;
@@ -2526,9 +2526,10 @@ select {
   display: flex;
   justify-content: space-between;
   background: white;
+  
 }
 
-::picker(select) {
+::picker(.sort_box) {
   border: 1px solid lightgray;
   border-top: 1px solid white;
   margin-top: -1px;
@@ -2537,12 +2538,12 @@ select {
   background: white;
 }
 
-option {
+.sort_box option {
   color: gray;
   padding: 0.75rem 1.5rem 0.75rem 2.5rem;
 }
 
-option:checked {
+.sort_box option:checked {
   background: var(--clr-red);
   color: black;
 }
