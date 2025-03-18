@@ -199,13 +199,12 @@
         </div>
         <!-- Shop Section -->
         <section class="shop-container section">
-            <!-- https://developer.mozilla.org/en-US/blog/html-details-exclusive-accordions/ -->
             <div class="shop-wrapper">
                 <!-- Merch Sorter Section -->
-                <div class="sort_section">
+                <!-- <div class="sort_section">
                     <h1 class="sort_header">Categories</h1>
                     <details name="Category">
-                        <summary>Category</summary>
+                        <summary>Type</summary>
                         <div id="myBtnContainer">
                             <button class="sort_btn active" onclick="filterSelection('all')">Show all</button>
                             <button class="sort_btn" onclick="filterSelection('apparel')">Apparel</button>
@@ -222,7 +221,32 @@
                             <button class="sort_btn" onclick="filterSelection('accessories')">Nyx Merch</button>
                         </div>
                     </details>
-                </div>
+                </div> -->
+
+                <!-- <select class="sort_box btn" name="Category" onchange="filterSelection(this.value)">
+                    <option class="sort_btn active" value="all">Show all</option>
+                    <option class="sort_btn" value="apparel">Apparel</option>
+                    <option class="sort_btn" value="vinyls">Vinyls</option>
+                    <option class="sort_btn" value="accessories">Accessories</option>
+                </select> -->
+
+                <select aria-label="Sort by" name="Category" onchange="filterSelection(this.value)">
+                    <button>
+                        <span aria-hidden="true">
+                            <span>Sort by :</span>
+                            <selectedcontent></selectedcontent>
+                        </span>
+                        <span class="arrow">
+                            <img src="https://www.svgrepo.com/download/80156/down-arrow.svg" alt="">
+                        </span>
+                    </button>
+                    <option class="active" value="all">Show all</option>
+                    <option value="apparel">Apparel</option>
+                    <option value="vinyls">Vinyls</option>
+                    <option value="accessories">Accessories</option>
+                </select>
+
+                <!-- https://codepen.io/collection/BNZjPe?cursor=eyJwYWdlIjoyfQ%3D%3D -->
 
                 <div class="shop-content">
                     <!-- JSON Cards Loaded Here -->

@@ -9,6 +9,8 @@
 
 .shop-wrapper {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 10px;
 }
 
@@ -565,10 +567,34 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1128px) {
     .thumbnails {
         align-self: flex-start;
         flex-direction: row;
+        margin-left: 161.5px;
+    }
+
+    .merch_content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .merch_img--container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .thumbnails {
+        margin-left: 83px;
+    }
+}
+
+@media (max-width: 769px) {
+    .thumbnails {
+        margin-left: 43.5px;
     }
 }
 

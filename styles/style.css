@@ -1957,6 +1957,15 @@ section .image img {
         height: 800px;
     }
 }
+@media (max-width: 1128px) {
+    .merch-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 
 /* lg */
 @media (max-width: 1024px) {
@@ -2042,14 +2051,14 @@ section .image img {
         height: 400px;
     }
 
-    .merch-container {
+    /* .merch-container {
         display: grid;
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
-    .merch_content {
+    /* .merch_content {
         justify-content: center;
         align-items: center;
     }
@@ -2058,16 +2067,14 @@ section .image img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .thumbnails{
-        flex-direction: row;
-    }
+    } */
 
     .section-title {
         font-size: var(--size-5xl);
     }
 }
+
+
 
 /* md */
 @media (max-width: 768px) {
@@ -2391,6 +2398,11 @@ section .image img {
     display: none;
 }
 
+/* .sort_box{
+    background: red;
+    border: none;
+} */
+
 .show {
     display: block;
 }
@@ -2503,4 +2515,85 @@ summary {
     .autoHide{
         transition: none;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+select,
+::picker(select) {
+  appearance: base-select;
+  font: -webkit-small-control;
+}
+
+select {
+  min-width: 250px;
+  text-align: left;
+  background: none;
+  border: 1px solid lightgray;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+::picker(select) {
+  border: 1px solid lightgray;
+  border-top: 1px solid white;
+  margin-top: -1px;
+  padding: 0;
+  box-shadow: none;
+  background: white;
+}
+
+option {
+  color: gray;
+  padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+}
+
+selectedcontent {
+  font-weight: 800;
+}
+
+.arrow img {
+  width: 1em;
+  opacity: 0.4;
+  vertical-align: middle;
+}
+
+option, selectedcontent {
+  letter-spacing: 0.3px;
+}
+
+select::picker-icon {
+  display: none;
+}
+
+/* checked style */
+
+option:checked {
+  background: #d0edd0;
+  color: black;
+}
+
+option::checkmark {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjAuMjg1IDJsLTExLjI4NSAxMS41NjctNS4yODYtNS4wMTEtMy43MTQgMy43MTYgOSA4LjcyOCAxNS0xNS4yODV6Ii8+PC9zdmc+);
+  background-size: cover;
+  position: absolute;
+  left: 0.75rem;
 }
