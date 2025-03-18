@@ -2524,6 +2524,7 @@ summary {
   border: 1px solid var(--clr-light);
   padding: 0.75rem;
   display: flex;
+  color: var(--clr-light);
   justify-content: space-between;
   background: var(--clr-dark);
   
