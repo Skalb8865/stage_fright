@@ -81,6 +81,7 @@
 .timeline ol li .details>* {
   opacity: 0;
   transition: 0.5s;
+  filter: blur(10px);
 }
 
 .timeline ol li time {
@@ -114,6 +115,7 @@
 .timeline ol li.in-view .details>* {
   opacity: 1;
   transform: none;
+  filter: blur(0);
 }
 
 .timeline ol li.in-view time {

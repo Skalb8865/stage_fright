@@ -2467,11 +2467,11 @@ summary {
 
 
 
-
+/* 
 .autoBlur{
     animation: autoBlurAnimation both;
     animation-timeline: view();
-}
+} */
 
 .autoHide{
     opacity: 0;
@@ -2487,7 +2487,7 @@ summary {
 }
 
 
-@keyframes autoBlurAnimation{
+/* @keyframes autoBlurAnimation{
     0%{
         filter: blur(20px);
     }
@@ -2497,10 +2497,10 @@ summary {
     100%{
         filter: blur(20px);
     }
-} 
+}  */
 
 @media (prefers-reduced-motion){
-    @keyframes autoBlurAnimation{
+    /* @keyframes autoBlurAnimation{
         0%{
             filter: blur(0);
         }
@@ -2510,7 +2510,7 @@ summary {
         100%{
             filter: blur(0);
         }
-    }
+    } */
 
     .autoHide{
         transition: none;
