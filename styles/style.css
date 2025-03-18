@@ -2517,6 +2517,31 @@ summary {
     }
 }
 
+select {
+  min-width: 250px;
+  text-align: left;
+  background: none;
+  border: 1px solid lightgray;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+
+::picker(select) {
+  border: 1px solid lightgray;
+  border-top: 1px solid white;
+  margin-top: -1px;
+  padding: 0;
+  box-shadow: none;
+  background: white;
+}
+
+option {
+  color: gray;
+  padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+}
+
 option:checked {
   background: var(--clr-red);
   color: black;
