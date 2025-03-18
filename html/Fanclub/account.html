@@ -53,21 +53,22 @@
             alt="">
         <img src="https://images.unsplash.com/photo-1598214013757-b51f69885b76?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test1"
+        <img id="test"
             src="https://images.unsplash.com/photo-1578934173483-f7b57f4c3c54?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test2"
+        <img id="test"
             src="https://images.unsplash.com/photo-1603520762497-4f020fe0f1b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test3"
+        <img id="test"
             src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test4"
+        <img id="test"
             src="https://images.unsplash.com/photo-1718946918971-0eb53cdd6967?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test5"
+        <img id="test"
             src="https://images.unsplash.com/photo-1587141701209-a9ee8213334f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
+        </span>
     </div>
     <div class="testbtn">
         <button id="testBtn">
@@ -76,19 +77,11 @@
     </div>
 
     <script>
-        const hiddenSection1 = document.getElementById(".test1");
-        const hiddenSection2 = document.getElementById(".test2");
-        const hiddenSection3 = document.getElementById(".test3");
-        const hiddenSection4 = document.getElementById(".test4");
-        const hiddenSection5 = document.getElementById(".test5");
+        const hiddenSection = document.querySelectorAll("#test");
         const unHideButton = document.getElementById("testBtn");
 
         function unHideSection() {
-            hiddenSection1.style.display = "block";
-            hiddenSection2.style.display = "block";
-            hiddenSection3.style.display = "block";
-            hiddenSection4.style.display = "block";
-            hiddenSection5.style.display = "block";
+            hiddenSection.style.display = "flex";
         }
 
         unHideButton.addEventListener("click", () => {
