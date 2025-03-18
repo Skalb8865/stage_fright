@@ -232,6 +232,9 @@
                     <option class="sort_btn" value="accessories">Accessories</option>
                 </select> -->
 
+
+
+
                 <!-- <select aria-label="Sort by" name="Category" onchange="filterSelection(this.value)">
                     <button>
                         <span aria-hidden="true">
@@ -247,63 +250,24 @@
                     <option value="vinyls">Vinyls</option>
                     <option value="accessories">Accessories</option>
                 </select> -->
-                <form>
-                    <input type="checkbox" id="options-checkbox-btn" />
-                    <div id="select-btn" class="fx fx-justify-between">
-                      <div id="selected-value">
-                        <span>Select a platform</span>
+
+                <div class="sort_container">
+                    <span class="choose">Choose Gender</span>
+                  
+                      <div class="dropdown">
+                        <div class="select">
+                          <span>Select Gender</span>
+                          <i class="fa fa-chevron-left"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown-menu">
+                          <li id="male">Male</li>
+                          <li id="female">Female</li>
+                        </ul>
                       </div>
-                      <div id="chevrons">
-                        <i class="fas fa-chevron-up"></i>
-                        <i class="fas fa-chevron-down"></i>
-                      </div>
-                    </div>
-                    <div id="options">
-                      <div class="option">
-                        <input class="option-radio-btn top" type="radio" name="platform" value="codepen" />
-                        <input class="option-radio-btn bottom" type="radio" name="platform" value="codepen" />
-                        <i class="fab fa-codepen"></i>
-                        <span class="option-label">CodePen</span>
-                        <span class="option-value">CodePen</span>
-                      </div>
-                      <div class="option">
-                        <input class="option-radio-btn top" type="radio" name="platform" value="dribbble" />
-                        <input class="option-radio-btn bottom" type="radio" name="platform" value="dribbble" />
-                        <i class="fab fa-dribbble"></i>
-                        <span class="option-label">Dribbble</span>
-                        <span class="option-value">Dribbble</span>
-                      </div>
-                      <div class="option">
-                        <input class="option-radio-btn top" type="radio" name="platform" value="behance" />
-                        <input class="option-radio-btn bottom" type="radio" name="platform" value="behance" />
-                        <i class="fab fa-behance"></i>
-                        <span class="option-label">Behance</span>
-                        <span class="option-value">Behance</span>
-                      </div>
-                      <div class="option">
-                        <input class="option-radio-btn top" type="radio" name="platform" value="hackerrank" />
-                        <input class="option-radio-btn bottom" type="radio" name="platform" value="hackerrank" />
-                        <i class="fab fa-hackerrank"></i>
-                        <span class="option-label">HackerRank</span>
-                        <span class="option-value">HackerRank</span>
-                      </div>
-                      <div class="option">
-                        <input class="option-radio-btn top" type="radio" name="platform" value="stackoverflow" />
-                        <input class="option-radio-btn bottom" type="radio" name="platform" value="stackoverflow" />
-                        <i class="fab fa-stack-overflow"></i>
-                        <span class="option-label">StackOverflow</span>
-                        <span class="option-value">StackOverflow</span>
-                      </div>
-                      <div class="option">
-                        <input class="option-radio-btn top" type="radio" name="platform" value="freecodecamp" />
-                        <input class="option-radio-btn bottom" type="radio" name="platform" value="freecodecamp" />
-                        <i class="fab fa-free-code-camp"></i>
-                        <span class="option-label">FreeCodeCamp</span>
-                        <span class="option-value">FreeCodeCamp</span>
-                      </div>
-                      <div id="option-bg"></div>
-                    </div>
-                  </form>
+                  
+                  <span class="msg"></span>
+                </div>
 
                 <!-- https://codepen.io/collection/BNZjPe?cursor=eyJwYWdlIjoyfQ%3D%3D -->
 
