@@ -2521,29 +2521,29 @@ summary {
   min-width: 250px;
   text-align: left;
   background: none;
-  border: 1px solid lightgray;
+  border: 1px solid var(--clr-light);
   padding: 0.75rem;
   display: flex;
   justify-content: space-between;
-  background: white;
+  background: var(--clr-dark);
   
 }
 
 ::picker(.sort_box) {
-  border: 1px solid lightgray;
-  border-top: 1px solid white;
+  border: 1px solid var(--clr-grey);
+  border-top: 1px solid var(--clr-light);
   margin-top: -1px;
   padding: 0;
   box-shadow: none;
-  background: white;
+  background: var(--clr-light);
 }
 
 .sort_box option {
-  color: gray;
+  color: var(--clr-light);
   padding: 0.75rem 1.5rem 0.75rem 2.5rem;
 }
 
-.sort_box option:checked {
+/* .sort_box option:checked {
   background: var(--clr-red);
   color: black;
-}
+} */
