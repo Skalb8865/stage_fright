@@ -2536,6 +2536,10 @@ select,
   font: -webkit-small-control;
 }
 
+.awdwadwad:hover{
+    background: red;
+}
+
 select {
   min-width: 250px;
   text-align: left;
