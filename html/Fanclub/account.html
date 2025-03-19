@@ -53,40 +53,42 @@
             alt="">
         <img src="https://images.unsplash.com/photo-1598214013757-b51f69885b76?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test"
+        <img id="testImage1"
             src="https://images.unsplash.com/photo-1578934173483-f7b57f4c3c54?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test"
+        <img id="testImage2"
             src="https://images.unsplash.com/photo-1603520762497-4f020fe0f1b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test"
+        <img id="testImage3"
             src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test"
+        <img id="testImage4"
             src="https://images.unsplash.com/photo-1718946918971-0eb53cdd6967?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
-        <img id="test"
+        <img id="testImage5"
             src="https://images.unsplash.com/photo-1587141701209-a9ee8213334f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="">
         </span>
     </div>
     <div class="testbtn">
-        <button id="testBtn">
+        <button type="button" onclick="show()" onclick="show()" id="testBtn">
             test
         </button>
     </div>
 
     <script>
-        const hiddenSection = document.querySelectorAll("#test");
-        const unHideButton = document.getElementById("testBtn");
-
-        function unHideSection() {
-            hiddenSection.style.display = "flex";
+        function show() {
+            /* Access image by id and change 
+            the display property to block*/
+            document.getElementById('testImage1')
+            document.getElementById('testImage2')
+            document.getElementById('testImage3')
+            document.getElementById('testImage4')
+            document.getElementById('testImage5')
+                .style.display = "block";
+            document.getElementById('testBtn')
+                .style.display = "none";
         }
-
-        unHideButton.addEventListener("click", () => {
-            unHideSection();
-        });
     </script>
 </body>
 

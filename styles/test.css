@@ -28,6 +28,22 @@
     background: darkred;
 }
 
-#test{
+#testImage1{
+    display: none;
+}
+
+#testImage2{
+    display: none;
+}
+
+#testImage3{
+    display: none;
+}
+
+#testImage4{
+    display: none;
+}
+
+#testImage5{
     display: none;
 }

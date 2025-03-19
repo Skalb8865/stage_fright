@@ -200,51 +200,23 @@
         <!-- Shop Section -->
         <section class="shop-container section">
             <div class="shop-wrapper">
-                <!-- Merch Sorter Section -->
-                <!-- <div class="sort_section">
-                    <h1 class="sort_header">Categories</h1>
-                    <details name="Category">
-                        <summary>Type</summary>
-                        <div id="myBtnContainer">
-                            <button class="sort_btn active" onclick="filterSelection('all')">Show all</button>
-                            <button class="sort_btn" onclick="filterSelection('apparel')">Apparel</button>
-                            <button class="sort_btn" onclick="filterSelection('vinyls')">Vinyls</button>
-                            <button class="sort_btn" onclick="filterSelection('accessories')">Accessories</button>
-                        </div>
-                    </details>
-                    <details name="Category">
-                        <summary>Type</summary>
-                        <div id="myBtnContainer">
-                            <button class="sort_btn active" onclick="filterSelection('all')">Logo Merch</button>
-                            <button class="sort_btn" onclick="filterSelection('apparel')">Prometheus Merch</button>
-                            <button class="sort_btn" onclick="filterSelection('vinyls')">Acantha Merch</button>
-                            <button class="sort_btn" onclick="filterSelection('accessories')">Nyx Merch</button>
-                        </div>
-                    </details>
-                </div> -->
+                <div class="btn_section">
+                    <select class="category_box" name="Category" onchange="filterSelection(this.value)">
+                        <option value="" label="Categories" disabled selected>Categories</option>
+                        <option value="apparel">Apparel</option>
+                        <option value="vinyls">Vinyls</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
 
-                <select class="sort_box" name="Category" onchange="filterSelection(this.value)">
-                    <option class="active" value="all">Show all</option>
-                    <option value="apparel">Apparel</option>
-                    <option value="vinyls">Vinyls</option>
-                    <option value="accessories">Accessories</option>
-                </select>
-
-                <!-- <select aria-label="Sort by" name="Category" onchange="filterSelection(this.value)">
-                    <button>
-                        <span aria-hidden="true">
-                            <span>Sort by :</span>
-                            <selectedcontent></selectedcontent>
-                        </span>
-                        <span class="arrow">
-                            <img src="https://www.svgrepo.com/download/80156/down-arrow.svg" alt="">
-                        </span>
-                    </button>
-                    <option class="active" value="all">Show all</option>
-                    <option value="apparel">Apparel</option>
-                    <option value="vinyls">Vinyls</option>
-                    <option value="accessories">Accessories</option>
-                </select> -->
+                    <select class="sort_box" name="Sort" onchange="filterSelection(this.value)">
+                        <option value="" label="Sort By" disabled selected>Sort By</option>
+                        <option value="Price Low to High">Price Low to High</option>
+                        <option value="Price High to Low">Price High to Low</option>
+                        <option value="Most Popular">Most Popular</option>
+                        <option value="Newest to Oldest">Newest to Oldest</option>
+                        <option value="Oldest to Newest">Oldest to Newest</option>
+                    </select>
+                </div>
 
                 <!-- https://codepen.io/collection/BNZjPe?cursor=eyJwYWdlIjoyfQ%3D%3D -->
 
