@@ -26,8 +26,21 @@
     --size-10xl: 10rem;
 }
 
-html{
-    cursor: url(/res/rock_hand.cur),auto;
+html {
+    cursor: url(/res/rock_hand.cur), auto;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: black;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--clr-light);
 }
 
 ::selection {
@@ -53,6 +66,7 @@ body {
     background: var(--clr-dark);
     line-height: calc(1em + 0.5rem);
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a {
@@ -69,6 +83,7 @@ button {
     background: transparent;
     border: none;
 }
+
 
 
 .main {
@@ -2482,7 +2497,7 @@ section .image img {
     }
 }
 
-.btn_section{
+.btn_section {
     display: flex;
     gap: 15px;
 }
@@ -2499,7 +2514,7 @@ section .image img {
     background: var(--clr-dark);
 }
 
-.category_box{
+.category_box {
     min-width: 250px;
     text-align: left;
     background: none;
@@ -2511,11 +2526,11 @@ section .image img {
     background: var(--clr-light);
 }
 
-.sort_box option:disabled{
+.sort_box option:disabled {
     display: none;
 }
 
-.category_box option:disabled{
+.category_box option:disabled {
     display: none;
 }
 
