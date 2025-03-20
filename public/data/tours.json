@@ -6,7 +6,7 @@
         "ticketsPrice": "$19",
         "venue": "The King Of Clubs",
         "buttonid": "open-modal",
-        "bg_identifier": "ckos"
+        "bg_identifier": "/tour_images/king_of_clubs.webp"
     },
     {
         "date": "Mar 1st - 2nd",
@@ -15,7 +15,7 @@
         "ticketsPrice": "$18",
         "venue": "Columbus Commons",
         "buttonid": "open-modal2",
-        "bg_identifier": "ccc"
+        "bg_identifier": "/tour_images/DSC_6150p2-2-1489038050.jpg"
     },
     {
         "date": "Mar 5th - 6th",
@@ -24,7 +24,7 @@
         "ticketsPrice": "$20",
         "venue": "Underground Arts",
         "buttonid": "open-modal3",
-        "bg_identifier": "pua"
+        "bg_identifier": "/tour_images/Underground-Arts-6.jpg"
     },
     {
         "date": "Mar 7th - 8th",

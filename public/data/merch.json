@@ -50,18 +50,22 @@
     "image": "/merch/SFwhitelongsleeve.webp"
   },
   {
+    "id": "7",
     "name": "Black Motto Sweatpants",
     "link": "/html/Merch/Apparel/black_motto_sweatpants.html",
     "price": "$16.99",
     "sort_attribute": "apparel",
-    "image": "/merch/pants.webp"
+    "image": "/merch/pants.webp",
+    "hoverimage": "/merch/pants.webp"
   },
   {
+    "id": "8",
     "name": "Black Logo Beanie",
     "link": "/html/Merch/Apparel/black_logo_beanie.html",
     "price": "$12.99",
     "sort_attribute": "apparel",
-    "image": "/merch/Beanie.webp"
+    "image": "/merch/Beanie.webp",
+    "hoverimage": "/merch/BeanieBack.webp"
   },
   {
     "name": "Prometheus Black Hoodie",
@@ -80,18 +84,22 @@
     "hoverimage": "/merch/promeShirtBack.webp"
   },
   {
+    "id": "11",
     "name": "Acantha Black Hoodie",
     "link": "/html/Merch/Apparel/acantha_black_hoodie.html",
     "price": "$24.99",
     "sort_attribute": "apparel",
-    "image": "/merch/AcanthaHood.webp"
+    "image": "/merch/AcanthaHood.webp",
+    "hoverimage": "/merch/AcanthaHoodFold.webp"
   },
   {
+    "id": "12",
     "name": "Acantha Black T-Shirt",
     "link": "/html/Merch/Apparel/acantha_T-shirt.html",
     "price": "$18.99",
     "sort_attribute": "apparel",
-    "image": "/merch/AcanthaShirt.webp"
+    "image": "/merch/AcanthaShirt.webp",
+    "hoverimage": "/merch/AcanthaShirtBack.webp"
   },
   {
     "name": "NYX Black Hoodie",

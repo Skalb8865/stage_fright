@@ -1,191 +1,9 @@
-/* .account_container {
-    position: relative;
-    max-width: 850px;
-    width: 100%;
-    background: #fff;
-    padding: 40px 30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    perspective: 2700px;
-  }
-  .account_container .cover {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    height: 100%;
-    width: 50%;
-    z-index: 98;
-    transition: all 1s ease;
-    transform-origin: left;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-  }
-  .account_container #flip:checked ~ .cover {
-    transform: rotateY(-180deg);
-  }
-  .account_container #flip:checked ~ .forms .login-form {
-    pointer-events: none;
-  }
-  .account_container .cover .front,
-  .account_container .cover .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  .cover .back {
-    transform: rotateY(180deg);
-  }
-  .account_container .cover img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 100;
-  }
-  .account_container .cover .text {
-    position: absolute;
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .account_container .cover .text::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: var(--clr-dark-grey);
-  }
-  .cover .text .text-1,
-  .cover .text .text-2 {
-    z-index: 20;
-    font-size: 1.625rem;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-  }
-  .cover .text .text-2 {
-    font-size: 0.9375rem;
-    font-weight: 500;
-  }
-  .account_container .forms {
-    height: 100%;
-    width: 100%;
-    background: #fff;
-  }
-  .account_container .form-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .form-content .login-form,
-  .form-content .signup-form {
-    width: calc(100% / 2 - 25px);
-  }
-  .forms .form-content .title {
-    position: relative;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #333;
-  }
-  .forms .form-content .title:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 25px;
-    background: var(--clr-red);
-  }
-  .forms .signup-form .title:before {
-    width: 20px;
-  }
-  .forms .form-content .input-boxes {
-    margin-top: 30px;
-  }
-  .forms .form-content .input-box {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    margin: 10px 0;
-    position: relative;
-  }
-  .form-content .input-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 0 30px;
-    font-size: 1rem;
-    font-weight: 500;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-  }
-
-  .form-content .input-box input:focus {
-    border-color: var(--clr-red);
-  }
-
-  .button{
-    border: 2px solid var(--clr-dark);
-  }
-
-  .form-content .input-box i {
-    position: absolute;
-    color: var(--clr-red);
-    font-size: 1.0625rem;
-  }
-  .forms .form-content .text {
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  .forms .form-content label {
-    color: var(--clr-red);
-    cursor: pointer;
-  }
-  .forms .form-content label:hover {
-    text-decoration: underline;
-  }
-  .forms .form-content .login-text,
-  .forms .form-content .sign-up-text {
-    text-align: center;
-    margin-top: 25px;
-  }
-  .account_container #flip {
-    display: none;
-  }
-  @media (max-width: 730px) {
-    .account_container .cover {
-      display: none;
-    }
-    .form-content .login-form,
-    .form-content .signup-form {
-      width: 100%;
-    }
-    .form-content .signup-form {
-      display: none;
-    }
-    .account_container #flip:checked ~ .forms .signup-form {
-      display: block;
-    }
-    .account_container #flip:checked ~ .forms .login-form {
-      display: none;
-    }
-  } */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .login_form {
   background-color: black;
   color: #717171;
-  font-family: Inter;
+    font-family: Inter;
   margin: 0;
   text-align: center;
   min-height: 100vh;
@@ -241,8 +59,9 @@ form button {
   box-shadow: 0 10px 30px #0005;
   border: 1px solid #71717188;
   transition: background-image 0.5s, opacity .5s, border .5s;
-
+  overflow: hidden;
 }
+
 
 form * {
   width: 100% !important;
@@ -251,6 +70,7 @@ form * {
 form input {
   color: black;
   background: white;
+  padding-right: 33px;
 }
 
 form button {
@@ -274,14 +94,14 @@ form button[type="submit"] {
   left: 0;
   top: 45%;
   background-image: linear-gradient(to right,
-      #71717155 0 40%, transparent 40% 60%, #71717155 60%); 
+      #71717155 0 40%, transparent 40% 60%, #71717155 60%);
 }
 
-.go_back{
+/* .go_back{
   width: 75%;
-}
+} */
 
-a:hover{
+a:hover {
   border-bottom: 1px solid white;
 }
 
@@ -300,11 +120,11 @@ input+p {
 
 input:invalid:not(:placeholder-shown) {
   border-color: red;
-  background-image: url(/res/red-x.png);
+  background-image: url(/res/form_validation/red-x.png);
 }
 
 input:valid:not(:placeholder-shown) {
-  background-image: url(/res/checked_green.png);
+  background-image: url(/res/form_validation/checked_green.png);
 }
 
 input:invalid:not(:placeholder-shown),
