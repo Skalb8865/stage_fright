@@ -84,6 +84,12 @@ button {
     border: none;
 }
 
+select{
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
+
 
 
 .main {
