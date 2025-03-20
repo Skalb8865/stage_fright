@@ -136,8 +136,8 @@
     transition: color 0.3s;
     width: 35px;
     padding: 5px;
-    position: absolute;
-    right: 25px;
+    /* position: absolute;
+    right: 25px; */
 }
 
 .cart-remove:hover {
