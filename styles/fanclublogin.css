@@ -300,11 +300,11 @@ input+p {
 
 input:invalid:not(:placeholder-shown) {
   border-color: red;
-  background-image: url(/res/red-x.png);
+  background-image: url(/res/form_validation/red-x.png);
 }
 
 input:valid:not(:placeholder-shown) {
-  background-image: url(/res/checked_green.png);
+  background-image: url(/res/form_validation/checked_green.png);
 }
 
 input:invalid:not(:placeholder-shown),

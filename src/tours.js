@@ -17,8 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
             data.forEach((tour) => {
                 const { date, location, venue, buttonid, bg_identifier } = tour;
                 tourCards.innerHTML += `
-            <div class="tour-card" id="${bg_identifier}">
-            <div class="tour_card-overlay"></div>
+            <div class="tour-card">
+                <img src="${bg_identifier}" alt="">
+                <div class="tour_card-overlay"></div>
                 <p class="tour-dates">${date}</p>
                 <p class="tour-location">${location}</p>
                 <p class="tour-venue">${venue}</p>

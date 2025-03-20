@@ -141,7 +141,7 @@
 }
 
 .cart-remove:hover {
-    color: var(--clr-dark-rose);
+    color: var(--clr-dark-red);
     transition: color 0.3s;
 }
 

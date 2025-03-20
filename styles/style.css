@@ -6,7 +6,7 @@
     --clr-grey: #929292;
     --clr-lighter-dark-grey: #1e232b;
     --clr-red: #ff3333;
-    --clr-dark-rose: #ac2222;
+    --clr-dark-red: #ac2222;
 
     /* Sizes */
     --size-xxs: 0.65rem;
@@ -27,7 +27,7 @@
 }
 
 html {
-    cursor: url(/res/rock_hand.cur), auto;
+    cursor: url(/res/cursor/rock_hand.cur), auto;
 }
 
 html::-webkit-scrollbar {
@@ -165,7 +165,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40dvh;
+    min-height: 60dvh;
     background: var(--clr-dark-grey);
 }
 
@@ -258,6 +258,7 @@ button {
 }
 
 .active-link {
+    font-family: 'Sentient', serif;
     position: relative;
     color: var(--clr-red);
     font-size: var(--size-lg);
@@ -1200,19 +1201,25 @@ button {
 .tour-card {
     position: relative;
     display: flex;
-    grid-template-columns: subgrid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2em;
-    border: 1px solid rgb(75, 82, 92);
+    /* border: 1px solid rgb(75, 82, 92); */
     background: #222429;
     text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s;
     height: 400px;
+}
+
+.tour-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
 }
 
 .tour_card-overlay {
@@ -1220,18 +1227,7 @@ button {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-}
-
-#ckos {
-    background-image: url(/res/king_of_clubs.webp);
-}
-
-#ccc {
-    background-image: url(/res/DSC_6150p2-2-1489038050.jpg);
-}
-
-#pua {
-    background-image: url(/res/Underground-Arts-6.jpg);
+    transition: all 0.3s;
 }
 
 /* <div class="tour_card-overlay"></div> */
@@ -1243,11 +1239,20 @@ button {
     background: red;
 } */
 
-
 .tour-card:hover {
-    border: 1px solid rgb(124, 128, 134);
-    scale: 1.015;
-    transition: all 0.3s ease-in-out;
+    border: none;
+    transition: all 0.3s;
+}
+
+
+.tour-card:hover img,
+.tour-card:hover .tour_card-overlay {
+    transform: scale(1.005);
+    transition: all 0.3s;
+}
+
+.tour-card:hover .tour_card-overlay {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .tour-card .tour-dates {
