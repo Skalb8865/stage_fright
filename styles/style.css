@@ -84,7 +84,7 @@ button {
     border: none;
 }
 
-select{
+select {
     -webkit-appearance: none;
     appearance: none;
     -moz-appearance: none;
@@ -92,6 +92,25 @@ select{
 
 .main {
     min-height: 63dvh;
+}
+
+.autoHide {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateY(100%);
+    transition: all 1s ease;
+}
+
+.autoShow {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+    .autoHide {
+        transition: none;
+    }
 }
 
 .login_page {
@@ -697,6 +716,7 @@ select{
     font-weight: 700;
     line-height: 2.5rem;
 } */
+
 .news_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -2467,7 +2487,7 @@ section .image img {
 }
 
 
-.hero_credittttttttt {
+.hero_credit {
     position: absolute;
     bottom: 0;
     font-size: var(--size-sm);
@@ -2475,7 +2495,7 @@ section .image img {
     margin-bottom: 5px;
 }
 
-.hero_credittttttttt a:hover {
+.hero_credit a:hover {
     border-bottom: 1px solid var(--clr-grey);
 }
 
@@ -2485,25 +2505,6 @@ section .image img {
 
 .show {
     display: block;
-}
-
-.autoHide {
-    opacity: 0;
-    filter: blur(15px);
-    transform: translateY(100%);
-    transition: all 1s ease;
-}
-
-.autoShow {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-@media (prefers-reduced-motion) {
-    .autoHide {
-        transition: none;
-    }
 }
 
 .btn_section {
