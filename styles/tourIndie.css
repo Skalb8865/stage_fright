@@ -1,0 +1,123 @@
+/* change this name  */
+.contact-section { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40dvh;
+    padding: 25px 0 75px 0;
+    margin-top: -100px;
+}
+/* change this name  */
+.section-title {
+    align-items: center;
+    text-align: center;
+    font-family: 'Sentient', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+/* change this name  */
+.contact_button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* change this name  */
+.btn {
+    background: rgb(154, 20, 20);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 1em 2.5em;
+    width: 300px;
+    transition: all 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+/* change this name  */
+.btn:hover {
+    background: white;
+    color: rgb(236, 13, 13);
+}
+
+.details {
+    color: rgb(255, 255, 255);
+
+    max-width: 800px;
+    margin: auto;
+}
+
+.timelocation {
+
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: left;
+}
+
+.when {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+.where{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-bottom: 40px; 
+   text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.date{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 40px; 
+   text-align: center;
+   
+}
+.tourContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tourimg {
+    height: 450px;
+    width:650px;
+}
+/* change this name  */
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 35px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+.when h2{
+    text-align: center;
+}
+
+.ticket p {
+    margin: 5px 0;
+}
+/* change this name  */
+.info {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
