@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.2.1"
+    "vite": "^6.2.2"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "esbuild": "^0.25.0",
     "git": "^0.1.5",
-    "swiper": "^11.2.5"
+    "swiper": "^11.2.6"
   }
 }
