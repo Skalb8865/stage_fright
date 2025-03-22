@@ -1,113 +1,113 @@
 [
     {
-        "date": "Feb 26th - 27th",
+        "date": "May 26th - 27th",
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
-        "ticketsPrice": "$19",
+        "ticketsPrice": "$15",
         "venue": "The King Of Clubs",
         "buttonid": "open-modal",
         "bg_identifier": "/tour_images/king_of_clubs.webp",
         "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
     },
     {
-        "date": "Mar 1st - 2nd",
+        "date": "Jun 1st - 2nd",
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
-        "ticketsPrice": "$18",
+        "ticketsPrice": "$15",
         "venue": "Columbus Commons",
         "buttonid": "open-modal2",
         "bg_identifier": "/tour_images/DSC_6150p2-2-1489038050.jpg",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/columbus_Commons.html"
     },
     {
-        "date": "Mar 5th - 6th",
+        "date": "Jun 5th - 6th",
         "location": "Philadelphia,<br> PA,<br> United States",
         "modalLocation": "Philadelphia, PA, United States",
-        "ticketsPrice": "$20",
+        "ticketsPrice": "$15",
         "venue": "Underground Arts",
         "buttonid": "open-modal3",
         "bg_identifier": "/tour_images/Underground-Arts-6.jpg",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/underground_Arts.html"
     },
     {
-        "date": "Mar 7th - 8th",
+        "date": "Jun 7th - 8th",
         "location": "Philadelphia,<br> PA,<br> United States",
         "modalLocation": "Philadelphia, PA, United States",
-        "ticketsPrice": "$20",
+        "ticketsPrice": "$15",
         "venue": "Franklin Music Hall",
         "buttonid": "open-modal4",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/franklin_Music_Hall.html"
     },
     {
-        "date": "Mar 12th - 13th",
+        "date": "Jun 12th - 13th",
         "location": "Brooklyn,<br> NY,<br> United States",
         "modalLocation": "rooklyn, NY, United States",
-        "ticketsPrice": "$19",
+        "ticketsPrice": "$15",
         "venue": "Brooklyn Paramount",
         "buttonid": "open-modal5",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/brooklyn_Paramount.html"
     },
     {
-        "date": "Mar 15th - 16th",
+        "date": "Jun 15th - 16th",
         "location": "Lewiston,<br> NY,<br> United States",
         "modalLocation": "Lewiston, NY, United States",
-        "ticketsPrice": "$19",
+        "ticketsPrice": "$15",
         "venue": "Artpark",
         "buttonid": "open-modal6",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/artpark.html"
     },
     {
-        "date": "Mar 18th - 19th",
+        "date": "Jun 18th - 19th",
         "location": "Jericho,<br> NY,<br> United States",
         "modalLocation": "Jericho, NY, United States",
-        "ticketsPrice": "$18",
+        "ticketsPrice": "$15",
         "venue": "Flagstar at Westbury Music Fair",
         "buttonid": "open-modal7",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/flagstar_Westbury.html"
     },
     {
-        "date": "Mar 21th - 22th",
+        "date": "Jun 21th - 22th",
         "location": "Queens,<br> NY,<br> United States",
         "modalLocation": "Queens, NY, United States",
-        "ticketsPrice": "$19",
+        "ticketsPrice": "$15",
         "venue": "Forest Hills Stadium",
         "buttonid": "open-modal8",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/forest_Hills.html"
     },
     {
-        "date": "Mar 24th - 25th",
+        "date": "Jun 24th - 25th",
         "location": "Queens,<br> NY,<br> United States",
         "modalLocation": "Queens, NY, United States",
-        "ticketsPrice": "$20",
+        "ticketsPrice": "$15",
         "venue": "Radio City Music Hall",
         "buttonid": "open-modal9",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/radio_city.html"
     },
     {
-        "date": "Mar 29th - Apr 1st",
+        "date": "Jun 29th - Jul 1st",
         "location": "Norfolk,<br> VA,<br> United States",
         "modalLocation": "Norfork, VA, United States",
-        "ticketsPrice": "$18",
+        "ticketsPrice": "$15",
         "venue": "The NorVa",
         "buttonid": "open-modal9",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/the_NorVa.html"
     },
     {
-        "date": "Apr 3rd - 4th",
+        "date": "Jul 3rd - 4th",
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
-        "ticketsPrice": "$19",
+        "ticketsPrice": "$15",
         "venue": "The Summit Music Hall",
         "buttonid": "open-modal11",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/summit_Music_Hall.html"
     },
     {
-        "date": "Apr 6th - 7th",
+        "date": "Jul 6th - 7th",
         "location": "Columbus,<br> OH,<br> United States",
         "modalLocation": "Columbus, OH, United States",
-        "ticketsPrice": "$18",
+        "ticketsPrice": "$15",
         "venue": "KEMBA Live!",
         "buttonid": "open-modal12",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "/html/Tours/tour_order/kemba_Live.html"
     }
 ]

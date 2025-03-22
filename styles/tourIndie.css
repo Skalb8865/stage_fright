@@ -1,11 +1,12 @@
 /* change this name  */
-.contact-section { 
+.order_section { 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 40dvh;
     padding: 25px 0 75px 0;
-    margin-top: -100px;
+    margin-top: -30px;
+    margin-bottom: -150px;
 }
 /* change this name  */
 .section-title {
@@ -18,13 +19,13 @@
     font-weight: 500;
 }
 /* change this name  */
-.contact_button--container {
+.ticket_button--container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 /* change this name  */
-.btn {
+.buy {
     background: rgb(154, 20, 20);
     color: white;
     border: 2px solid white;
@@ -37,9 +38,10 @@
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.3px;
+    
 }
 /* change this name  */
-.btn:hover {
+.buy:hover {
     background: white;
     color: rgb(236, 13, 13);
 }
@@ -71,6 +73,16 @@
     margin-left: auto;
     margin-right: auto;
 }
+.where h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-top: 40px;
+}
+.where p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 25px;
+}
 .date{
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -91,11 +103,13 @@
     width:650px;
 }
 /* change this name  */
-h2 {
+.names {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 10px;
     color: red;
+    margin-top: 10px;
+    padding-top: 60px;
 }
 
 .ticket {
@@ -116,8 +130,8 @@ h2 {
     margin: 5px 0;
 }
 /* change this name  */
-.info {
+/* .info {
     color: #fff;
     text-decoration: underline;
     cursor: pointer;
-}
+} */
