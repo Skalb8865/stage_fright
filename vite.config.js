@@ -57,7 +57,8 @@ export default defineConfig({
         logo_white_airpod_case: resolve(__dirname, 'html/Merch/Accessories/logo_white_airpod_case.html'),
         // Tour Order Pages
         kings_of_clubs: resolve(__dirname, 'html/Tours/tour_order/kings_of_clubs.html'),
-
+        columbus_commons: resolve(__dirname, 'html/Tours/tour_order/columbus_commons.html'),
+        // underground_arts: resolve(__dirname, 'html/Tours/tour_order/underground_arts.html'),
         // franklin_music_hall: resolve(__dirname, 'html/Tours/tour_order/franklin_music_hall.html'),
         // brooklyn_paramount: resolve(__dirname, 'html/Tours/tour_order/brooklyn_paramount.html'),
         // artpark: resolve(__dirname, 'html/Tours/tour_order/artpark.html'),
@@ -69,9 +70,6 @@ export default defineConfig({
         // kemba_live: resolve(__dirname, 'html/Tours/tour_order/kemba_live.html'),
         // Tour Order Pages
         checkout: resolve(__dirname, 'html/Contact/checkout.html'),
-
-        //columbus_commons: resolve(__dirname, 'html/Tours/tour_order/columbus_commons.html'),
-        //underground_arts: resolve(__dirname, 'html/Tours/tour_order/underground_arts.html'),
       },
     },
   },
