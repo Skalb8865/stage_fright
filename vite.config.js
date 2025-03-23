@@ -58,7 +58,7 @@ export default defineConfig({
         // Tour Order Pages
         kings_of_clubs: resolve(__dirname, 'html/Tours/tour_order/kings_of_clubs.html'),
         columbus_commons: resolve(__dirname, 'html/Tours/tour_order/columbus_commons.html'),
-        underground_arts: resolve(__dirname, 'html/Tours/tour_order/underground_arts.html'),
+
         franklin_music_hall: resolve(__dirname, 'html/Tours/tour_order/franklin_music_hall.html'),
         brooklyn_paramount: resolve(__dirname, 'html/Tours/tour_order/brooklyn_paramount.html'),
         artpark: resolve(__dirname, 'html/Tours/tour_order/artpark.html'),
