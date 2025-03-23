@@ -1,13 +1,14 @@
 /* change this name  */
-.order_section { 
+.order_section {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 40dvh;
     padding: 25px 0 75px 0;
-    margin-top: -30px;
-    margin-bottom: -150px;
+    /* margin-top: -30px;
+    margin-bottom: -150px; */
 }
+
 /* change this name  */
 .section-title {
     align-items: center;
@@ -18,12 +19,14 @@
     color: rgb(255, 255, 255);
     font-weight: 500;
 }
+
 /* change this name  */
 .ticket_button--container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* change this name  */
 .buy {
     background: rgb(154, 20, 20);
@@ -38,8 +41,9 @@
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.3px;
-    
+
 }
+
 /* change this name  */
 .buy:hover {
     background: white;
@@ -48,13 +52,11 @@
 
 .details {
     color: rgb(255, 255, 255);
-
     max-width: 800px;
     margin: auto;
 }
 
 .timelocation {
-
     color: rgb(255, 255, 255);
     font-size: 25px;
     text-align: left;
@@ -65,32 +67,36 @@
     font-size: 15px;
     margin-bottom: 40px;
 }
-.where{
+
+.where {
     color: rgb(255, 255, 255);
     font-size: 15px;
-    margin-bottom: 40px; 
-   text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-.where h2{
+
+.where h2 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     padding-top: 40px;
 }
-.where p{
+
+.where p {
     color: rgb(255, 255, 255);
     font-size: 20px;
     padding-top: 25px;
 }
-.date{
+
+.date {
     color: rgb(255, 255, 255);
     font-size: 20px;
-    margin-bottom: 40px; 
-   text-align: center;
-   
+    margin-bottom: 40px;
+    text-align: center;
 }
-.tourContainer{
+
+.tourContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,8 +106,9 @@
 
 .tourimg {
     height: 450px;
-    width:650px;
+    width: 650px;
 }
+
 /* change this name  */
 .names {
     font-size: 35px;
@@ -122,13 +129,15 @@
     border-bottom: 1px solid #fff;
     margin-bottom: 30px;
 }
-.when h2{
+
+.when h2 {
     text-align: center;
 }
 
 .ticket p {
     margin: 5px 0;
 }
+
 /* change this name  */
 /* .info {
     color: #fff;
