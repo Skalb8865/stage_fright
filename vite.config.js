@@ -58,7 +58,6 @@ export default defineConfig({
         // Tour Order Pages
         kings_of_clubs: resolve(__dirname, 'html/Tours/tour_order/kings_of_clubs.html'),
         columbus_commons: resolve(__dirname, 'html/Tours/tour_order/columbus_commons.html'),
-
         // Tour Order Pages
         checkout: resolve(__dirname, 'html/Contact/checkout.html'),
       },
