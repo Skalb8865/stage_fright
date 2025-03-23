@@ -366,6 +366,7 @@ select {
 }
 
 .menu {
+    font-family: 'Sentient', serif;
     position: fixed;
     top: 0;
     left: -100%;

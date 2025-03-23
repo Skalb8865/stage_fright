@@ -17,7 +17,7 @@
         "venue": "Columbus Commons",
         "buttonid": "open-modal2",
         "bg_identifier": "/tour_images/DSC_6150p2-2-1489038050.jpg",
-        "tour_link": "/html/Tours/tour_order/columbus_Commons.html"
+        "tour_link": "/html/Tours/tour_order/columbus_commons.html"
     },
     {
         "date": "Jun 5th - 6th",
@@ -27,7 +27,7 @@
         "venue": "Underground Arts",
         "buttonid": "open-modal3",
         "bg_identifier": "/tour_images/Underground-Arts-6.jpg",
-        "tour_link": "/html/Tours/tour_order/underground_Arts.html"
+        "tour_link": "/html/Tours/tour_order/underground_arts.html"
     },
     {
         "date": "Jun 7th - 8th",
@@ -36,7 +36,7 @@
         "ticketsPrice": "$15",
         "venue": "Franklin Music Hall",
         "buttonid": "open-modal4",
-        "tour_link": "/html/Tours/tour_order/franklin_Music_Hall.html"
+        "tour_link": "/html/Tours/tour_order/franklin_music_hall.html"
     },
     {
         "date": "Jun 12th - 13th",
@@ -45,7 +45,7 @@
         "ticketsPrice": "$15",
         "venue": "Brooklyn Paramount",
         "buttonid": "open-modal5",
-        "tour_link": "/html/Tours/tour_order/brooklyn_Paramount.html"
+        "tour_link": "/html/Tours/tour_order/brooklyn_paramount.html"
     },
     {
         "date": "Jun 15th - 16th",
@@ -63,7 +63,7 @@
         "ticketsPrice": "$15",
         "venue": "Flagstar at Westbury Music Fair",
         "buttonid": "open-modal7",
-        "tour_link": "/html/Tours/tour_order/flagstar_Westbury.html"
+        "tour_link": "/html/Tours/tour_order/flagstar_westbury.html"
     },
     {
         "date": "Jun 21th - 22th",
@@ -72,7 +72,7 @@
         "ticketsPrice": "$15",
         "venue": "Forest Hills Stadium",
         "buttonid": "open-modal8",
-        "tour_link": "/html/Tours/tour_order/forest_Hills.html"
+        "tour_link": "/html/Tours/tour_order/forest_hills.html"
     },
     {
         "date": "Jun 24th - 25th",
@@ -99,7 +99,7 @@
         "ticketsPrice": "$15",
         "venue": "The Summit Music Hall",
         "buttonid": "open-modal11",
-        "tour_link": "/html/Tours/tour_order/summit_Music_Hall.html"
+        "tour_link": "/html/Tours/tour_order/summit_music_hall.html"
     },
     {
         "date": "Jul 6th - 7th",
@@ -108,6 +108,6 @@
         "ticketsPrice": "$15",
         "venue": "KEMBA Live!",
         "buttonid": "open-modal12",
-        "tour_link": "/html/Tours/tour_order/kemba_Live.html"
+        "tour_link": "/html/Tours/tour_order/kemba_live.html"
     }
 ]

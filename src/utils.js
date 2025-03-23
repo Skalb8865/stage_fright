@@ -299,17 +299,12 @@ document.addEventListener("DOMContentLoaded", () => {
       loader.style.display = "none";
       modal.style.display = "flex";
       document.body.style.overflow = "hidden";
-    }, 3750);
+    }, 2500);
 
-    setTimeout(() => {
       updateCartDisplay();
       updateTotal();
       updateTotalItems();
-    }, 2000);
-
-    setTimeout(() => {
       closesCart();
-    }, 3000);
   }
 
   // Close the modal when the user clicks on the x

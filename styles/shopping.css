@@ -23,6 +23,7 @@
 
 /* CART  */
 .cart {
+    font-family: 'Sentient', serif;
     position: fixed;
     top: 0;
     right: -125%;
