@@ -131,9 +131,12 @@
 }
 
 .cart-remove {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--clr-red);
     cursor: pointer;
+    position: relative;
+    left: -60px;
+    top: -10px;
     transition: color 0.3s;
     width: 35px;
     padding: 5px;

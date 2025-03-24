@@ -47,9 +47,7 @@ html::-webkit-scrollbar-thumb {
     background: var(--clr-red);
 }
 
-*,
-*:before,
-*:after {
+* {
     margin: 0;
     padding: 0;
     -moz-box-sizing: border-box;
@@ -64,9 +62,8 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background: var(--clr-dark);
-    line-height: calc(1em + 0.5rem);
     overflow-x: hidden;
-    overflow-y: scroll;
+    /* line-height: calc(1em + 0.5rem); */
 }
 
 a {
@@ -577,13 +574,13 @@ select {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-attachment: fixed;
 }
 
 .hero-section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    user-select: none;
 }
 
 
@@ -609,15 +606,11 @@ select {
 }
 
 .hero-title {
-    font-family: 'Sentient', serif;
     color: var(--clr-light);
-    font-size: clamp(2rem, calc(7vw + 1rem), 6rem);
+    font-size: 6dvw;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 80px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    line-height: 1;
     z-index: 1;
 }
 
@@ -641,83 +634,6 @@ select {
 /* ************ */
 /* Home Section */
 /* ************ */
-/* .news {
-    columns: 350px;
-}
-
-
-.news-wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 35px;
-}
-
-.news-card {
-    position: relative;
-    transition: all 0.3s;
-}
-
-
-.news-overlay {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 70%;
-}
-
-.news-info--section {
-    width: 100%;
-    transition: background 0.3s;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-.news-card:hover {
-    transition: all 0.3s;
-    transform: scale(1.025);
-}
-
-.news-card:hover .news-info--section {
-    background: var(--clr-dark-rose);
-    transition: all 0.3s;
-}
-
-.news-card img {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-}
-
-.news-card .credit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -40px;
-    right: 0;
-    left: 0;
-    font-size: 0.75rem;
-    color: var(--clr-light);
-}
-
-.credit a:hover {
-    border-bottom: 1px solid var(--clr-light);
-}
-
-.news-card .headline-date {
-    color: var(--clr-red);
-    font-size: 1.2rem;
-}
-
-.news-card .headline {
-    color: var(--clr-light);
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2.5rem;
-} */
-
 .news_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -769,15 +685,15 @@ select {
     text-transform: uppercase;
 }
 
-.news_card .h2 {
-    color: var(--clr-light);
-    font-weight: 600;
+.news_card h2 {
+    color: var(--clr-red);
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .news_card p {
-    color: var(--clr-grey);
-    font-weight: 600;
+    color: var(--clr-light);
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -1051,6 +967,7 @@ select {
 
 .product-description {
     max-width: 500px;
+    line-height: 1.3;
     color: var(--clr-grey);
 }
 
@@ -1208,9 +1125,9 @@ select {
     font-size: 1.5rem;
 }
 
-/* ************** */
+/* ************ */
 /* Tour Section */
-/* ************** */
+/* ************ */
 .tours {
     display: grid;
     max-width: 1536px;
@@ -1427,6 +1344,152 @@ select {
     padding: 25px;
     background: transparent;
 }
+
+
+/* ****************** */
+/* Tour Pages Section */
+/* ****************** */
+
+.order_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40dvh;
+    padding: 25px 0 75px 0;
+    /* margin-top: -30px;
+    margin-bottom: -150px; */
+}
+
+.tour_title {
+    align-items: center;
+    text-align: center;
+    font-family: 'Sentient', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.ticket_button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy {
+    background: rgb(154, 20, 20);
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 1em 2.5em;
+    width: 300px;
+    transition: all 0.3s;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+
+}
+
+.buy:hover {
+    background: white;
+    color: rgb(236, 13, 13);
+}
+
+.details {
+    color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: auto;
+}
+
+.timelocation {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: left;
+}
+
+.when {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.where {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.where h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-top: 40px;
+}
+
+.where p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+.date {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.tourContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tourimg {
+    height: 450px;
+    width: 650px;
+}
+
+.names {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: red;
+    margin-top: 10px;
+    padding-top: 60px;
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 35px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+.when h2 {
+    text-align: center;
+}
+
+.ticket p {
+    margin: 5px 0;
+}
+
+/* change this name  */
+/* .info {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+} */
 
 
 /* ************** */
@@ -2523,6 +2586,14 @@ section .image img {
     color: var(--clr-light);
     justify-content: space-between;
     background: var(--clr-dark);
+    background-image: url(/res/0cave1.webp);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
+}
+
+.sort_box{
+    background-image: url(/res/fanclub/fanclub_logo.png);
 }
 
 .category_box {
@@ -2547,7 +2618,6 @@ section .image img {
 
 ::picker(.sort_box) {
     border: 1px solid var(--clr-grey);
-    border-top: 1px solid var(--clr-light);
     margin-top: -1px;
     padding: 0;
     box-shadow: none;
@@ -2556,7 +2626,6 @@ section .image img {
 
 ::picker(.category_box) {
     border: 1px solid var(--clr-dark);
-    border-top: 1px solid var(--clr-dark);
     margin-top: -1px;
     padding: 0;
     box-shadow: none;
