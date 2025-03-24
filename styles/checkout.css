@@ -92,10 +92,15 @@
 
 .security-textbox-container {
     display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width: 70.5%;
+}
+
+.message-textbox-container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 70.5%;
 }
 
 .select-container {
