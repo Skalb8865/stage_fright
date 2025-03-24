@@ -77,9 +77,7 @@
 .subject-input-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70.5%;
+    width: 20%;
 }
 
 /* .tickets-input-container {
@@ -93,8 +91,8 @@
 .security-textbox-container {
     display: flex;
     flex-direction:column;
-    justify-content: center;
-    width: 70.5%;
+    justify-content: left;
+    width: 20%;
 }
 
 .message-textbox-container {
