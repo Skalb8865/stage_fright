@@ -5,8 +5,8 @@
     --clr-light: #fefefe;
     --clr-grey: #929292;
     --clr-lighter-dark-grey: #1e232b;
-    --clr-red: #ff3333;
-    --clr-dark-red: #ac2222;
+    --clr-red: #fa0505;
+    --clr-dark-red: #bb1111;
 
     /* Sizes */
     --size-xxs: 0.65rem;
@@ -181,6 +181,7 @@ select {
     padding-bottom: 5rem;
 }
 
+
 .contact-section {
     display: flex;
     justify-content: center;
@@ -327,7 +328,6 @@ select {
 }
 
 
-
 /* ********************* */
 /* Mobile Navbar Section */
 /* ********************* */
@@ -408,6 +408,7 @@ select {
     width: 375px;
     padding: 0 0 0 40px;
     height: 100%;
+    line-height: 0.75;
     border-right: 1px solid var(--clr-grey);
 }
 
@@ -417,6 +418,10 @@ select {
     font-size: 2rem;
     margin: 1rem 0;
     transition: all 0.25s;
+}
+
+.menu-left a.active-link{
+    color: var(--clr-red);
 }
 
 .menu-left a:hover {
@@ -429,6 +434,7 @@ select {
     display: flex;
     flex-direction: column;
     height: 100%;
+    line-height: 1.2;
     padding: 0 40px;
 }
 
@@ -607,7 +613,7 @@ select {
 
 .hero-title {
     color: var(--clr-light);
-    font-size: 6dvw;
+    font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1;
@@ -974,6 +980,7 @@ select {
 .size-list {
     list-style-type: none;
     display: flex;
+    line-height: 1.75;
     gap: 10px;
 }
 
@@ -1454,6 +1461,7 @@ select {
 .tourimg {
     height: 450px;
     width: 650px;
+    object-fit: cover;
 }
 
 .names {
@@ -1694,6 +1702,24 @@ select {
     align-items: center;
 }
 
+.contact_btn {
+    background: var(--clr-red);
+    color: var(--clr-light);
+    cursor: pointer;
+    padding: 1.5em 2.75em;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact_btn:hover {
+    background: var(--clr-dark-red);
+}
+
 .contact {
     display: flex;
     justify-content: center;
@@ -1926,13 +1952,13 @@ section.hero_container {
 
 section .content h4 {
     margin-bottom: 1rem;
-    color: #ccc;
+    color: var(--clr-red);
     font-size: 1rem;
     font-weight: 600;
 }
 
 section .content h2 {
-    color: #fff;
+    color: var(--clr-light);
     margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 700;
@@ -1941,12 +1967,13 @@ section .content h2 {
 
 section .content h2 span {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px var(--clr-light);
 }
 
 section .content p {
     margin-bottom: 2rem;
-    color: #ccc;
+    line-height: 1.3;
+    color: var(--clr-light);
 }
 
 section .image {
@@ -1957,6 +1984,23 @@ section .image {
     max-height: 600px;
 }
 
+.login_btn {
+    background: var(--clr-red);
+    color: var(--clr-light);
+    cursor: pointer;
+    padding: 1em 2.75em;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.login_btn:hover {
+    background: var(--clr-dark-red);
+}
 
 section .image img {
     width: 100%;
@@ -2523,7 +2567,10 @@ section .image img {
     content: "";
     position: absolute;
     inset: 0;
-    background: url('/res/0cave1.webp') no-repeat center center/cover;
+    background: url('/res/_MG_9323.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -2;
 }
 
@@ -2586,13 +2633,13 @@ section .image img {
     color: var(--clr-light);
     justify-content: space-between;
     background: var(--clr-dark);
-    background-image: url(/res/0cave1.webp);
+    background-image: url(/res/_MG_9323.png);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: calc(100% - 10px);
 }
 
-.sort_box{
+.sort_box:focus {
     background-image: url(/res/fanclub/fanclub_logo.png);
 }
 

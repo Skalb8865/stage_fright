@@ -51,6 +51,13 @@
     width: 100%;
 }
 
+#swiper_slide1{
+    background: url(/res/_MG_9323.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .swiper-tour-card:hover {
     border: 1px solid rgb(124, 128, 134);
     transition: border 0.3s;
