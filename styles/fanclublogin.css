@@ -116,6 +116,10 @@ input+p {
   text-align: left;
 }
 
+.privacy_policy--reminder{
+  line-height: 1.3;
+}
+
 .sso {
   margin-bottom: 30px;
 }

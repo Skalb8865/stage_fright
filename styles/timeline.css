@@ -14,10 +14,12 @@
 
 .details h3 {
   color: var(--clr-light);
+  line-height: 1;
 }
 
 .details p {
   color: var(--clr-grey);
+  line-height: 1.3;
 }
 
 .timeline ol {
