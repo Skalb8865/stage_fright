@@ -1,18 +1,18 @@
-body{
+body {
     background-color: rgb(0, 0, 0);
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-button{
+button {
     border: none;
 }
 
-.toggle{
+.toggle {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -26,6 +26,7 @@ button{
     background-color: rgb(0, 0, 0);
     display: none;
 }
+
 .dash {
     background: rgb(222, 0, 0);
     color: white;
@@ -83,7 +84,8 @@ button{
     border-image: linear-gradient(to right, #ec1c1c 50%, transparent 50%) 100% 1;
     margin-bottom: 10px;
 }
-.contract{
+
+.contract {
     color: #ec1c1c;
     font-weight: 900;
     text-align: left;
@@ -106,11 +108,12 @@ button{
     font-size: 20px;
 }
 
-.elfsight-app-81def428-4cf5-426d-8d07-4849c47dfa4b{
+.elfsight-app-81def428-4cf5-426d-8d07-4849c47dfa4b {
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+
 .hero-link {
     display: flex;
     justify-content: center;
@@ -123,6 +126,7 @@ button{
     font-size: 0.875rem;
     color: grey;
 }
+
 .hero-section {
     position: relative;
     width: 100%;
@@ -191,7 +195,7 @@ button{
     align-items: center;
 }
 
-.dash_container{
+.dash_container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -211,6 +215,7 @@ button{
         align-items: center;
     }
 }
+
 @media (max-width: 900px) {
     .flex-container {
         flex-direction: column;
