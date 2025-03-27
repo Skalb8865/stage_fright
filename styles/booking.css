@@ -3,26 +3,35 @@ body{
     overflow-x: hidden;
 }
 
-#myDIV {
+.toggle{
+    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+#hide {
     width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: rgb(0, 0, 0);
-
+    display: none;
 }
 .dash {
     background: black;
     color: white;
-    border: 2px solid white;
+    align-content: center;
+    text-decoration: none;
     cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid rgb(222, 0, 0);
     padding: 1em 2.5em;
     width: 200px;
     transition: all 0.3s;
-    text-align: center;
-    text-decoration: none;
     font-size: 0.875rem;
-    text-transform: uppercase;
     letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .dash:hover {
@@ -46,7 +55,7 @@ body{
 
 .card {
     width: 27%;
-    height: 220px;
+    height: 240px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
     padding: 16px;
@@ -70,7 +79,9 @@ body{
 .contract{
     color: #ec1c1c;
     font-weight: 900;
-    margin-right: 61%;
+    text-align: left;
+    font-size: 15px;
+    margin-right: 60%;
 }
 
 .text {
