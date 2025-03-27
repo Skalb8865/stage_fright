@@ -69,6 +69,7 @@ export default defineConfig({
         summit_music_hall: resolve(__dirname, 'html/Tours/tour_order/summit_music_hall.html'),
         kemba_live: resolve(__dirname, 'html/Tours/tour_order/kemba_live.html'),
         checkout: resolve(__dirname, 'html/Contact/checkout.html'),
+        booking: resolve(__dirname, 'html/Info/booking.html'),
       },
     },
   },
