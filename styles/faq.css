@@ -1,7 +1,42 @@
-.faq_question--header{
-    color: white;
+.fag_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-.faq_asnwer{
+.faq_question--header {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.faq_asnwer {
     color: gray;
+    line-height: 1.2;
+}
+
+span {
+    color: red;
+}
+
+details {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+details p {
+    padding: 20px;
+    border: 1px solid #e8e8e8;
+}
+
+summary {
+    padding: 20px;
+    background-color: #e8e8e8;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }

@@ -2688,3 +2688,8 @@ section .image img {
     color: var(--clr-dark);
     padding: 0.75rem 1.5rem 0.75rem 2.5rem;
 }
+
+
+.flex{
+    background: red;
+}

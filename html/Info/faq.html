@@ -23,12 +23,31 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var detailsElements = document.querySelectorAll("details");
+
+            detailsElements.forEach(function (details) {
+                details.addEventListener("toggle", function () {
+                    if (details.open) {
+                        // Close all other open details
+                        detailsElements.forEach(function (otherDetails) {
+                            if (otherDetails !== details && otherDetails.open) {
+                                otherDetails.open = false;
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Columbus Commons Stage Fright Tour">
     <meta property="og:description" content="Stage Fright, Columbus Commons, Columbus, Ohio, June 1st, June 2nd, 2025">
     <meta property="og:image" content="https://stage-fright-bpa2025.vercel.app/tour_images/DSC_6150p2-2-1489038050.jpg">
-    <meta property="og:url" content="https://stage-fright-bpa2025.vercel.app/html/Tours/tour_order/columbus_commons.html">
+    <meta property="og:url"
+        content="https://stage-fright-bpa2025.vercel.app/html/Tours/tour_order/columbus_commons.html">
     <meta property="type" content="website">
     <meta property="title" content="Columbus Commons Stage Fright Tour">
     <meta property="description" content="Join Stage Fright at Columbus Commons on June 11, 2025.">
@@ -146,40 +165,50 @@
         <div class="loader" id="loader"></div>
     </div>
 
-    <main class="main">
+    <main class="main fag_page">
         <section class="faq container section">
             <div class="faq_question">
-                <h2 class="faq_question--header">1. What Is Stage Fright?</h2>
+                <h2 class="faq_question--header"><span>1.</span> What Is Stage Fright?</h2>
                 <p class="faq_asnwer">Stage Fright is a band that thrives on high-energy performances. We blend talent
                     with dedication to make exciting live music.</p>
             </div>
 
             <div class="faq_question">
-                <h2 class="faq_question--header">2. When Do Tickets Go On Sale?</h2>
+                <h2 class="faq_question--header"><span>2.</span> When Do Tickets Go On Sale?</h2>
                 <p class="faq_asnwer">Tickets go on sale a month before the date of our tour on which you bought the
                     tickets for. </p>
             </div>
 
             <div class="faq_question">
-                <h2 class="faq_question--header">3. How Can I Renew My Fan-club Membership?</h2>
+                <h2 class="faq_question--header"><span>3.</span> How Can I Renew My Fan-club Membership?</h2>
                 <p class="faq_asnwer">Fan-club memberships will auto renew unless you cancel your membership. If you
                     cancel your membership you can always renew your memebership later</p>
             </div>
 
             <div class="faq_question">
-                <h2 class="faq_question--header">4. What Is Your Return Policy On Tickets And Orders?</h2>
+                <h2 class="faq_question--header"><span>4.</span> What Is Your Return Policy On Tickets And Orders?</h2>
                 <p class="faq_asnwer">It can be cancelled within 15 buisness days of the orginal order. </p>
             </div>
 
             <div class="faq_question">
-                <h2 class="faq_question--header">5. Can I Change or Add To My Order If I've Already Submitted One</h2>
+                <h2 class="faq_question--header"><span>5.</span> Can I Change or Add To My Order If I've Already
+                    Submitted One</h2>
                 <p class="faq_asnwer">You can cannot change or add to orders if you already submitted one</p>
             </div>
 
             <div class="faq_question">
-                <h2 class="faq_question--header">6. Contacting Us</h2>
+                <h2 class="faq_question--header"><span>6.</span> Contacting Us</h2>
                 <p class="faq_asnwer">If you have any more issues please do not hesitate to contact us</p>
             </div>
+            <details>
+                <summary><span>1.</span> What Is Stage Fright?</summary>
+                <p>Stage Fright is a band that thrives on high-energy performances. We blend talent
+                    with dedication to make exciting live music.</p>
+            </details>
+            <details>
+                <summary>Details</summary>
+                <p>Something small enough to escape casual notice.</p>
+            </details>
         </section>
 
         <!-- Order Confirmation Modal -->
