@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Here</title>
     <link rel="stylesheet" href="/styles/booking.css">
-    <script src="/src/booking.js"></script>
+    <!-- <script src="/src/booking.js"></script> -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("hide");
+            if (x.style.display == "none" || x.style.display === "") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+    </script>
 </head>
 
 <body>
