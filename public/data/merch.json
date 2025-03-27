@@ -153,5 +153,55 @@
     "price": "$7.99",
     "sort_attribute": "accessories",
     "image": "/merch/backAirpod.webp"
+  },
+  {
+    "name": "Frenzy Pin",
+    "link": "#",
+    "price": "$1.25",
+    "sort_attribute": "accessories",
+    "image": "/merch/frenzyPin.webp"
+  },
+  {
+    "name": "Fury Pin",
+    "link": "#",
+    "price": "$1.25",
+    "sort_attribute": "accessories",
+    "image": "/merch/furyPin.webp"
+  },
+  {
+    "id": "22",
+    "name": "Prometheus Photo",
+    "link": "#",
+    "price": "$26.47",
+    "sort_attribute": "accessories",
+    "image": "/merch/PrometheusPicture.webp",
+    "hoverimage": "/merch/PrometheusPictureSide.webp"
+  },
+  {
+    "id": "23",
+    "name": "Acantha Photo",
+    "link": "#",
+    "price": "$26.47",
+    "sort_attribute": "accessories",
+    "image": "/merch/AcanthaPicture.webp",
+    "hoverimage": "/merch/AcanthaPictureSide.webp"
+  },
+  {
+    "id": "24",
+    "name": "NYX Photo",
+    "link": "#",
+    "price": "$26.47",
+    "sort_attribute": "accessories",
+    "image": "/merch/NYXPicture.webp",
+    "hoverimage": "/merch/NYXPictureSide.webp"
+  },
+  {
+    "id": "25",
+    "name": "NYX Photo",
+    "link": "#",
+    "price": "$26.47",
+    "sort_attribute": "accessories",
+    "image": "/merch/HephaestusPicture.webp",
+    "hoverimage": "/merch/HephaestusPictureSide.webp"
   }
 ]
