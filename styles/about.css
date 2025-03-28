@@ -103,10 +103,6 @@ section {
     font-family: "Font Awesome 5 Free";
 }
 
-.list-style-one li a:hover {
-    color: #44bce2;
-}
-
 .btn-style-one {
     position: relative;
     display: inline-block;
@@ -115,14 +111,12 @@ section {
     color: #ffffff;
     padding: 10px 30px;
     font-weight: 600;
-    overflow: hidden;
     letter-spacing: 0.02em;
     background-color: var(--clr-red);
 }
 
 .btn-style-one:hover {
     background-color: var(--clr-dark-red);
-    color: #ffffff;
 }
 
 .about-section {
