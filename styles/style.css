@@ -94,14 +94,14 @@ select {
 
 .autoHide {
     opacity: 0;
-    filter: blur(15px);
+    /* filter: blur(15px); */
     transform: translateY(20%);
     transition: all 1s ease;
 }
 
 .autoShow {
     opacity: 1;
-    filter: blur(0);
+    /* filter: blur(0); */
     transform: translateX(0);
 }
 
