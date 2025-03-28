@@ -10,4 +10,4 @@ Our website is the hub for everything Stage Fright.
 It is designed to show our history, tours, and merchandise, allowing fans to proudly show their love for the band.
 In addition, you can find our music and other social media links. This site is your gateway to everything Stage Fright.
 
-### Website URL: https://stage-fright-bpa2025.vercel.app/
+### Website URL: https://stagefrightanthem.vercel.app
