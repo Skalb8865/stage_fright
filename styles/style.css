@@ -2482,19 +2482,17 @@ section .image img {
     margin-bottom: 16px;
     padding: 0 8px;
 }
-
+/* 
 .about_card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
     color: var(--clr-light);
-}
+} */
 
-.about-section {
-    padding: 50px;
-    text-align: center;
+/* .about-section {
     background-color: #474e5d;
     color: white;
-}
+} */
 
 .about_container {
     padding: 0 16px;

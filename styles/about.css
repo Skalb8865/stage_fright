@@ -8,6 +8,7 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     gap: 20px;
+    text-align: center;
 }
 
 .about-image {
@@ -22,13 +23,19 @@
 }
 
 .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 1;
+    gap: 10px;
     /* text-align: left; */
 }
 
 .about-text h2 {
     /* text-align: left; */
     font-size: 28px;
+    color: var(--clr-light);
     margin-bottom: 10px;
 }
 
@@ -39,20 +46,22 @@
 }
 
 .learn-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
+    background: var(--clr-red);
+    color: var(--clr-light);
     cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s ease;
+    padding: 1em 2.75em;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .learn-more-button:hover {
-    background-color: #0056b3;
+    background: var(--clr-dark-red);
+
 }
 
 /* Responsive Styles */
