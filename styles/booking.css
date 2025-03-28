@@ -47,6 +47,40 @@ button {
     background: rgb(143, 13, 13);
 }
 
+.btn {
+    /* background: rgb(222, 0, 0);
+    color: white;
+    align-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 1em 2.5em;
+    width: 200px;
+    transition: all 0.3s;
+    font-size: 0.875rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 20px;
+    margin-top: 20px; */
+
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid #ec1c1c;
+    cursor: pointer;
+    padding: 1.5em 2.75em;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: rgb(249, 249, 249);
+    color: #000000;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -181,7 +215,7 @@ button {
     border-bottom: 1px solid gray;
 }
 
-.contact-section {
+.book-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,18 +223,85 @@ button {
     padding: 25px 0 75px 0;
 }
 
-.contact_button--container {
+.book_button--container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+<<<<<<< HEAD
+.book-title {
+    text-align: center;
+    font-family: 'Sentient', serif;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    padding: 3rem;
+    color: red;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+=======
+>>>>>>> ff6c98fe49398f354b53c5fe7f3a7cc1c27e21cb
 .dash_container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+/* ************** */
+/* Footer Section */
+/* ************** */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 175px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.footer p {
+    color: white;
+    font-size: 0.9375rem;
+}
+
+.footer p:nth-child(2) {
+    color: gray;
+    font-size: 0.9375rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-socials a {
+    color: white;
+    font-size: 1.125rem;
+    text-decoration: none;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: red;
+    padding-left: 2px;
+    transition: all 0.3s ease;
+}
+
+.footer .made_by {
+    width: 250px;
+    color: grey;
+}
+
+
 
 @media (max-width: 1200px) {
     .flex-container {
