@@ -85,6 +85,7 @@ select {
     -webkit-appearance: none;
     appearance: none;
     -moz-appearance: none;
+    border: none;
 }
 
 .main {
@@ -94,7 +95,7 @@ select {
 .autoHide {
     opacity: 0;
     filter: blur(15px);
-    transform: translateY(100%);
+    transform: translateY(20%);
     transition: all 1s ease;
 }
 
@@ -420,7 +421,7 @@ select {
     transition: all 0.25s;
 }
 
-.menu-left a.active-link{
+.menu-left a.active-link {
     color: var(--clr-red);
 }
 
@@ -631,9 +632,10 @@ select {
     right: 0;
     font-size: var(--size-sm);
     color: var(--clr-grey);
+    margin-bottom: 10px;
 }
 
-.hlink:hover {
+.hero-link span:hover{
     border-bottom: 1px solid var(--clr-grey);
 }
 
@@ -2653,7 +2655,17 @@ section .image img {
     color: var(--clr-dark);
     justify-content: space-between;
     background: var(--clr-light);
+    background-image: url(/res/arrow-down-sign-to-navigate.png);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
 }
+
+
+.category_box:focus {
+    background-image: url(/res/upload2.png);
+}
+
 
 .sort_box option:disabled {
     display: none;
@@ -2689,7 +2701,7 @@ section .image img {
     padding: 0.75rem 1.5rem 0.75rem 2.5rem;
 }
 
-.elfsight-app-a05b0846-74d9-49c1-a20a-2ad5c45d76d6{
+.elfsight-app-a05b0846-74d9-49c1-a20a-2ad5c45d76d6 {
     justify-content: center;
     align-items: center;
 }
