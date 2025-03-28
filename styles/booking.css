@@ -229,6 +229,7 @@ button {
     align-items: center;
 }
 
+<<<<<<< HEAD
 .book-title {
     text-align: center;
     font-family: 'Sentient', serif;
@@ -240,6 +241,8 @@ button {
     font-weight: 500;
 }
 
+=======
+>>>>>>> ff6c98fe49398f354b53c5fe7f3a7cc1c27e21cb
 .dash_container {
     width: 100%;
     display: flex;
