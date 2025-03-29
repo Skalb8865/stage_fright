@@ -52,7 +52,7 @@
 .timeline ol li .time-wrapper::after {
   content: "";
   position: absolute;
-  background: var(--clr-light);
+  background: var(--clr-red);
 }
 
 .timeline ol li .time-wrapper::before {

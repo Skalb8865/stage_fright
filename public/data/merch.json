@@ -36,6 +36,15 @@
     "hoverimage": "/merch/HephaestusVinylCover.webp"
   },
   {
+    "id": "5",
+    "name": "Exclusive Rainbow Logo T-Shirt",
+    "link": "#",
+    "price": "$19.99",
+    "sort_attribute": "apparel",
+    "image": "/merch/ExclusiveShirt.webp",
+    "hoverimage": "/merch/ExclusiveShirtBack.webp"
+  },
+  {
     "name": "Stage Fright Black Logo Hoodie",
     "link": "/html/Merch/Apparel/black_logo_hoodie.html",
     "price": "$24.99",
@@ -60,12 +69,39 @@
   },
   {
     "id": "8",
+    "name": "Black Logo Hoodie",
+    "link": "#",
+    "price": "$24.99",
+    "sort_attribute": "apparel",
+    "image": "/merch/BlackLogoHoodie.webp",
+    "hoverimage": "/merch/BlackLogoHoodieAlt.webp"
+  },
+  {
+    "id": "9",
     "name": "Black Logo Beanie",
     "link": "/html/Merch/Apparel/black_logo_beanie.html",
     "price": "$12.99",
     "sort_attribute": "apparel",
     "image": "/merch/Beanie.webp",
     "hoverimage": "/merch/BeanieBack.webp"
+  },
+  {
+    "id": "10",
+    "name": "Hermes Tour Black Hoodie",
+    "link": "#",
+    "price": "$24.99",
+    "sort_attribute": "apparel",
+    "image": "/merch/HermesTourHoodie.webp",
+    "hoverimage": "/merch/HermesTourHoodieAlt.webp"
+  },
+  {
+    "id": "11",
+    "name": "Hermes Tour Black T-Shirt",
+    "link": "#",
+    "price": "$18.99",
+    "sort_attribute": "apparel",
+    "image": "/merch/HermesTourShirt.webp",
+    "hoverimage": "/merch/HermesTourShirtFold.webp"
   },
   {
     "name": "Prometheus Black Hoodie",
@@ -75,7 +111,7 @@
     "image": "/merch/Prometheushood.webp"
   },
   {
-    "id": "10",
+    "id": "13",
     "name": "Prometheus Black T-Shirt",
     "link": "/html/Merch/Apparel/prometheus_T-shirt.html",
     "price": "$18.99",
@@ -84,7 +120,7 @@
     "hoverimage": "/merch/promeShirtBack.webp"
   },
   {
-    "id": "11",
+    "id": "14",
     "name": "Acantha Black Hoodie",
     "link": "/html/Merch/Apparel/acantha_black_hoodie.html",
     "price": "$24.99",
@@ -93,7 +129,7 @@
     "hoverimage": "/merch/AcanthaHoodFold.webp"
   },
   {
-    "id": "12",
+    "id": "15",
     "name": "Acantha Black T-Shirt",
     "link": "/html/Merch/Apparel/acantha_T-shirt.html",
     "price": "$18.99",
@@ -109,7 +145,7 @@
     "image": "/merch/Nyxhood.webp"
   },
   {
-    "id": "14",
+    "id": "17",
     "name": "NYX Black T-Shirt",
     "link": "/html/Merch/Apparel/nyx_T-shirt.html",
     "price": "$18.99",
@@ -125,7 +161,7 @@
     "image": "/merch/HephaestusHoodie.webp"
   },
   {
-    "id": "16",
+    "id": "19",
     "name": "Hephaestus Black T-Shirt",
     "link": "/html/Merch/Apparel/hephaestus_T-shirt.html",
     "price": "$18.99",
@@ -169,7 +205,7 @@
     "image": "/merch/furyPin.webp"
   },
   {
-    "id": "22",
+    "id": "25",
     "name": "Prometheus Photo",
     "link": "#",
     "price": "$26.47",
@@ -178,7 +214,7 @@
     "hoverimage": "/merch/PrometheusPictureSide.webp"
   },
   {
-    "id": "23",
+    "id": "26",
     "name": "Acantha Photo",
     "link": "#",
     "price": "$26.47",
@@ -187,7 +223,7 @@
     "hoverimage": "/merch/AcanthaPictureSide.webp"
   },
   {
-    "id": "24",
+    "id": "27",
     "name": "NYX Photo",
     "link": "#",
     "price": "$26.47",
@@ -196,12 +232,21 @@
     "hoverimage": "/merch/NYXPictureSide.webp"
   },
   {
-    "id": "25",
+    "id": "28",
     "name": "NYX Photo",
     "link": "#",
     "price": "$26.47",
     "sort_attribute": "accessories",
     "image": "/merch/HephaestusPicture.webp",
     "hoverimage": "/merch/HephaestusPictureSide.webp"
+  },
+  {
+    "id": "29",
+    "name": "Stage Fright Sticker Set",
+    "link": "#",
+    "price": "$3.02",
+    "sort_attribute": "accessories",
+    "image": "/merch/StickerSet.webp",
+    "hoverimage": "/merch/StickerSet.webp"
   }
 ]

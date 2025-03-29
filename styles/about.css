@@ -1,17 +1,6 @@
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-img {
+.image-1 img {
     max-width: 100%;
     height: auto;
-}
-
-section {
-    padding: 60px 0;
-    /* min-height: 100vh;*/
 }
 
 .sec-title {
@@ -63,11 +52,6 @@ section {
     color: #ffffff;
 }
 
-.sec-title.text-center h2:before {
-    left: 50%;
-    margin-left: -25px;
-}
-
 .list-style-one {
     position: relative;
 }
@@ -101,7 +85,8 @@ section {
     font-family: "Font Awesome 5 Free";
 }
 
-.btn-style-one {
+
+.learn_more--btn {
     position: relative;
     display: inline-block;
     font-size: 17px;
@@ -113,7 +98,7 @@ section {
     background-color: var(--clr-red);
 }
 
-.btn-style-one:hover {
+.learn_more--btn:hover {
     background-color: var(--clr-dark-red);
 }
 
@@ -148,27 +133,8 @@ section {
     margin-bottom: 45px;
 }
 
-.about-section .btn-box {
-    position: relative;
-}
-
-.about-section .btn-box a {
-    padding: 15px 50px;
-}
-
 .about-section .image-column {
     position: relative;
-}
-
-.about-section .image-column .text-layer {
-    position: absolute;
-    right: -110px;
-    top: 50%;
-    font-size: 325px;
-    line-height: 1em;
-    color: #ffffff;
-    margin-top: -175px;
-    font-weight: 500;
 }
 
 .about-section .image-column .inner-column {
@@ -177,140 +143,10 @@ section {
     padding-bottom: 125px;
 }
 
-.about-section .image-column .inner-column:before {
-    position: absolute;
-    left: -75px;
-    top: 65px;
-    height: 520px;
-    width: 520px;
-    background-image: url(https://i.ibb.co/fxJ1jtC/about-circle-1.png);
-    content: "";
-}
-
 .about-section .image-column .image-1 {
     position: relative;
 }
 
-.about-section .image-column .image-2 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.about-section .image-column .image-2 img,
 .about-section .image-column .image-1 img {
     box-shadow: 0 30px 50px rgba(8, 13, 62, .15);
 }
-
-.about-section .image-column .video-link {
-    position: absolute;
-    left: 70px;
-    top: 170px;
-}
-
-.about-section .image-column .video-link .link {
-    position: relative;
-    display: block;
-    font-size: 22px;
-    color: #191e34;
-    font-weight: 400;
-    text-align: center;
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 30px 50px rgba(8, 13, 62, .15);
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-
-
-
-
-
-
-
-/* .about-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    gap: 20px;
-    text-align: center;
-}
-
-.about-image {
-    flex: 1;
-    max-width: 50%;
-}
-
-.about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    gap: 10px;
-     text-align: left; 
-}
-
-.about-text h2 {
-    text-align: left; 
-    font-size: 28px;
-    color: var(--clr-light);
-    margin-bottom: 10px;
-}
-
-.about-text p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.learn-more-button {
-    background: var(--clr-red);
-    color: var(--clr-light);
-    cursor: pointer;
-    padding: 1em 2.75em;
-    width: 200px;
-    font-weight: 600;
-    transition: all 0.3s;
-    text-align: center;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.learn-more-button:hover {
-    background: var(--clr-dark-red);
-
-}
-
-@media (max-width: 768px) {
-    .about-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-image {
-        max-width: 100%;
-    }
-
-    .about-text {
-        text-align: center;
-    }
-} */
