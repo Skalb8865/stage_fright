@@ -229,20 +229,6 @@ button {
     align-items: center;
 }
 
-<<<<<<< HEAD
-.book-title {
-    text-align: center;
-    font-family: 'Sentient', serif;
-    font-size: 3.75rem;
-    text-transform: uppercase;
-    padding: 3rem;
-    color: red;
-    line-height: 3rem;
-    font-weight: 500;
-}
-
-=======
->>>>>>> ff6c98fe49398f354b53c5fe7f3a7cc1c27e21cb
 .dash_container {
     width: 100%;
     display: flex;
