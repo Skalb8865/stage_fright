@@ -131,156 +131,164 @@
                         aria-label="Our Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
                     <a href="https://youtube.com/@stagefrightrb?si=K0BPTB77cNhv7n7M" aria-label="Our Youtube"
                         target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-                <div class="menu-address">Stage Fright<br><span>4465 S Hamilton Rd, Columbus, Ohio</span></div>
-            </div>
-        </div>
-    </div>
-    <div class="loader-container" id="loader-container">
-        <div class="loader" id="loader"></div>
-    </div>
-
-    <main class="main">
-        <!--ABOUT SECTION-->
-        <div class="merch-container product-box container">
-            <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/Fanclub_Shirt.webp" alt="Fanclub Black Shirt">
-                </div>
-            </div>
-            <div class="merch_content">
-                <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a
-                        href="/html/Fanclub/fanclub.html">Fanclub</a></span>
-                <h1 class="product-title">Fanclub Black Shirt</h1>
-                <h2 class="product-price">$18.99</h2>
-                <p class="product-description">The Amplified Brigade t-shirt is typically crafted from lightweight,
-                    breathable cotton, designed for casual comfort. The shirt features bold prints of the band's logo,
-                    album covers, or tour artwork. It’s a simple, go-to piece for fans to wear at shows or in daily
-                    life.
-                </p>
-
-                <ul class="size-list">
-                    <li class="sizes">
-                        <input id="small" type="radio" name="size" aria-label="Size Small" aria-required="true"
-                            required>
-                        <label for="small">S</label>
-                    </li>
-                    <li class="sizes">
-                        <input id="medium" type="radio" name="size" aria-label="Size Medium" aria-required="true"
-                            required>
-                        <label for="medium">M</label>
-                    </li>
-                    <li class="sizes">
-                        <input id="large" type="radio" name="size" aria-label="Size Large" aria-required="true"
-                            required>
-                        <label for="large">L</label>
-                    </li>
-                    <li class="sizes">
-                        <input id="extra-large" type="radio" name="size" aria-label="Size Extra Large"
-                            aria-required="true" required>
-                        <label for="extra-large">XL</label>
-                    </li>
-                    <li class="sizes">
-                        <input id="extra-extra-large" type="radio" name="size" aria-label="Size Extra Extra Large"
-                            aria-required="true" required>
-                        <label for="extra-extra-large">XXL</label>
-                    </li>
-                </ul>
-
-                <div class="quantity-container">
-                    <div class="number-input">
-                        <button class="quantity-btn minus"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
-                        <input class="quantity" id="quantity" min="1" max="10" name="quantity" value="1" type="number"
-                            aria-label="quantity" disabled>
-                        <button class="quantity-btn plus"
-                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
-                    </div>
-
-                    <button class="add-cart">Add To Cart</button>
+                    <a href="http://tiktok.com/@stage.fright.anthem" aria-label="Our Tiktok" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://music.amazon.com/user-playlists/092e4e8fed5a45339069ade2c7e56f59sune?ref=dm_sh_4jvlB3sp4coaZDaqlMoaIlR9z"
+                        aria-label="Our Amazon Music" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+                    <div class="menu-address">Stage Fright<br><span>4465 S Hamilton Rd, Columbus, Ohio</span></div>
                 </div>
             </div>
         </div>
-
-        <!-- SHOP SECTION  -->
-        <section class="shop merch_suggestions--container section">
-            <h2 class="shop-title">You May Also Like</h2>
-            <!-- CONTENT  -->
-            <div class="shop-content">
-                <!-- BOX 1 -->
-                <div class="merch-box">
-                    <a href="./fanclub_mug.html" aria-label="Fanclub Black Coffee Mug"><img
-                            src="/merch/Fanclub_Mug.webp" alt="Fanclub Black Coffee Mug" class="product-img"></a>
-                    <div class="info-section">
-                        <h2 class="product-title">Fanclub Blak Coffee Mug</h2>
-                        <span class="product-price">$12.99</span>
-                    </div>
-                </div>
-                <!-- BOX 2 -->
-                <div class="merch-box">
-                    <a href="./fanclub_backpack.html" aria-label="Fanclub Black Backpack"><img
-                            src="/merch/Fanclub_Backpack.webp" alt="Fanclub Black Backpack" class="product-img"></a>
-                    <div class="info-section">
-                        <h2 class="product-title">Fanclub Black Backpack</h2>
-                        <span class="product-price">$15.99</span>
-                    </div>
-                </div>
-                <!-- BOX 3 -->
-                <div class="merch-box">
-                    <a href="./fanclub_black_hoodie.html" aria-label="Fanclub Black Hoodie"><img
-                            src="/merch/Fanclub_Hoodie.webp" alt="Fanclub Black Hoodie" class="product-img"></a>
-                    <div class="info-section">
-                        <h2 class="product-title">Fanclub Black Hoodie</h2>
-                        <span class="product-price">$24.99</span>
-                    </div>
-                </div>
-                <!-- BOX 4 -->
-                <div class="merch-box">
-                    <a href="/html/Merch/Media/nyx_vinyl.html" aria-label="NYX Vinyl"><img src="/merch/Nyxvinyl.webp"
-                            alt="Nyx Vinyl" class="product-img"></a>
-                    <div class="info-section">
-                        <h2 class="product-title">NYX Vinyl</h2>
-                        <span class="product-price">$27.99</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Order Confirmation Modal -->
-        <dialog id="order-modal" class="order-modal">
-            <div class="order_modal--content">
-                <div class="order_checkmark">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <div class="checkmark-background"></div>
-                </div>
-                <h1>Thank You!</h1>
-                <p>Your order has been placed successfully.</p>
-                <button class="order_close--btn" id="order_close--btn">Got it</button>
-                <span class="order_modal--close" id="close-modal">&times;</span>
-            </div>
-        </dialog>
-    </main>
-
-
-    <!-- ============== -->
-    <!-- Footer Section -->
-    <!-- ============== -->
-    <footer class="footer">
-        <p>4465 S Hamilton Rd, Columbus, Ohio</p>
-        <p>(220) 465-1915 | stagefrightrb@gmail.com</p>
-        <div class="footer-socials">
-            <a href="https://x.com/StageFrightRB?s=09" aria-label="Our Twitter" target="_blank"><i
-                    class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/stagefrightoffical/?igsh=MXJ4MXZsbGtva3JmdQ%3D%3D"
-                aria-label="Our Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://open.spotify.com/user/31mk4mtczxnuxitto37orbgyps7q?si=X3NFJPe1RW6WBEY4RFS6VQ"
-                aria-label="Our Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
-            <a href="https://youtube.com/@stagefrightrb?si=K0BPTB77cNhv7n7M" aria-label="Our Youtube" target="_blank"><i
-                    class="fa-brands fa-youtube"></i></a>
+        <div class="loader-container" id="loader-container">
+            <div class="loader" id="loader"></div>
         </div>
-        <p>Eastland Career Center BPA</p>
-        <p>&copy; Stage Fright 2025. All rights reserved.</p>
-        <p class="made_by">Made By Sean Kalb, Aidien Gooden, Jabari Hill, Gabe Zeigler</p>
-    </footer>
+
+        <main class="main">
+            <!--ABOUT SECTION-->
+            <div class="merch-container product-box container">
+                <div class="merch_img--container">
+                    <div class="merch_img--card"><img src="/merch/Fanclub_Shirt.webp" alt="Fanclub Black Shirt">
+                    </div>
+                </div>
+                <div class="merch_content">
+                    <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a
+                            href="/html/Fanclub/fanclub.html">Fanclub</a></span>
+                    <h1 class="product-title">Fanclub Black Shirt</h1>
+                    <h2 class="product-price">$18.99</h2>
+                    <p class="product-description">The Amplified Brigade t-shirt is typically crafted from lightweight,
+                        breathable cotton, designed for casual comfort. The shirt features bold prints of the band's
+                        logo,
+                        album covers, or tour artwork. It’s a simple, go-to piece for fans to wear at shows or in daily
+                        life.
+                    </p>
+
+                    <ul class="size-list">
+                        <li class="sizes">
+                            <input id="small" type="radio" name="size" aria-label="Size Small" aria-required="true"
+                                required>
+                            <label for="small">S</label>
+                        </li>
+                        <li class="sizes">
+                            <input id="medium" type="radio" name="size" aria-label="Size Medium" aria-required="true"
+                                required>
+                            <label for="medium">M</label>
+                        </li>
+                        <li class="sizes">
+                            <input id="large" type="radio" name="size" aria-label="Size Large" aria-required="true"
+                                required>
+                            <label for="large">L</label>
+                        </li>
+                        <li class="sizes">
+                            <input id="extra-large" type="radio" name="size" aria-label="Size Extra Large"
+                                aria-required="true" required>
+                            <label for="extra-large">XL</label>
+                        </li>
+                        <li class="sizes">
+                            <input id="extra-extra-large" type="radio" name="size" aria-label="Size Extra Extra Large"
+                                aria-required="true" required>
+                            <label for="extra-extra-large">XXL</label>
+                        </li>
+                    </ul>
+
+                    <div class="quantity-container">
+                        <div class="number-input">
+                            <button class="quantity-btn minus"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                            <input class="quantity" id="quantity" min="1" max="10" name="quantity" value="1"
+                                type="number" aria-label="quantity" disabled>
+                            <button class="quantity-btn plus"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                        </div>
+
+                        <button class="add-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SHOP SECTION  -->
+            <section class="shop merch_suggestions--container section">
+                <h2 class="shop-title">You May Also Like</h2>
+                <!-- CONTENT  -->
+                <div class="shop-content">
+                    <!-- BOX 1 -->
+                    <div class="merch-box">
+                        <a href="./fanclub_mug.html" aria-label="Fanclub Black Coffee Mug"><img
+                                src="/merch/Fanclub_Mug.webp" alt="Fanclub Black Coffee Mug" class="product-img"></a>
+                        <div class="info-section">
+                            <h2 class="product-title">Fanclub Blak Coffee Mug</h2>
+                            <span class="product-price">$12.99</span>
+                        </div>
+                    </div>
+                    <!-- BOX 2 -->
+                    <div class="merch-box">
+                        <a href="./fanclub_backpack.html" aria-label="Fanclub Black Backpack"><img
+                                src="/merch/Fanclub_Backpack.webp" alt="Fanclub Black Backpack" class="product-img"></a>
+                        <div class="info-section">
+                            <h2 class="product-title">Fanclub Black Backpack</h2>
+                            <span class="product-price">$15.99</span>
+                        </div>
+                    </div>
+                    <!-- BOX 3 -->
+                    <div class="merch-box">
+                        <a href="./fanclub_black_hoodie.html" aria-label="Fanclub Black Hoodie"><img
+                                src="/merch/Fanclub_Hoodie.webp" alt="Fanclub Black Hoodie" class="product-img"></a>
+                        <div class="info-section">
+                            <h2 class="product-title">Fanclub Black Hoodie</h2>
+                            <span class="product-price">$24.99</span>
+                        </div>
+                    </div>
+                    <!-- BOX 4 -->
+                    <div class="merch-box">
+                        <a href="/html/Merch/Media/nyx_vinyl.html" aria-label="NYX Vinyl"><img
+                                src="/merch/Nyxvinyl.webp" alt="Nyx Vinyl" class="product-img"></a>
+                        <div class="info-section">
+                            <h2 class="product-title">NYX Vinyl</h2>
+                            <span class="product-price">$27.99</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order Confirmation Modal -->
+            <dialog id="order-modal" class="order-modal">
+                <div class="order_modal--content">
+                    <div class="order_checkmark">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <div class="checkmark-background"></div>
+                    </div>
+                    <h1>Thank You!</h1>
+                    <p>Your order has been placed successfully.</p>
+                    <button class="order_close--btn" id="order_close--btn">Got it</button>
+                    <span class="order_modal--close" id="close-modal">&times;</span>
+                </div>
+            </dialog>
+        </main>
+
+
+        <!-- ============== -->
+        <!-- Footer Section -->
+        <!-- ============== -->
+        <footer class="footer">
+            <p>4465 S Hamilton Rd, Columbus, Ohio</p>
+            <p>(220) 465-1915 | stagefrightrb@gmail.com</p>
+            <div class="footer-socials">
+                <a href="https://x.com/StageFrightRB?s=09" aria-label="Our Twitter" target="_blank"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/stagefrightoffical/?igsh=MXJ4MXZsbGtva3JmdQ%3D%3D"
+                    aria-label="Our Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://open.spotify.com/user/31mk4mtczxnuxitto37orbgyps7q?si=X3NFJPe1RW6WBEY4RFS6VQ"
+                    aria-label="Our Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://youtube.com/@stagefrightrb?si=K0BPTB77cNhv7n7M" aria-label="Our Youtube"
+                    target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="http://tiktok.com/@stage.fright.anthem" aria-label="Our Tiktok" target="_blank">
+                    <i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://music.amazon.com/user-playlists/092e4e8fed5a45339069ade2c7e56f59sune?ref=dm_sh_4jvlB3sp4coaZDaqlMoaIlR9z"
+                    aria-label="Our Amazon Music" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+            </div>
+            <p>Eastland Career Center BPA</p>
+            <p>&copy; Stage Fright 2025. All rights reserved.</p>
+            <p class="made_by">Made By Sean Kalb, Aidien Gooden, Jabari Hill, Gabe Zeigler</p>
+        </footer>
 </body>
 
 </html>
