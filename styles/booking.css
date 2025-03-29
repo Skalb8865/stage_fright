@@ -90,15 +90,15 @@ button {
 
 .flex-container>div {
     width: 28%;
-    height: 170px;
+    height: 200px;
     margin: 10px;
     background-color: #363636;
     align-items: center;
 }
 
 .card {
-    width: 27%;
-    height: 240px;
+    width: 28%;
+    height: 270px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /* this adds the "card" effect */
     padding: 16px;
@@ -113,24 +113,17 @@ button {
     font-weight: bold;
     color: rgb(255, 255, 255);
     border-style: none none solid none;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
     border-image: linear-gradient(to right, #ec1c1c 50%, transparent 50%) 100% 1;
-    margin-bottom: 10px;
-}
-
-.contract {
-    color: #ec1c1c;
-    font-weight: 900;
-    text-align: left;
-    font-size: 15px;
+    margin-bottom: 25px;
 }
 
 .text {
     margin-top: -12px;
     float: left;
     color: rgb(255, 255, 255);
-    font-size: 17px;
+    font-size: 15px;
     text-align: left;
 }
 
@@ -220,7 +213,7 @@ button {
     justify-content: center;
     align-items: center;
     min-height: 40dvh;
-    padding: 25px 0 75px 0;
+
 }
 
 .book_button--container {
@@ -289,11 +282,12 @@ button {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .flex-container {
+        display: flex;
         flex-direction: column;
     }
-
+    
     .flex-container>div {
         width: 70%;
         height: 25%;
@@ -303,11 +297,11 @@ button {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     .flex-container {
+        display: flex;
         flex-direction: column;
     }
-
     .flex-container>div {
         width: 70%;
         height: 25%;
@@ -317,3 +311,14 @@ button {
     }
 
 }
+/* 
+@media (max-width: 530px) {
+    .Title {
+        font-size: 30px;
+    }
+}
+@media (max-width: 450px) {
+    .Title {
+        font-size: 23px;
+    }
+} */

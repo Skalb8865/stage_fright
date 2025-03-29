@@ -6,64 +6,196 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Here</title>
     <link rel="stylesheet" href="/styles/booking.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
     <!-- <script src="/src/booking.js"></script> -->
     <script>
         function myFunction() {
             var x = document.getElementById("hide");
             if (x.style.display == "none" || x.style.display === "") {
-              x.style.display = "block";
+                x.style.display = "block";
             } else {
-              x.style.display = "none";
+                x.style.display = "none";
             }
-          }
+        }
     </script>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    </noscript>
+
+    <!-- ======== -->
+    <!-- JS Links -->
+    <!-- ======== -->
+    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="./src/swiper.js"></script>
+    <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="cm8nn4rcb06a4s5k4wgjs2edu"></script> -->
+
+    <meta property="description"
+        content="Stage Fright is a high-energy rock band from Columbus, Ohio, known for their electrifying live performances and raw, emotionally charged sound. Blending classic rock influences with a modern edge, they deliver powerful riffs, anthemic choruses, and lyrics that resonate with fans of all ages. With a reputation for turning every show into an unforgettable experience, Stage Fright is quickly becoming a staple in the Midwest rock scene.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stage Fright Homepage">
+    <meta property="og:description"
+        content="Stage Fright is a high-energy rock band from Columbus, Ohio, known for their electrifying live performances and raw, emotionally charged sound. Blending classic rock influences with a modern edge, they deliver powerful riffs, anthemic choruses, and lyrics that resonate with fans of all ages. With a reputation for turning every show into an unforgettable experience, Stage Fright is quickly becoming a staple in the Midwest rock scene.">
+    <meta property="og:image" content="https://stage-fright-bpa2025.vercel.app/logo/Stage_Fright_Logo.png">
+    <meta property="og:url" content="https://stage-fright-bpa2025.vercel.app/">
+    <meta name="author" content="Eastland Career Center BPA 2025 Web Design Team">
+    <meta property="keywords" content="Stage Fright, Rock Band, Columbus, Ohio, BPA, 2025">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Stage Fright Homepage">
+    <meta name="twitter:description"
+        content="Stage Fright is a high-energy rock band from Columbus, Ohio, known for their electrifying live performances and raw, emotionally charged sound. Blending classic rock influences with a modern edge, they deliver powerful riffs, anthemic choruses, and lyrics that resonate with fans of all ages. With a reputation for turning every show into an unforgettable experience, Stage Fright is quickly becoming a staple in the Midwest rock scene.">
+    <meta name="twitter:image" content="https://stage-fright-bpa2025.vercel.app/logo/Stage_Fright_Logo.png">
 </head>
 
 <body>
-    <div class="hero-section">
-        <img src="/tour_images/danny-howe-74kShnX5zZI-unsplash.jpg" alt="Hero Image">
-        <div class="hero-overlay"></div>
-        <div class="hero-link">
-            <a href="https://unsplash.com/photos/photo-of-a-lighted-concert-74kShnX5zZI" target="_blank">Source:
-                <span class="hlink">Photo by &nbsp; <a
-                        href="https://unsplash.com/@dannyhowe?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Danny
-                        Howe &nbsp;</a> on &nbsp; <a
-                        href="https://unsplash.com/photos/photo-of-a-lighted-concert-74kShnX5zZI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    <a class="scroll_up--button" id="scroll_up--button" href="#top" aria-label="Scroll to Top" inert><i
+            class="ri-arrow-up-line"></i></a>
+    <header class="navbar-container" id="top">
+        <nav class="navbar">
+            <div class="nav-left--section">
+                <div class="hamburger" id="hamburger" aria-label="open menu" aria-controls="menu" aria-expanded="false"
+                    role="button">
+                    <div class="nav_bar"></div>
+                    <div class="nav_bar"></div>
+                    <div class="nav_bar"></div>
+                </div>
+            </div>
 
-                </span>
-            </a>
+            <div class="nav-center--section">
+                <div class="center-left">
+                    <ul class="center-left--list">
+                        <li class="nav-item"><a href="/html/About/about_landing_page.html"
+                                aria-label="About Band">About</a></li>
+                        <li class="nav-item"><a href="/html/Music/music.html" aria-label="Music Page">Music</a></li>
+                    </ul>
+                </div>
+
+                <div class="center-logo">
+                    <a href="/index.html" aria-label="Homepage" aria-current="page"><img class="logo"
+                            src="/res/logo/Stage_Fright_Logo_no_background.webp" alt="Logo"></a>
+                </div>
+
+                <div class="center-right">
+                    <ul class="center-right--list">
+                        <li class="nav-item"><a href="/html/Merch/merch.html" aria-label="Merch Page">Merch</a>
+                        </li>
+                        <li class="nav-item"><a href="/html/Tours/tour.html" aria-label="Tours Page">Tours</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav-right--section">
+                <button id="cart-icon" aria-label="open cart" aria-controls="cart" aria-expanded="false">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-icon-count" id="total-items"></span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+    <div class="cart-overlay" aria-hidden="true"></div>
+
+    <!-- CART  -->
+    <div class="cart" id="cart" inert>
+        <h2 class="cart-title">Your Cart</h2>
+
+        <!-- CONTENT  -->
+        <div class="cart-content">
+
+
         </div>
-        <div class="hero-content" data-aos="fade-up">
-            <h1 class="hero-title">Get Ready to Rock – Book Now!</h1>
+
+        <!-- TOTAL   -->
+        <div class="total-section">
+            <div class="total">
+                <div class="total-title">Subtotal</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <a href="/html/Contact/checkout.html" class="btn-buy">Checkout</a>
+        </div>
+        <!-- CART CLOSE  -->
+        <i class='ri-close-fill' id="cart-close"></i>
+    </div>
+
+    <!-- Navbar Menu -->
+    <div class="menu" id="menu">
+        <div class="menu_header"></div>
+        <div class="menu-container container">
+            <div class="menu-left">
+                <a class="active-link" href="/index.html" aria-label="Homepage" aria-current="page">Home</a>
+                <a href="/html/About/about_landing_page.html" aria-label="About Page">About</a>
+                <a href="/html/Tours/tour.html" aria-label="Tours Page">Tours</a>
+                <a href="/html/Music/music.html" aria-label="Music Page">Music</a>
+                <a href="/html/Merch/merch.html" aria-label="Merch Page">Merch</a>
+            </div>
+
+            <div class="menu-right">
+                <div class="menu-header">
+                    <a href="/html/Contact/contact.html" aria-label="Contact Page">Contact</a>
+                    <a href="/html/Contact/customer_service.html" aria-label="Customer Support Page">Customer
+                        Support</a>
+                    <a href="/html/Fanclub/fanclub.html" aria-label="Fanclub Page">The Amplified Brigade</a>
+                    <a href="/html/Info/booking.html" aria-label="Booking Page">Book Us</a>
+                    <a href="/html/About/timeline.html" aria-label="Timeline Page">Our History</a>
+                    <a href="/html/Credits/credits.html" aria-label="Credits Page">Credits</a>
+                    <a href="/html/Info/faq.html" aria-label="Credits Page">FAQ</a>
+                    <a href="/html/Info/privacy_policy.html" aria-label="Credits Page">Privacy Policy</a>
+                </div>
+
+                <div class="menu-social">
+                    <a href="https://x.com/StageFrightRB?s=09" aria-label="Our Twitter" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/stagefrightoffical/?igsh=MXJ4MXZsbGtva3JmdQ%3D%3D"
+                        aria-label="Our Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://open.spotify.com/user/31mk4mtczxnuxitto37orbgyps7q?si=X3NFJPe1RW6WBEY4RFS6VQ"
+                        aria-label="Our Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://youtube.com/@stagefrightrb?si=K0BPTB77cNhv7n7M" aria-label="Our Youtube"
+                        target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="http://tiktok.com/@stage.fright.anthem" aria-label="Our Tiktok" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://music.amazon.com/user-playlists/092e4e8fed5a45339069ade2c7e56f59sune?ref=dm_sh_4jvlB3sp4coaZDaqlMoaIlR9z"
+                        aria-label="Our Amazon Music" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+                </div>
+                <div class="menu-address">Stage Fright<br><span>4465 S Hamilton Rd, Columbus, Ohio</span></div>
+            </div>
         </div>
     </div>
+    <div class="loader-container" id="loader-container">
+        <div class="loader" id="loader"></div>
+    </div>
+
     <h1 class="cover"></h1>
     <h1 class="section-title" data-aos="fade-up" data-aos-delay="300">Our Services</h1>
     <div class="flex-container">
         <div class="card">
-            <h3 class="Title">Private parties <h3 class="payment">Free</h3>
+            <h3 class="Title">Fundraiser <h3 class="payment">Free</h3>
             </h3>
-            <h5 class="contract">Express Contract</h5>
             <p class="text">
                 Our band is eager to contribute to your fundraiser by delivering an exciting performance that will
                 energize and inspire attendees, all at no cost to you. With a mix of upbeat tunes and heartfelt
                 melodies.
             </p>
+           
         </div>
         <div class="card">
             <h3 class="Title">Bar Shows<h3 class="payment">$700</h3>
             </h3>
-            <h5 class="contract">Fixed-Price Contract</h5>
+            
             <p class="text">
-                We are Stage Fright, a dynamic rock band with years of live performance experience, known for creating
-                an energetic and engaging atmosphere.
+                We are Stage Fright, a dynamic rock band with years of live
+                performance experience,known for creating an energetic and
+                engaging atmosphere.
             </p>
         </div>
         <div class="card">
-            <h3 class="Title">Birthday <h3 class="payment">$600</h3>
+            <h3 class="Title">Birthday Parties<h3 class="payment">$600</h3>
             </h3>
-            <h5 class="contract">Fixed-Price Contract</h5>
+           
             <p class="text">
                 Looking for the perfect entertainment for your birthday party? Our band offers a lively, high-energy
                 performance that will get everyone dancing and singing along.
@@ -72,7 +204,7 @@
         <div class="card">
             <h3 class="Title">Prom Parties<h3 class="payment">$800</h3>
             </h3>
-            <h5 class="contract">Fixed-Price Contract</h5>
+    
             <p class="text">
                 Make your prom night unforgettable with our band’s electrifying performance! Stage Fright specializes in
                 playing a mix of timeless classics and today’s biggest hits, perfect for dancing and creating lasting
@@ -82,7 +214,7 @@
         <div class="card">
             <h3 class="Title">Rockmitzvah<h3 class="payment">$1200</h3>
             </h3>
-            <h5 class="contract">Fixed-Price Contract</h5>
+         
             <p class="text">
                 Stage Fright is a high-energy band that specializes in Rockmitzvahs, bringing an unforgettable rock 'n'
                 roll experience to your celebration.Let us make your Bar or Bat Mitzvah a memorable, music-filled event!
@@ -91,7 +223,7 @@
         <div class="card">
             <h3 class="Title">School Events<h3 class="payment">$2000</h3>
             </h3>
-            <h5 class="contract">Fixed-Price Contract</h5>
+  
             <p class="text">
                 Stage Fright is excited to bring high-energy performances and a diverse setlist to your school event,
                 creating an unforgettable experience. We are ready to engage the crowd with a mix of upbeat songs!
@@ -106,7 +238,7 @@
                 <div class="card">
                     <h3 class="Title">Club Gigs<h3 class="payment">$2500</h3>
                     </h3>
-                    <h5 class="contract">Fixed-Price Contract</h5>
+                    
                     <p class="text">
                         Ready to take your club night to the next level? Stage Fright delivers high-energy performances
                         With
@@ -119,7 +251,7 @@
                 <div class="card">
                     <h3 class="Title">Private parties <h3 class="payment">$2500</h3>
                     </h3>
-                    <h5 class="contract">Fixed-Price Contract</h5>
+        
                     <p class="text">
                         Looking to elevate your private party with live music? Our Stage Fright specializes in creating
                         the
@@ -129,7 +261,7 @@
                 <div class="card">
                     <h3 class="Title">Festivals<h3 class="payment">$4000+</h3>
                     </h3>
-                    <h5 class="contract">T&M Contract</h5>
+              
                     <p class="text">
                         Get the crowd moving at your festival with our band's electrifying performance! Stage Fright
                         bring a
@@ -140,7 +272,7 @@
                 <div class="card">
                     <h3 class="Title">Local Show<h3 class="payment">$4000+</h3>
                     </h3>
-                    <h5 class="contract">T&M Contract</h5>
+                  
                     <p class="text">
                         Bring the excitement of live music to your local show with our dynamic band! Stage Fright
                         specializes in
@@ -150,7 +282,7 @@
                 <div class="card">
                     <h3 class="Title">Town Fair<h3 class="payment">$4500+</h3>
                     </h3>
-                    <h5 class="contract">T&M Contract</h5>
+            
                     <p class="text">
                         Bring the excitement of live music to your town fair with our energetic band! Stage Fright
                         offers a
@@ -161,7 +293,7 @@
                 <div class="card">
                     <h3 class="Title">Other Venues<h3 class="payment">$6000</h3>
                     </h3>
-                    <h5 class="contract">Fixed-Price Contract</h5>
+                   
                     <p class="text">
                         Looking for a versatile band to bring the perfect soundtrack to your venue? Stage Fright caters
                         to a
@@ -170,9 +302,9 @@
                     </p>
                 </div>
                 <div class="card">
-                    <h3 class="Title">Mini-Tour <h3 class="payment">$10000+</h3>
+                    <h3 class="Title">Mini-Tours<h3 class="payment">$10000+</h3>
                     </h3>
-                    <h5 class="contract">T&M Contract</h5>
+                    
                     <p class="text">
                         Take your event on the road with our band’s exciting mini-tour performance! Stage Fright is
                         ready to
