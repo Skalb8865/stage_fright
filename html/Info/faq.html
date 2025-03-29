@@ -165,65 +165,68 @@
         <div class="loader" id="loader"></div>
     </div>
 
-    <main class="main fag_page">
-        <section class="faq container section">
-            <div class="faq_question">
-                <h2 class="faq_question--header"><span>1.</span> What Is Stage Fright?</h2>
-                <p class="faq_asnwer">Stage Fright is a band that thrives on high-energy performances. We blend talent
-                    with dedication to make exciting live music.</p>
-            </div>
+    <section class="hero-section">
+        <!-- <img src="./res/policyimg.jpg" alt="band" id="hero-image">
+        <div class="centered">Our Policies</div> -->
+    </section>
 
-            <div class="faq_question">
-                <h2 class="faq_question--header"><span>2.</span> When Do Tickets Go On Sale?</h2>
-                <p class="faq_asnwer">Tickets go on sale a month before the date of our tour on which you bought the
-                    tickets for. </p>
+        <!--FAQ section-->
+    <div class="accordion arrows">
+        <h1 class="title">Frequently Asked Questions</h1>
+        <input type="radio" name="accordion" id="cb1" />
+        <section class="box">
+            <label class="box-title" for="cb1">What Is Stage Fright?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <p> Stage Fright is a band that thrives on high-energy performances. We blend talent with dedication to make exciting live music.  </p>
             </div>
-
-            <div class="faq_question">
-                <h2 class="faq_question--header"><span>3.</span> How Can I Renew My Fan-club Membership?</h2>
-                <p class="faq_asnwer">Fan-club memberships will auto renew unless you cancel your membership. If you
-                    cancel your membership you can always renew your memebership later</p>
-            </div>
-
-            <div class="faq_question">
-                <h2 class="faq_question--header"><span>4.</span> What Is Your Return Policy On Tickets And Orders?</h2>
-                <p class="faq_asnwer">It can be cancelled within 15 buisness days of the orginal order. </p>
-            </div>
-
-            <div class="faq_question">
-                <h2 class="faq_question--header"><span>5.</span> Can I Change or Add To My Order If I've Already
-                    Submitted One</h2>
-                <p class="faq_asnwer">You can cannot change or add to orders if you already submitted one</p>
-            </div>
-
-            <div class="faq_question">
-                <h2 class="faq_question--header"><span>6.</span> Contacting Us</h2>
-                <p class="faq_asnwer">If you have any more issues please do not hesitate to contact us</p>
-            </div>
-            <details>
-                <summary><span>1.</span> What Is Stage Fright?</summary>
-                <p>Stage Fright is a band that thrives on high-energy performances. We blend talent
-                    with dedication to make exciting live music.</p>
-            </details>
-            <details>
-                <summary>Details</summary>
-                <p>Something small enough to escape casual notice.</p>
-            </details>
         </section>
-
-        <!-- Order Confirmation Modal -->
-        <dialog id="order-modal" class="order-modal">
-            <div class="order_modal--content">
-                <div class="order_checkmark">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <div class="checkmark-background"></div>
-                </div>
-                <h1>Thank You!</h1>
-                <p>Your order has been placed successfully.</p>
-                <button class="order_close--btn" id="order_close--btn">Got it</button>
-                <span class="order_modal--close" id="close-modal">&times;</span>
+        <input type="radio" name="accordion" id="cb2" />
+        <section class="box">
+            <label class="box-title" for="cb2">When Do Tickets Go On Sale?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <P>
+                    Tickets go on sale a month before the date of our tour on which you bought the tickets from. 
+                </P>
             </div>
-        </dialog>
+        </section>
+        <input type="radio" name="accordion" id="cb3" />
+        <section class="box">
+            <label class="box-title" for="cb3">How Can I Renew My Fan-club Membership?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <p> Fan-club memberships will auto renew unless you cancel your membership. If you cancel your membership you can always renew your memebership later </p>
+            </div>
+        </section>
+        <input type="radio" name="accordion" id="cb4" />
+        <section class="box">
+            <label class="box-title" for="cb4">What Is Your Return Policy On Tickets And Orders?</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <p> It can be cancelled within 15 buisness days of the orginal order. 
+                </p>
+            </div>
+        </section>
+        <input type="radio" name="accordion" id="cb5" />
+        <section class="box">
+            <label class="box-title" for="cb5">Can I Change or Add To My Order If I've Already Submitted One</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <p>You can cannot change or add to orders if you already submitted one </p>
+            </div>
+        </section>
+        <input type="radio" name="accordion" id="cb6" />
+        <section class="box">
+            <label class="box-title" for="cb6">Contacting Us</label>
+            <label class="box-close" for="acc-close"></label>
+            <div class="box-content">
+                <p> If you have any more issues please do not hesitate to contact us
+                </p>
+            </div>
+        </section>
+        <input type="radio" name="accordion" id="acc-close" />
+    </div>
     </main>
 
 
