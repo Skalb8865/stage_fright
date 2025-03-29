@@ -28,103 +28,224 @@
     <meta name="keywords" content="Web Design, html, css, js">
 </head>
 
+
 <body>
-    <div class="row">
-        <div class="col-75">
-            <div class="checkout_container">
-                <form action="/action_page.php">
-                    <div class="row">
-                        <div class="col-50">
-                            <h3>Billing Address</h3>
-                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                            <input type="text" id="email" name="email" placeholder="john@example.com">
-                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
-                            <label for="city"><i class="fa fa-institution"></i> City</label>
-                            <input type="text" id="city" name="city" placeholder="New York">
-
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="state">State</label>
-                                    <input type="text" id="state" name="state" placeholder="NY">
-                                </div>
-                                <div class="col-50">
-                                    <label for="zip">Zip</label>
-                                    <input type="text" id="zip" name="zip" placeholder="10001">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-50">
-                            <h3>Payment</h3>
-                            <label for="fname">Accepted Cards</label>
-                            <div class="icon-container">
-                                <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                <i class="fa fa-cc-discover" style="color:orange;"></i>
-                            </div>
-                            <label for="cname">Name on Card</label>
-                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                            <label for="ccnum">Credit card number</label>
-                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                            <label for="expmonth">Exp Month</label>
-                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
-
-                            <div class="row">
-                                <div class="col-50">
-                                    <label for="expyear">Exp Year</label>
-                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
-                                </div>
-                                <div class="col-50">
-                                    <label for="cvv">CVV</label>
-                                    <input type="text" id="cvv" name="cvv" placeholder="352">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <label>
-                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                    </label>
-                    <input type="submit" value="Continue to checkout" class="checkout_btn">
-                </form>
+    <a class="scroll_up--button" id="scroll_up--button" href="#top" aria-label="Scroll to Top" inert><i
+            class="ri-arrow-up-line"></i></a>
+    <header class="container" id="top">
+        <nav class="navbar">
+            <div class="nav-left--section">
+                <div class="hamburger" id="hamburger" aria-label="open menu" aria-controls="menu" aria-expanded="false"
+                    role="button">
+                    <div class="nav_bar"></div>
+                    <div class="nav_bar"></div>
+                    <div class="nav_bar"></div>
+                </div>
             </div>
+
+            <div class="nav-center--section">
+                <div class="center-left">
+                    <ul class="center-left--list">
+                        <li class="nav-item"><a href="/html/About/about_landing_page.html"
+                                aria-label="About Band">About</a></li>
+                        <li class="nav-item"><a href="/html/Music/music.html" aria-label="Music Page">Music</a></li>
+                    </ul>
+                </div>
+
+                <div class="center-logo">
+                    <a href="/index.html" aria-label="Homepage" aria-current="page"><img class="logo"
+                            src="/res/logo/Stage_Fright_Logo_no_background.webp" alt="Logo"></a>
+                </div>
+
+                <div class="center-right">
+                    <ul class="center-right--list">
+                        <li class="nav-item"><a href="/html/Merch/merch.html" aria-label="Merch Page">Merch</a>
+                        </li>
+                        <li class="nav-item"><a href="/html/Tours/tour.html" aria-label="Tours Page">Tours</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav-right--section">
+                <button id="cart-icon" aria-label="open cart" aria-controls="cart" aria-expanded="false">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-icon-count" id="total-items"></span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+    <div class="cart-overlay" aria-hidden="true"></div>
+
+    <!-- CART  -->
+    <div class="cart" id="cart" inert>
+        <h2 class="cart-title">Your Cart</h2>
+
+        <!-- CONTENT  -->
+        <div class="cart-content">
+
+
         </div>
 
-        <div class="col-25">
-            <div class="order_items">
-                <h4>Cart
-                    <span class="checkout_price" style="color:white">
-                        <i class="fa fa-shopping-cart"></i>
-                        <b>4</b>
-                    </span>
-                </h4>
-                <p><a href="#">Product 1</a> <span class="checkout_price">$15</span></p>
-                <p><a href="#">Product 2</a> <span class="checkout_price">$5</span></p>
-                <p><a href="#">Product 3</a> <span class="checkout_price">$8</span></p>
-                <p><a href="#">Product 4</a> <span class="checkout_price">$2</span></p>
-                <hr>
-                <p>Total <span class="checkout_price" style="color: white"><b>$30</b></span></p>
+        <!-- TOTAL   -->
+        <div class="total-section">
+            <div class="total">
+                <div class="total-title">Subtotal</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <a href="/html/Contact/checkout.html" class="btn-buy">Checkout</a>
+        </div>
+        <!-- CART CLOSE  -->
+        <i class='ri-close-fill' id="cart-close"></i>
+    </div>
+
+    <!-- Navbar Menu -->
+    <div class="menu" id="menu">
+        <div class="menu_header"></div>
+        <div class="menu-container container">
+            <div class="menu-left">
+                <a class="active-link" href="/index.html" aria-label="Homepage" aria-current="page">Home</a>
+                <a href="/html/About/about_landing_page.html" aria-label="About Page">About</a>
+                <a href="/html/Tours/tour.html" aria-label="Tours Page">Tours</a>
+                <a href="/html/Music/music.html" aria-label="Music Page">Music</a>
+                <a href="/html/Merch/merch.html" aria-label="Merch Page">Merch</a>
+            </div>
+
+            <div class="menu-right">
+                <div class="menu-header">
+                    <a href="/html/Contact/contact.html" aria-label="Contact Page">Contact</a>
+                    <a href="/html/Contact/customer_service.html" aria-label="Customer Support Page">Customer
+                        Support</a>
+                    <a href="/html/Fanclub/fanclub.html" aria-label="Fanclub Page">The Amplified Brigade</a>
+                    <a href="/html/Info/booking.html" aria-label="Booking Page">Book Us</a>
+                    <a href="/html/About/timeline.html" aria-label="Timeline Page">Our History</a>
+                    <a href="/html/Credits/credits.html" aria-label="Credits Page">Credits</a>
+                    <a href="/html/Info/faq.html" aria-label="Credits Page">FAQ</a>
+                    <a href="/html/Info/privacy_policy.html" aria-label="Credits Page">Privacy Policy</a>
+                </div>
+
+                <div class="menu-social">
+                    <a href="https://x.com/StageFrightRB?s=09" aria-label="Our Twitter" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/stagefrightoffical/?igsh=MXJ4MXZsbGtva3JmdQ%3D%3D"
+                        aria-label="Our Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://open.spotify.com/user/31mk4mtczxnuxitto37orbgyps7q?si=X3NFJPe1RW6WBEY4RFS6VQ"
+                        aria-label="Our Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://youtube.com/@stagefrightrb?si=K0BPTB77cNhv7n7M" aria-label="Our Youtube"
+                        target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="menu-address">Stage Fright<br><span>4465 S Hamilton Rd, Columbus, Ohio</span></div>
             </div>
         </div>
     </div>
+    <div class="loader-container" id="loader-container">
+        <div class="loader" id="loader"></div>
+    </div>
 
-    <!-- Order Confirmation Modal -->
-    <dialog id="order-modal" class="order-modal">
-        <div class="order_modal--content">
-            <div class="order_checkmark">
-                <i class="fa-regular fa-circle-check"></i>
-                <div class="checkmark-background"></div>
+
+    <main class="main">
+        <div class="row">
+            <div class="col-75">
+                <div class="checkout_container">
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="john@example.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="New York">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" placeholder="NY">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" id="zip" name="zip" placeholder="10001">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Exp Year</label>
+                                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                        </label>
+                        <input type="submit" value="Continue to checkout" class="checkout_btn">
+                    </form>
+                </div>
             </div>
-            <h1>Thank You!</h1>
-            <p>Your order has been placed successfully.</p>
-            <button class="order_close--btn" id="order_close--btn">Got it</button>
-            <span class="order_modal--close" id="close-modal">&times;</span>
+
+            <div class="col-25">
+                <div class="order_items">
+                    <!-- <h4>Cart
+                        <span class="checkout_price" style="color:white">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>4</b>
+                        </span>
+                    </h4>
+                    <p><a href="#">Product 1</a> <span class="checkout_price">$15</span></p>
+                    <p><a href="#">Product 2</a> <span class="checkout_price">$5</span></p>
+                    <p><a href="#">Product 3</a> <span class="checkout_price">$8</span></p>
+                    <p><a href="#">Product 4</a> <span class="checkout_price">$2</span></p>
+                    <hr>
+                    <p>Total <span class="checkout_price" style="color: white"><b>$30</b></span></p> -->
+                </div>
+            </div>
         </div>
-    </dialog>
+
+        <!-- Order Confirmation Modal -->
+        <dialog id="order-modal" class="order-modal">
+            <div class="order_modal--content">
+                <div class="order_checkmark">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <div class="checkmark-background"></div>
+                </div>
+                <h1>Thank You!</h1>
+                <p>Your order has been placed successfully.</p>
+                <button class="order_close--btn" id="order_close--btn">Got it</button>
+                <span class="order_modal--close" id="close-modal">&times;</span>
+            </div>
+        </dialog>
+
+        <div style="display: none;" class="submit-btn">
+            <button type="submit" class="checkout-btn">Submit</button>
+        </div>
+    </main>
 </body>
 
 </html>

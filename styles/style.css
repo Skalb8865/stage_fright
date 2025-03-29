@@ -118,7 +118,7 @@ select {
 .autoHide {
     opacity: 0;
     /* filter: blur(15px); */
-    transform: translateY(20%);
+    transform: translateY(75%);
     transition: all 1s ease;
 }
 
