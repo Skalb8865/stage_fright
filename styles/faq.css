@@ -1,3 +1,28 @@
+
+
+:root {
+    --basically-black: #0a0a0a;
+
+    --primary: #DC0000;
+    --primary-dark: #850000;
+
+
+    --light-grey: #BDC4D0;
+    --grey: grey;
+    --dark-grey: #555756;
+
+    --background-light: #F3F4F8;
+    --background-lessdark:#1D1B19;
+    --background-dark: #0a0a0a;
+    --accent: #e5e4ea;
+
+
+    --font-lightest: #fff;
+    --font-light: #abaab4;
+    --font-dark: #333;
+    --font-darkest: #0a0a0a;
+}
+
 .accordion {
 	margin: auto;
 	width: 520px;
@@ -150,3 +175,36 @@ input:checked+section.box .box-title:before {
 	font-weight: 500;
 	color: #ffffff;
 }
+
+.privatePolicy{
+    color: var(--font-lightest);
+    text-align: center;
+}
+
+.privatePolicy p{
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+
+.privatePolicy h2{
+    color: var(--primary);
+}
+
+.privacy{
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 45px;
+    color: var(--primary);
+}
+
+.p-Body{
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: var(--background-dark);
+}
+
+/* Idk why this isn't working
+.p-Body h2{
+    font-weight: bold 500px;
+    
+} */
