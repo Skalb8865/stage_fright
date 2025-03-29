@@ -1635,7 +1635,7 @@ select {
 .songs {
     padding-bottom: 10px;
     margin-top: 2px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--clr-grey);
 }
