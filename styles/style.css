@@ -2746,3 +2746,22 @@ section .image img {
     justify-content: center;
     align-items: center;
 }
+
+
+.checkout-btn {
+    background: var(--clr-red);
+    color: var(--clr-light);
+    cursor: pointer;
+    padding: 1.5em 2.75em;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.checkout-btn:hover {
+    background: var(--clr-dark-red);
+}

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // section for cart and merch products
   const addToCartButtons = document.querySelectorAll(".add-cart");
-  const buyButton = document.querySelector(".btn-buy");
+  const buyButton = document.querySelector(".checkout-btn");
   let products = document.querySelectorAll(".main_container, .product-box");
   let cartBoxes = document.querySelectorAll(".cart-box");
   // end of section for cart and merch products
