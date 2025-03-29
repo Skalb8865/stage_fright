@@ -150,3 +150,23 @@
 .about-section .image-column .image-1 img {
     box-shadow: 0 30px 50px rgba(8, 13, 62, .15);
 }
+
+.about-section .image-column .inner-column .image {
+    position: relative;
+}
+
+.about-section .image-column .inner-column .image:before {
+    position: absolute;
+    content: '';
+    left: -50px;
+    bottom: -50px;
+    width: 299px;
+    height: 299px;
+    background: url(img/pattern-2.png) no-repeat;
+}
+
+.about-section .image-column .inner-column .image img {
+    position: relative;
+    width: 100%;
+    display: block;
+}
