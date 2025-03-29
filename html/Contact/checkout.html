@@ -16,12 +16,12 @@
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     </noscript>
-    
+
     <link rel="stylesheet" href="/styles/checkout.css">
     <!-- ======== -->
     <!-- JS Links -->
     <!-- ======== -->
-    <!-- <script type="module" src="/src/main.js"></script> -->
+    <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
 
     <meta name="description" content="Stage Fright Website">
@@ -31,9 +31,8 @@
 <body>
     <div class="row">
         <div class="col-75">
-            <div class="container">
+            <div class="checkout_container">
                 <form action="/action_page.php">
-
                     <div class="row">
                         <div class="col-50">
                             <h3>Billing Address</h3>
@@ -96,19 +95,19 @@
         </div>
 
         <div class="col-25">
-            <div class="container">
+            <div class="order_items">
                 <h4>Cart
-                    <span class="price" style="color:black">
+                    <span class="checkout_price" style="color:white">
                         <i class="fa fa-shopping-cart"></i>
                         <b>4</b>
                     </span>
                 </h4>
-                <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-                <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-                <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-                <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                <p><a href="#">Product 1</a> <span class="checkout_price">$15</span></p>
+                <p><a href="#">Product 2</a> <span class="checkout_price">$5</span></p>
+                <p><a href="#">Product 3</a> <span class="checkout_price">$8</span></p>
+                <p><a href="#">Product 4</a> <span class="checkout_price">$2</span></p>
                 <hr>
-                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                <p>Total <span class="checkout_price" style="color: white"><b>$30</b></span></p>
             </div>
         </div>
     </div>
