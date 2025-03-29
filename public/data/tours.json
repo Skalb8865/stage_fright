@@ -26,7 +26,7 @@
         "ticketsPrice": "$15",
         "venue": "Underground Arts",
         "buttonid": "open-modal3",
-        "bg_identifier": "/tour_images/Underground-Arts-6.jpg",
+        "bg_identifier":"/tour_images/underground.webp",
         "tour_link": "/html/Tours/tour_order/underground_arts.html"
     },
     {
@@ -96,7 +96,7 @@
         "ticketsPrice": "$15",
         "venue": "The NorVa",
         "buttonid": "open-modal9",
-        "bg_identifier":"/tour_images/norva.webp",
+        "bg_identifier": "/tour_images/Underground-Arts-6.jpg" ,
         "tour_link": "/html/Tours/tour_order/the_NorVa.html"
     },
     {

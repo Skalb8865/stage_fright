@@ -1381,6 +1381,10 @@ select {
 /* ****************** */
 /* Tour Pages Section */
 /* ****************** */
+.side{
+    overflow-x: hidden;
+}
+
 .order_section {
     display: flex;
     justify-content: center;
@@ -1395,7 +1399,7 @@ select {
     align-items: center;
     text-align: center;
     font-family: 'Sentient', serif;
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -1444,6 +1448,7 @@ select {
     color: rgb(255, 255, 255);
     font-size: 15px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .where {
@@ -1456,8 +1461,8 @@ select {
 }
 
 .where h2 {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
+    color: rgb(255, 0, 0);
+    font-size: 60px;
     padding-top: 40px;
 }
 
@@ -1506,6 +1511,10 @@ select {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     margin-bottom: 30px;
+}
+
+.ticket strong {
+ color: #fa0505;
 }
 
 .when h2 {
@@ -2418,11 +2427,11 @@ section .image img {
     .email-input-container {
         width: 92%;
     }
-
-    /* 
-    .tickets-input-container {
-        width: 92%;
-    } */
+    
+    .ticket {
+        width: 100%;
+        text-align: center ;
+    }
 
     .subject-input-container {
         width: 92%;
@@ -2441,6 +2450,11 @@ section .image img {
         height: 420px;
     }
 
+    .tourimg {
+        height: 350px;
+        width: 450px;
+        object-fit: cover;
+    }
 }
 
 /* xs */
@@ -2469,6 +2483,12 @@ section .image img {
     .news-card {
         width: 400px;
         height: 400px;
+    }
+
+    .tourimg {
+        height: 250px;
+        width: 350px;
+        object-fit: cover;
     }
 }
 
