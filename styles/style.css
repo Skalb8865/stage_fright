@@ -119,7 +119,7 @@ select {
     opacity: 0;
     /* filter: blur(15px); */
     transform: translateY(75%);
-    transition: all 0.85s linear;
+    transition: all 1s ease;
 }
 
 .autoShow {
