@@ -932,6 +932,19 @@ select {
     text-align: center;
 }
 
+.member-cards .overlay a {
+    font-weight: 500;
+    margin: 10px 0 85px 0;
+    font-size: 1.125rem;
+    text-align: center;
+    color: var(--clr-red);
+    border-bottom: 0px solid var(--clr-red);
+}
+
+.member-cards .overlay a:hover {
+    border-bottom: 1px solid var(--clr-red);
+}
+
 /* Changes the height of the overlay making it rise until it hits whatever the height is set at. */
 .member-cards:hover .overlay {
     height: 100%;
@@ -1228,14 +1241,14 @@ select {
     transition: all 0.3s;
 }
 
-.tour-card:hover .tour-venue{
+.tour-card:hover .tour-venue {
     color: var(--clr-red);
     text-decoration: underline;
     transition: all 0.3s ease-in-out;
 }
 
 
-.tour-card:hover{
+.tour-card:hover {
     transform: scale(1.015);
     transform: translateX(10px);
     transition: all 0.3s ease-in-out;
