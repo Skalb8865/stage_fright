@@ -24,24 +24,6 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var detailsElements = document.querySelectorAll("details");
-
-            detailsElements.forEach(function (details) {
-                details.addEventListener("toggle", function () {
-                    if (details.open) {
-                        // Close all other open details
-                        detailsElements.forEach(function (otherDetails) {
-                            if (otherDetails !== details && otherDetails.open) {
-                                otherDetails.open = false;
-                            }
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Columbus Commons Stage Fright Tour">
@@ -171,7 +153,6 @@
     <div class="loader-container" id="loader-container">
         <div class="loader" id="loader"></div>
     </div>
-<<<<<<< HEAD
     <h1 class="FAQ_title_top autoHide">FAQ</h1>
     <!-- -------------------------------- -->
     <!-- ----------Subscription---------- -->
@@ -179,24 +160,24 @@
     <div class="accordion-wrapper">
         <h1>Subscription</h1>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check1" checked>
+            <input type="checkbox" type="radio" name="radio-a" id="check1" checked>
             <label class="accordion-label" for="check1">Can I Change or Add To My Order</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p>You can cannot change or add to orders if you already submitted one</p>
             </div>
         </div>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check2">
+            <input type="checkbox"  name="radio-a" id="check2">
             <label class="accordion-label" for="check2">How Can I Renew My Fan-club Membership?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p>Fan-club memberships will not expire unless you cancel your membership. If you cancel your
                     membership you can always renew your memebership later.</p>
             </div>
         </div>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check3">
+            <input type="checkbox" name="radio-a" id="check3">
             <label class="accordion-label" for="check3">Do you offer any discounts?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p>Yes! We offer 10% discount for fan club members occasionally. There may be other temporary discounts
                     to regular viewer of the website</p>
             </div>
@@ -208,24 +189,24 @@
     <div class="accordion-wrapper">
         <h1><i class="fa-light fa-users-rays"></i>General Questions</h1>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check4" checked>
+            <input type="checkbox" name="radio-a" id="check4" checked>
             <label class="accordion-label" for="check4">What Is Stage Fright?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p>Stage Fright is a band that thrives on high-energy performances. We blend talent with dedication to
                     make exciting live music. &#128522;</p>
             </div>
         </div>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check5">
+            <input type="checkbox" name="radio-a" id="check5">
             <label class="accordion-label" for="check5">When Do Tickets Go On Sale?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p> Tickets go on sale a month before the date of our tour on which you bought the tickets from.</p>
             </div>
         </div>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check6">
+            <input type="checkbox" name="radio-a" id="check6">
             <label class="accordion-label" for="check6">How much are tickets?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p> Ticket prices are displayed already. If you want to see them go and vist the tour page of the
                     concert you want to see. The prices are listed there towards the bottom. </p>
             </div>
@@ -237,23 +218,23 @@
     <div class="accordion-wrapper">
         <h1>Support</h1>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check7" checked>
+            <input type="checkbox" name="radio-a" id="check7" checked>
             <label class="accordion-label" for="check7">What Is Your Return Policy On Tickets And Orders?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p> It can be cancelled within 15 buisness days of the orginal order.</p>
             </div>
         </div>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check8">
+            <input type="checkbox" name="radio-a" id="check8">
             <label class="accordion-label" for="check8">Where is My Order?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p> You can track your order with the link you receive in your confirmation email</p>
             </div>
         </div>
         <div class="accordion">
-            <input type="radio" name="radio-a" id="check9">
+            <input type="checkbox" name="radio-a" id="check9">
             <label class="accordion-label" for="check9">Will Sales Tax Be Applied To My Order?</label>
-            <div class="accordion-content">
+            <div class="accordion_content">
                 <p>Sales tax will be applied to merchandise and handling for the following states: Arizona, Arkansas,
                     California, Colorado, Florida, Georgia, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana,
                     Maryland, Massachusetts, Michigan, Minnesota, Missouri, Nebraska, Nevada, New Jersey, New York,
@@ -268,70 +249,6 @@
             <a href="/html/Contact/contact.html" class="FAQ_btn">Contact Us</a>
         </div>
     </div>
-=======
-
-    <main class="main">
-        <!--FAQ section-->
-        <div class="accordion arrows">
-            <h1 class="title">Frequently Asked Questions</h1>
-            <input type="radio" name="accordion" id="cb1" />
-            <section class="box">
-                <label class="box-title" for="cb1">What Is Stage Fright?</label>
-                <label class="box-close" for="acc-close"></label>
-                <div class="box-content">
-                    <p> Stage Fright is a band that thrives on high-energy performances. We blend talent with dedication
-                        to
-                        make exciting live music. </p>
-                </div>
-            </section>
-            <input type="radio" name="accordion" id="cb2" />
-            <section class="box">
-                <label class="box-title" for="cb2">When Do Tickets Go On Sale?</label>
-                <label class="box-close" for="acc-close"></label>
-                <div class="box-content">
-                    <P>
-                        Tickets go on sale a month before the date of our tour on which you bought the tickets from.
-                    </P>
-                </div>
-            </section>
-            <input type="radio" name="accordion" id="cb3" />
-            <section class="box">
-                <label class="box-title" for="cb3">How Can I Renew My Fan-club Membership?</label>
-                <label class="box-close" for="acc-close"></label>
-                <div class="box-content">
-                    <p> Fan-club memberships will auto renew unless you cancel your membership. If you cancel your
-                        membership you can always renew your memebership later </p>
-                </div>
-            </section>
-            <input type="radio" name="accordion" id="cb4" />
-            <section class="box">
-                <label class="box-title" for="cb4">What Is Your Return Policy On Tickets And Orders?</label>
-                <label class="box-close" for="acc-close"></label>
-                <div class="box-content">
-                    <p> It can be cancelled within 15 buisness days of the orginal order.
-                    </p>
-                </div>
-            </section>
-            <input type="radio" name="accordion" id="cb5" />
-            <section class="box">
-                <label class="box-title" for="cb5">Can I Change or Add To My Order If I've Already Submitted One</label>
-                <label class="box-close" for="acc-close"></label>
-                <div class="box-content">
-                    <p>You can cannot change or add to orders if you already submitted one </p>
-                </div>
-            </section>
-            <input type="radio" name="accordion" id="cb6" />
-            <section class="box">
-                <label class="box-title" for="cb6">Contacting Us</label>
-                <label class="box-close" for="acc-close"></label>
-                <div class="box-content">
-                    <p> If you have any more issues please do not hesitate to contact us
-                    </p>
-                </div>
-            </section>
-            <input type="radio" name="accordion" id="acc-close" />
-        </div>
->>>>>>> 84ab03ba8e1b20224324fc4d4f7fd464c5493308
     </main>
 
 

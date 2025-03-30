@@ -61,7 +61,7 @@ input {
     transition: all 0.3s;
 }
 
-.accordion-content {
+.accordion_content {
     max-height: 0;
     padding: 0 16px;
     color: rgb(255, 0, 0);
@@ -70,7 +70,7 @@ input {
     transition: all 0.3s;
 }
 
-.accordion-content p {
+.accordion_content p {
     margin: 0;
     color: rgba(255, 255, 255, 0.7);
     font-size: 18px;
@@ -83,14 +83,14 @@ input:checked+.accordion-label {
 input:checked+.accordion-label::after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+
 }
 
-input:checked~.accordion-content {
+input:checked~.accordion_content {
     max-height: 100vh;
     padding: 16px;
+    display: block;
 }
-
-
 
 
 .FAQ_button--container {
