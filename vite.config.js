@@ -9,7 +9,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         about_landing_page: resolve(__dirname, 'html/About/about_landing_page.html'),
         about: resolve(__dirname, 'html/About/about.html'),
-        aidienbio: resolve(__dirname, 'html/About/bios/aidienbio.html'),
+        // aidienbio: resolve(__dirname, 'html/About/bios/aidienbio.html'),
         gabebio: resolve(__dirname, 'html/About/bios/gabebio.html'),
         jabaribio: resolve(__dirname, 'html/About/bios/jabaribio.html'),
         seanbio: resolve(__dirname, 'html/About/bios/seanbio.html'),
