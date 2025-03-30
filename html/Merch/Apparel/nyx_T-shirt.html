@@ -22,6 +22,18 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
 
 
     <meta name="description" content="Stage Fright Website">
@@ -146,11 +158,22 @@
 
 
     <main class="main">
-        <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
             <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/NyxShirt.webp" alt="Acantha Black T-Shirt"></div>
+                <div class="thumbnails">
+                    <img src="/merch/NyxShirt.webp" alt="NYX Black T-Shirt" class="selected" onclick="changeImage(this)"
+                        role="button">
+                    <img src="/merch/nyxShirtBack.webp" alt="NYX Black T-Shirt Back" onclick="changeImage(this)"
+                        role="button">
+                </div>
+                <div class="merch_img--card" style="display: none;">
+                    <img src="/merch/NyxShirt.webp" alt="NYX Black T-Shirt">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/NyxShirt.webp" alt="NYX Black T-Shirt">
+                </div>
             </div>
+
             <div class="merch_content">
                 <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a href="/html/Merch/merch.html">Store</a> </span>
                 <h1 class="product-title">NYX Black T-Shirt</h1>

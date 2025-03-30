@@ -18,6 +18,7 @@
     </noscript>
     <link rel="stylesheet" href="/styles/about.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <style>
         a {
             text-decoration: none;
@@ -35,7 +36,19 @@
             border: none;
             outline: none;
         }
+
+        ul,
+        ol,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+
+        button:focus {
+            outline: none;
+        }
     </style>
+
 
     <!-- ======== -->
     <!-- JS Links -->
@@ -189,6 +202,11 @@
         <section style="background: var(--clr-dark);" class="about-section">
             <div class="container">
                 <div class="row">
+                    <!-- Image Column -->
+                    <div class="image-column col-lg-6 col-md-12 col-sm-12 autoHide">
+                        <figure class="image-1"><img src="/res/members/group.webp" alt=""></figure>
+                    </div>
+                    
                     <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2 autoHide">
                         <div class="inner-column">
                             <div class="sec-title">
@@ -207,11 +225,6 @@
                             </ul>
                             <a href="./timeline.html" class="learn_more--btn">Learn More</a>
                         </div>
-                    </div>
-
-                    <!-- Image Column -->
-                    <div class="image-column col-lg-6 col-md-12 col-sm-12 autoHide">
-                        <figure class="image-1"><img src="/res/members/group.webp" alt=""></figure>
                     </div>
                 </div>
             </div>
@@ -239,7 +252,7 @@
                     <div class="image-column col-md-6 col-sm-12 col-xs-12 autoHide">
                         <div class="inner-column " data-wow-delay="0ms" data-wow-duration="1500ms">
                             <div class="image">
-                                <img src="/res/_MG_9323.png" alt="">
+                                <img loading="lazy" decoding="async" src="/res/group_color.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -263,9 +276,10 @@
         <!-- Member Section -->
         <!-- ============== -->
         <section class="member container section ">
+            <h1 class="section-title autoHide">Meet Our Members</h1>
             <div class="member-wrapper">
                 <div class="member-cards">
-                    <img loading="lazy" src="/res/members/aidien.webp" alt="Aidien, Lead Vocalist">
+                    <img loading="lazy" decoding="async" src="/res/members/aidien.webp" alt="Aidien, Lead Vocalist">
                     <div class="overlay">
                         <h2>Aidien Gooden</h2>
                         <p>Leader Signer</p>
@@ -277,7 +291,7 @@
                 </div>
 
                 <div class="member-cards">
-                    <img loading="lazy" src="/res/members/sean.webp" alt="Sean, Lead Guitarist">
+                    <img loading="lazy" decoding="async" src="/res/members/sean.webp" alt="Sean, Lead Guitarist">
                     <div class="overlay">
                         <h2>Sean Kalb</h2>
                         <p>Lead Guitarist</p>
@@ -289,7 +303,7 @@
                 </div>
 
                 <div class="member-cards">
-                    <img loading="lazy" src="/res/members/jabari.webp" alt="Jabari, Drummer">
+                    <img loading="lazy" decoding="async" src="/res/members/jabari.webp" alt="Jabari, Drummer">
                     <div class="overlay">
                         <h2>Jabari Hill</h2>
                         <p>Drummer</p>
@@ -301,7 +315,7 @@
                 </div>
 
                 <div class="member-cards">
-                    <img loading="lazy" src="/res/members/gabe.webp" alt="Gabe, Lead Bassist">
+                    <img loading="lazy" decoding="async" src="/res/members/gabe.webp" alt="Gabe, Lead Bassist">
                     <div class="overlay">
                         <h2>Gabe Zeigler</h2>
                         <p>Bassist</p>

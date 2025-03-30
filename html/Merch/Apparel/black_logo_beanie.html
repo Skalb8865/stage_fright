@@ -22,6 +22,18 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
 
 
     <meta name="description" content="Stage Fright Website">
@@ -141,10 +153,20 @@
     </div>
 
     <main class="main">
-        <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
             <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/Beanie.webp" alt="Black Logo Beanie"></div>
+                <div class="thumbnails">
+                    <img src="/merch/Beanie.webp" alt="Black Logo Beanie" class="selected" onclick="changeImage(this)"
+                        role="button">
+                    <img src="/merch/BeanieBack.webp" alt="Black Logo Beanie Back" onclick="changeImage(this)"
+                        role="button">
+                </div>
+                <div class="merch_img--card" style="display: none;">
+                    <img src="/merch/Beanie.webp" alt="Black Logo Beanie">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/Beanie.webp" alt="Black Logo Beanie">
+                </div>
             </div>
             <div class="merch_content">
                 <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a href="/html/Merch/merch.html">Store</a>
@@ -178,8 +200,10 @@
             <div class="shop-content">
                 <!-- BOX 1 -->
                 <div class="merch-box">
-                    <a href="./white_logo_hat.html" aria-label="Stage Fright White Hat"><img src="/merch/hatMerch.webp"
-                            alt="White Stage Fright Hat" class="product-img"></a>
+                    <a href="./white_logo_hat.html" aria-label="Stage Fright White Hat"><img id="suggestion_1"
+                            src="/merch/hatMerch.webp" alt="White Stage Fright Hat" class="product-img"
+                            onmouseover="document.getElementById('suggestion_1').src='/merch/backhat.webp'"
+                            onmouseleave="document.getElementById('suggestion_1').src='/merch/hatMerch.webp'"></a>
                     <div class="info-section">
                         <h2 class="product-title">Stage Fright White Hat</h2>
                         <span class="product-price">$12.99</span>
@@ -188,7 +212,10 @@
                 <!-- BOX 2 -->
                 <div class="merch-box">
                     <a href="./prometheus_vinyl.html" aria-label="Prometheus Vinyl"><img
-                            src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl" class="product-img"></a>
+                            src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl" class="product-img"
+                            id="suggestion_2"
+                            onmouseover="document.getElementById('suggestion_2').src='/merch/PrometheusvinylCover.webp'"
+                            onmouseleave="document.getElementById('suggestion_2').src='/merch/Prometheusvinyl.webp'"></a>
                     <div class="info-section">
                         <h2 class="product-title">Prometheus Vinyl</h2>
                         <span class="product-price">$27.99</span>
@@ -205,8 +232,10 @@
                 </div>
                 <!-- BOX 4 -->
                 <div class="merch-box">
-                    <a href="./prometheus_T-shirt.html"><img src="/merch/PrometheusShirt.webp"
-                            alt="Prometheus Black T-Shirt" class="product-img"></a>
+                    <a href="./prometheus_T-shirt.html"><img id="suggestion_4" src="/merch/PrometheusShirt.webp"
+                            alt="Prometheus Black T-Shirt" class="product-img"
+                            onmouseover="document.getElementById('suggestion_4').src='/merch/promeShirtBack.webp'"
+                            onmouseleave="document.getElementById('suggestion_4').src='/merch/PrometheusShirt.webp'"></a>
                     <div class="info-section">
                         <h2 class="product-title">Prometheus Black T-Shirt</h2>
                         <span class="product-price">$18.99</span>
