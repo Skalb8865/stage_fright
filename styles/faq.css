@@ -1,26 +1,3 @@
-:root {
-	--basically-black: #0a0a0a;
-
-	--primary: #DC0000;
-	--primary-dark: #850000;
-
-
-	--light-grey: #BDC4D0;
-	--grey: grey;
-	--dark-grey: #555756;
-
-	--background-light: #F3F4F8;
-	--background-lessdark: #1D1B19;
-	--background-dark: #0a0a0a;
-	--accent: #e5e4ea;
-
-
-	--font-lightest: #fff;
-	--font-light: #abaab4;
-	--font-dark: #333;
-	--font-darkest: #0a0a0a;
-}
-
 .accordion {
 	margin: auto;
 	width: 520px;
@@ -179,8 +156,15 @@ input:checked+section.box .box-title:before {
 }
 
 .privatePolicy {
-	color: var(--font-lightest);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: var(--clr-light);
+
 }
 
 .privatePolicy p {
@@ -189,20 +173,19 @@ input:checked+section.box .box-title:before {
 }
 
 .privatePolicy h2 {
-	color: var(--primary);
+	color: var(--clr-red);
 }
 
 .privacy {
 	font-size: 40px;
 	text-transform: uppercase;
 	padding-bottom: 45px;
-	color: var(--primary);
+	color: var(--clr-red);
 }
 
 .p-Body {
 	padding-left: 25px;
 	padding-right: 25px;
-	background-color: var(--background-dark);
 }
 
 /* Idk why this isn't working
