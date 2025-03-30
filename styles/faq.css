@@ -1,24 +1,24 @@
 :root {
-    --basically-black: #0a0a0a;
+	--basically-black: #0a0a0a;
 
-    --primary: #DC0000;
-    --primary-dark: #850000;
-
-
-    --light-grey: #BDC4D0;
-    --grey: grey;
-    --dark-grey: #555756;
-
-    --background-light: #F3F4F8;
-    --background-lessdark:#1D1B19;
-    --background-dark: #0a0a0a;
-    --accent: #e5e4ea;
+	--primary: #DC0000;
+	--primary-dark: #850000;
 
 
-    --font-lightest: #fff;
-    --font-light: #abaab4;
-    --font-dark: #333;
-    --font-darkest: #0a0a0a;
+	--light-grey: #BDC4D0;
+	--grey: grey;
+	--dark-grey: #555756;
+
+	--background-light: #F3F4F8;
+	--background-lessdark: #1D1B19;
+	--background-dark: #0a0a0a;
+	--accent: #e5e4ea;
+
+
+	--font-lightest: #fff;
+	--font-light: #abaab4;
+	--font-dark: #333;
+	--font-darkest: #0a0a0a;
 }
 
 .accordion {
@@ -26,8 +26,8 @@
 	width: 520px;
 	margin-bottom: 200px;
 	text-align: center;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .accordion input {
@@ -55,16 +55,19 @@
 	right: 0;
 	pointer-events: none;
 }
-.title{
+
+.title {
 	color: aliceblue;
 	text-align: center;
-    align-items: center;
+	align-items: center;
 	text-transform: uppercase;
 	padding-left: 75px;
 }
-body{
+
+body {
 	background-color: black;
 }
+
 div.box {
 	background: #ffffff;
 	z-index: 100;
@@ -96,8 +99,8 @@ div .box-title {
 	-ms-user-select: none;
 	user-select: none;
 	transform: rotate(0deg);
-    transform-origin: 1rem 50%;
-    transition: 0.25s transform ease;
+	transform-origin: 1rem 50%;
+	transition: 0.25s transform ease;
 }
 
 .box {
@@ -112,8 +115,8 @@ div .box-title {
 	color: rgba(255, 255, 255, 0.54);
 	display: none;
 	transform: rotate(0deg);
-    transform-origin: 1rem 50%;
-    transition: 0.25s transform ease;
+	transform-origin: 1rem 50%;
+	transition: 0.25s transform ease;
 }
 
 .box-close {
@@ -125,8 +128,8 @@ div .box-title {
 	cursor: pointer;
 	display: none;
 	transform: rotate(0deg);
-    transform-origin: 1rem 50%;
-    transition: 0.25s transform ease;
+	transform-origin: 1rem 50%;
+	transition: 0.25s transform ease;
 }
 
 input:checked+.box {
@@ -136,16 +139,16 @@ input:checked+.box {
 input:checked+.box .box-title {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 	transform: rotate(0deg);
-    transform-origin: 1rem 50%;
-    transition: 0.25s transform ease;
+	transform-origin: 1rem 50%;
+	transition: 0.25s transform ease;
 }
 
 input:checked+.box .box-content,
 input:checked+.box .box-close {
 	display: inline-block;
 	transform: rotate(0deg);
-    transform-origin: 1rem 50%;
-    transition: 0.25s transform ease;
+	transform-origin: 1rem 50%;
+	transition: 0.25s transform ease;
 }
 
 .arrows section .box-title {
@@ -168,37 +171,38 @@ input:checked+.box .box-close {
 input:checked+section.box .box-title:before {
 	transform: rotate(90deg);
 }
-.box-content p{
+
+.box-content p {
 	font-size: medium;
 	font-weight: 500;
 	color: #ffffff;
 }
 
-.privatePolicy{
-    color: var(--font-lightest);
-    text-align: center;
+.privatePolicy {
+	color: var(--font-lightest);
+	text-align: center;
 }
 
-.privatePolicy p{
-    font-size: 20px;
-    padding-bottom: 14px;
+.privatePolicy p {
+	font-size: 20px;
+	padding-bottom: 14px;
 }
 
-.privatePolicy h2{
-    color: var(--primary);
+.privatePolicy h2 {
+	color: var(--primary);
 }
 
-.privacy{
-    font-size: 40px;
-    text-transform: uppercase;
-    padding-bottom: 45px;
-    color: var(--primary);
+.privacy {
+	font-size: 40px;
+	text-transform: uppercase;
+	padding-bottom: 45px;
+	color: var(--primary);
 }
 
-.p-Body{
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: var(--background-dark);
+.p-Body {
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: var(--background-dark);
 }
 
 /* Idk why this isn't working

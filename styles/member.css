@@ -1,11 +1,4 @@
-body {
-    margin: 0;
-    background: #000;
-}
 
-.stopfade {
-    opacity: .5;
-}
 
 #polina {
     font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
@@ -26,48 +19,72 @@ h1 {
     letter-spacing: .3rem;
 }
 
-#polina button {
-    display: block;
-    width: 80%;
-    padding: .4rem;
-    border: none;
-    margin: 1rem auto;
-    font-size: 1.3rem;
-    background: rgba(255, 255, 255, 0.23);
-    color: #fff;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: .3s background;
-}
-
-#polina button:hover {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0.5);
-    padding: .5rem;
-    transition: .6s background;
-}
-
-a:hover {
-    background: rgba(0, 0, 0, 0.9);
-}
-
-.member-cards {
-    width: 570px;
-    height: 570px;
+.levi{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow-x: hidden;
+}
+.member-cards {
+    width: 20vw;
 }
 
 .member-cards img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.indie_button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.indie_btn {
+    background: red;
+    color:white;
+    cursor: pointer;
+    padding: 13px;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    gap: 10px;
+}
+
+.indie_btn:hover {
+    background: red;
+}
+.indie_title {
+    text-align: center;
+    font-family: 'Sentient', serif;
+    font-size: 2.50rem;
+    text-transform: uppercase;
+    padding: 3rem;
+    color: white;
+    line-height: 3rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+    .levi{
+        display: flex;
+        flex-direction: column;
+    }
+    .indie_button--container{
+        display: flex;
+        flex-direction: column;
+    }
+    #polina{
+        width: 450px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
