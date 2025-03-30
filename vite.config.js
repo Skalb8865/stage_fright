@@ -11,7 +11,7 @@ export default defineConfig({
         about: resolve(__dirname, 'html/About/about.html'),
         // aidienbio: resolve(__dirname, 'html/About/bios/aidienbio.html'),
         // gabebio: resolve(__dirname, 'html/About/bios/gabebio.html'),
-        jabaribio: resolve(__dirname, 'html/About/bios/jabaribio.html'),
+        // jabaribio: resolve(__dirname, 'html/About/bios/jabaribio.html'),
         seanbio: resolve(__dirname, 'html/About/bios/seanbio.html'),
         timeline: resolve(__dirname, 'html/About/timeline.html'),
         tours: resolve(__dirname, 'html/Tours/tour.html'),
