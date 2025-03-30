@@ -1,0 +1,137 @@
+body {
+    background: rgba(216, 214, 214, 0.1);
+    padding: 0 1em 1em;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: left;
+    padding-bottom: 20px;
+    color: rgba(255, 0, 0, 0.8);
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordion-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    width: 95vh;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.accordion:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-label {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 16px;
+    background: rgba(255, 0, 0, 0.8);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.accordion-label:hover {
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 16px;
+    color: rgb(255, 0, 0);
+    background: rgb(0, 0, 0);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+}
+
+input:checked+.accordion-label {
+    background: rgb(255, 0, 0);
+}
+
+input:checked+.accordion-label::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+input:checked~.accordion-content {
+    max-height: 100vh;
+    padding: 16px;
+}
+
+
+
+
+.FAQ_button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FAQ_btn {
+    background: red;
+    color:white;
+    cursor: pointer;
+    padding: 1.5em 2.75em;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.FAQ_btn:hover {
+    background: red;
+}
+.FAQ_title {
+    text-align: center;
+    font-family: 'Sentient', serif;
+    font-size: 2.50rem;
+    text-transform: uppercase;
+    padding: 3rem;
+    color: white;
+    line-height: 3rem;
+    font-weight: 500;
+}
+.FAQ_title_top {
+    text-align: center;
+    font-family: 'Sentient', serif;
+    font-size: 4.50rem;
+    text-transform: uppercase;
+    padding: 3rem;
+    color: white;
+    line-height: 3rem;
+    font-weight: 500;
+}
