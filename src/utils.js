@@ -7,8 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // section for cart and merch products
   const addToCartButtons = document.querySelectorAll(".add-cart");
-  const buyButton = document.querySelector(".checkout-btn");
-  const checkoutPageButton = document.querySelector(".btn-buy");
+  const buyButton = document.querySelector(".btn-buy");
   let products = document.querySelectorAll(".main_container, .product-box");
   let cartBoxes = document.querySelectorAll(".cart-box");
   // end of section for cart and merch products
@@ -212,11 +211,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // section for enabling and disabling the buy button
   function disalbeBuyButton() {
-    checkoutPageButton.classList.add("disabled");
+    buyButton.classList.add("disabled");
   }
 
   function enableBuyButton() {
-    checkoutPageButton.classList.remove("disabled");
+    buyButton.classList.remove("disabled");
   }
   // end of section for enabling and disabling the buy button
 
