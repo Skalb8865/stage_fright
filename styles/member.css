@@ -17,13 +17,14 @@ h1 {
     letter-spacing: .3rem;
 }
 
-.levi{
+.levi {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     overflow-x: hidden;
 }
+
 .member-cards {
     width: 20vw;
 }
@@ -40,6 +41,7 @@ h1 {
     align-items: center;
     gap: 10px;
 }
+
 .indie_btn {
     background: var(--clr-red);
     color: var(--clr-light);
@@ -58,6 +60,7 @@ h1 {
 .indie_btn:hover {
     background: var(--clr-dark-red);
 }
+
 .indie_title {
     text-align: center;
     font-family: 'Sentient', serif;
@@ -70,15 +73,17 @@ h1 {
 }
 
 @media screen and (max-width: 650px) {
-    .levi{
+    .levi {
         display: flex;
         flex-direction: column;
     }
-    .indie_button--container{
+
+    .indie_button--container {
         display: flex;
         flex-direction: column;
     }
-    #polina{
+
+    #polina {
         width: 450px;
         align-items: center;
         justify-content: center;
