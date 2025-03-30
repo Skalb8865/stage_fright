@@ -52,7 +52,49 @@
 }
 
 #swiper_slide1{
-    background: url(/res/_MG_9323.png);
+    background: url(/tour_images/king.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#swiper_slide2{
+    background: url(/tour_images/commons.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#swiper_slide3{
+    background: url(/tour_images/underground.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#swiper_slide4{
+    background: url(/tour_images/fmh.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#swiper_slide5{
+    background: url(/tour_images/paramount.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#swiper_slide6{
+    background: url(/tour_images/parkart.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#swiper_slide7{
+    background: url(/tour_images/flagstarMF.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,7 +108,7 @@
 .swiper-tour-card .slider_card--date {
     font-weight: 600;
     font-size: 1.5rem;
-    color: var(--clr-light);
+    color: var(--clr-grey);
     text-transform: uppercase;
     padding: 10px;
 }
@@ -74,7 +116,7 @@
 .swiper-tour-card .slider_card--location {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--clr-light);
+    color: var(--clr-grey);
     padding: 10px;
     line-height: 2rem;
 }
@@ -82,7 +124,7 @@
 .swiper-tour-card .slider_card--place {
     font-weight: 500;
     font-size: 1rem;
-    color: var(--clr-light);
+    color: var(--clr-grey);
     padding: 0 5px 10px 5px;
 }
 
