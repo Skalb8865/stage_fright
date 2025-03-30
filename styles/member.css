@@ -1,10 +1,8 @@
-
-
 #polina {
     font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
     font-weight: 100;
     background: rgba(0, 0, 0, 0.3);
-    color: white;
+    color: var(--clr-light);
     padding: 2rem;
     width: 33%;
     margin: 2rem;
@@ -43,8 +41,8 @@ h1 {
     gap: 10px;
 }
 .indie_btn {
-    background: red;
-    color:white;
+    background: var(--clr-red);
+    color: var(--clr-light);
     cursor: pointer;
     padding: 13px;
     width: 200px;
@@ -58,7 +56,7 @@ h1 {
 }
 
 .indie_btn:hover {
-    background: red;
+    background: var(--clr-dark-red);
 }
 .indie_title {
     text-align: center;
@@ -66,7 +64,7 @@ h1 {
     font-size: 2.50rem;
     text-transform: uppercase;
     padding: 3rem;
-    color: white;
+    color: var(--clr-light);
     line-height: 3rem;
     font-weight: 500;
 }
