@@ -1,7 +1,8 @@
 
 .about-section{
 	position:relative;
-	padding:120px 0px;
+	padding:60px 0px;
+	overflow-x: hidden;
 }
 
 .about-section .content-column{
@@ -12,7 +13,6 @@
 .about-section .content-column .inner-column{
 	position:relative;
 	padding-top:50px;
-	padding-right:100px;
 }
 
 .about-section .content-column .text{
@@ -104,12 +104,12 @@
 }
 
 .sec-title h2{
-    margin-top: 25px;
+    margin-top: 15px;
 	color: var(--clr-light);
 }
 .sec-title {
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 .sec-title .title {
     position: relative;
@@ -128,4 +128,22 @@
     width: 40px;
     height: 3px;
     background-color: var(--clr-light);
+}
+@media screen and (max-width: 650px) {
+    .inner-column{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 430px;
+    }
+	.text{
+		width: 400px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.image-column{
+		align-items: center;
+	}
 }
