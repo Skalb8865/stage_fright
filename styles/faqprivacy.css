@@ -4,7 +4,7 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-p{
+p {
     color: rgb(255, 255, 255);
 }
 
@@ -95,9 +95,10 @@ input:checked~.accordion_content {
     justify-content: center;
     align-items: center;
 }
+
 .FAQ_btn {
     background: red;
-    color:white;
+    color: white;
     cursor: pointer;
     padding: 1.5em 2.75em;
     width: 200px;
@@ -112,6 +113,7 @@ input:checked~.accordion_content {
 .FAQ_btn:hover {
     background: red;
 }
+
 .FAQ_title {
     text-align: center;
     font-family: 'Sentient', serif;
@@ -122,6 +124,7 @@ input:checked~.accordion_content {
     line-height: 3rem;
     font-weight: 500;
 }
+
 .FAQ_title_top {
     text-align: center;
     font-family: 'Sentient', serif;
@@ -131,4 +134,37 @@ input:checked~.accordion_content {
     color: white;
     line-height: 3rem;
     font-weight: 500;
+}
+
+.privatePolicy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: var(--clr-light);
+
+}
+
+.privatePolicy p {
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+
+.privatePolicy h2 {
+    color: var(--clr-red);
+}
+
+.privacy {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 45px;
+    color: var(--clr-red);
+}
+
+.p-Body {
+    padding-left: 25px;
+    padding-right: 25px;
 }
