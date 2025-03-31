@@ -16,13 +16,17 @@
     <noscript>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     </noscript>
-    <link rel="stylesheet" href="/styles/coll.css">
+
+    <link rel="preload" href="/styles/collapsible.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/styles/collapsible.css">
+    </noscript>
 
     <!-- ======== -->
     <!-- JS Links -->
     <!-- ======== -->
-    <script type="module" src="/src/coll.js"></script>
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/collapsible.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
 
 
