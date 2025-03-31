@@ -7,7 +7,6 @@ export default defineConfig({
       input: {
         // Main Pages
         main: resolve(__dirname, 'index.html'),
-        about_landing_page: resolve(__dirname, 'html/About/about_landing_page.html'),
         about: resolve(__dirname, 'html/About/about.html'),
         aidienbio: resolve(__dirname, 'html/About/bios/Aidienbio.html'),
         gabebio: resolve(__dirname, 'html/About/bios/gabeBio.html'),
