@@ -92,8 +92,9 @@ button {
     width: 28%;
     height: 200px;
     margin: 10px;
-    background-color: #363636;
+    background-color: #000000;
     align-items: center;
+    border: 2px solid rgb(255, 0, 0);
 }
 
 .card {
