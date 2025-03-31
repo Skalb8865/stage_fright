@@ -1,7 +1,7 @@
 .about-section {
 	position: relative;
 	padding: 120px 0px;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 .about-section .content-column {
@@ -94,6 +94,8 @@
 	background-color: var(--clr-light);
 }
 
-@media screen and (max-width: 1199px) {
-	
+@media screen and (max-width: 490px) {
+	.about-section {
+		overflow-x: hidden;
+	}
 }
