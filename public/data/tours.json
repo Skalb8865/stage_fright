@@ -5,7 +5,6 @@
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$15",
         "venue": "The King Of Clubs",
-        "buttonid": "open-modal",
         "bg_identifier": "/tour_images/king.webp",
         "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
     },
@@ -15,8 +14,7 @@
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$15",
         "venue": "Columbus Commons",
-        "buttonid": "open-modal2",
-        "bg_identifier":"/tour_images/commons.webp",
+        "bg_identifier": "/tour_images/commons.webp",
         "tour_link": "/html/Tours/tour_order/columbus_commons.html"
     },
     {
@@ -26,7 +24,7 @@
         "ticketsPrice": "$15",
         "venue": "Underground Arts",
         "buttonid": "open-modal3",
-        "bg_identifier":"/tour_images/underground.webp",
+        "bg_identifier": "/tour_images/underground.webp",
         "tour_link": "/html/Tours/tour_order/underground_arts.html"
     },
     {
@@ -35,8 +33,7 @@
         "modalLocation": "Philadelphia, PA, United States",
         "ticketsPrice": "$15",
         "venue": "Franklin Music Hall",
-        "buttonid": "open-modal4",
-        "bg_identifier":"/tour_images/fmh.webp" ,
+        "bg_identifier": "/tour_images/fmh.webp",
         "tour_link": "/html/Tours/tour_order/franklin_music_hall.html"
     },
     {
@@ -45,8 +42,7 @@
         "modalLocation": "rooklyn, NY, United States",
         "ticketsPrice": "$15",
         "venue": "Brooklyn Paramount",
-        "buttonid": "open-modal5",
-        "bg_identifier":"/tour_images/paramount.webp",
+        "bg_identifier": "/tour_images/paramount.webp",
         "tour_link": "/html/Tours/tour_order/brooklyn_paramount.html"
     },
     {
@@ -55,8 +51,7 @@
         "modalLocation": "Lewiston, NY, United States",
         "ticketsPrice": "$15",
         "venue": "Artpark",
-        "buttonid": "open-modal6",
-        "bg_identifier":"/tour_images/parkart.webp",
+        "bg_identifier": "/tour_images/parkart.webp",
         "tour_link": "/html/Tours/tour_order/artpark.html"
     },
     {
@@ -65,8 +60,7 @@
         "modalLocation": "Jericho, NY, United States",
         "ticketsPrice": "$15",
         "venue": "Flagstar at Westbury Music Fair",
-        "buttonid": "open-modal7",
-        "bg_identifier":"/tour_images/flagstarMF.webp",
+        "bg_identifier": "/tour_images/flagstarMF.webp",
         "tour_link": "/html/Tours/tour_order/flagstar_westbury.html"
     },
     {
@@ -75,8 +69,7 @@
         "modalLocation": "Queens, NY, United States",
         "ticketsPrice": "$15",
         "venue": "Forest Hills Stadium",
-        "buttonid": "open-modal8",
-        "bg_identifier":"/tour_images/hillsforest.webp",
+        "bg_identifier": "/tour_images/hillsforest.webp",
         "tour_link": "/html/Tours/tour_order/forest_hills.html"
     },
     {
@@ -86,7 +79,7 @@
         "ticketsPrice": "$15",
         "venue": "Radio City Music Hall",
         "buttonid": "open-modal9",
-        "bg_identifier":"/tour_images/radioCMH.webp",
+        "bg_identifier": "/tour_images/radioCMH.webp",
         "tour_link": "/html/Tours/tour_order/radio_city.html"
     },
     {
@@ -95,8 +88,7 @@
         "modalLocation": "Norfork, VA, United States",
         "ticketsPrice": "$15",
         "venue": "The NorVa",
-        "buttonid": "open-modal9",
-        "bg_identifier": "/tour_images/Underground-Arts-6.jpg" ,
+        "bg_identifier": "/tour_images/Underground-Arts-6.jpg",
         "tour_link": "/html/Tours/tour_order/the_NorVa.html"
     },
     {
@@ -105,8 +97,7 @@
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$15",
         "venue": "The Summit Music Hall",
-        "buttonid": "open-modal11",
-        "bg_identifier":"/tour_images/summithall.webp",
+        "bg_identifier": "/tour_images/summithall.webp",
         "tour_link": "/html/Tours/tour_order/summit_music_hall.html"
     },
     {
@@ -115,8 +106,7 @@
         "modalLocation": "Columbus, OH, United States",
         "ticketsPrice": "$15",
         "venue": "KEMBA Live!",
-        "buttonid": "open-modal12",
-        "bg_identifier":"/tour_images/live.webp",
+        "bg_identifier": "/tour_images/live.webp",
         "tour_link": "/html/Tours/tour_order/kemba_live.html"
     }
 ]
