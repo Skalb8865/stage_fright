@@ -65,16 +65,19 @@
 }
 
 .sec-title h2 {
+	font-family: 'Sentient', serif;
 	margin-top: 25px;
 	color: var(--clr-light);
 }
 
 .sec-title {
+	font-family: 'Sentient', serif;
 	position: relative;
 	padding-bottom: 40px;
 }
 
 .sec-title .title {
+	
 	position: relative;
 	color: var(--clr-red);
 	font-size: 18px;

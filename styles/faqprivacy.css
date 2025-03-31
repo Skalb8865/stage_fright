@@ -144,7 +144,6 @@ input:checked~.accordion_content {
     font-weight: 500;
 }
 
-<<<<<<< Updated upstream
 .privatePolicy {
     display: flex;
     flex-direction: column;
@@ -177,82 +176,4 @@ input:checked~.accordion_content {
 .p-Body {
     padding-left: 25px;
     padding-right: 25px;
-=======
-@media (max-width: 450px) {
-    body {
-        overflow-x: hidden;
-    }
-    .main{
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-    .accordion-wrapper {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        overflow-x: hidden;
-    }
-
-    .accordion {
-        width: 430px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        overflow-x: hidden;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .FAQ_title_head {
-        text-align: center;
-        font-family: 'Sentient', serif;
-        font-size: 30px;
-        width: 430px;
-    }
-
-}
-
-@media (max-width: 500px) {
-    body {
-        overflow-x: hidden;
-    }
-    .main{
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-    .accordion-wrapper {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        overflow-x: hidden;
-    }
-
-    .accordion {
-        width: 430px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        overflow-x: hidden;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .FAQ_title_head {
-        text-align: center;
-        font-family: 'Sentient', serif;
-        font-size: 30px;
-        width: 430px;
-    }
-
-}
-
-@media (max-width: 650px) {
-    body {
-        overflow-x: hidden;
-    }
-    .main{
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
->>>>>>> Stashed changes
 }
