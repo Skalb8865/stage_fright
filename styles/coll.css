@@ -1,0 +1,56 @@
+body{
+	overflow-x: hidden;
+}
+.collapsible {
+	background: black;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+	padding: 0.75em 2.5em;
+	width: 200px;
+	transition: all 0.3s;
+	text-decoration: none;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	padding: 18px;
+	overflow-x: hidden;
+}
+
+.active,
+.collapsible:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2212";
+	color: #000000;
+}
+
+.content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #000000;
+	color: #f1f1f1;
+	overflow-x: hidden;
+}
+
+.content p {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	width: 400px;
+	height: 200px;
+	text-decoration: none;
+	text-align: center;
+	color: #8b8b8b;
+}
