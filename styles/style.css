@@ -1430,6 +1430,40 @@ select {
     font-weight: 500;
 }
 
+.indie_button--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.indie_btn {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    cursor: pointer;
+    padding: 13px;
+    width: 200px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    gap: 10px;
+    border: 2px solid #ec1c1c;
+}
+
+.indie_title {
+    text-align: center;
+    font-family: 'Sentient', serif;
+    font-size: 2.50rem;
+    text-transform: uppercase;
+    padding: 3rem;
+    color: var(--clr-light);
+    line-height: 3rem;
+    font-weight: 500;
+}
+
 .ticket_button--container {
     display: flex;
     justify-content: center;
@@ -1479,22 +1513,20 @@ select {
 
 .where {
     color: rgb(255, 255, 255);
-    font-size: 15px;
     margin-bottom: 40px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .where h2 {
     color: rgb(255, 0, 0);
-    font-size: 60px;
+    font-size: 40;
     padding-top: 40px;
+    text-align: center;
 }
 
 .where p {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 25px;
 }
 
