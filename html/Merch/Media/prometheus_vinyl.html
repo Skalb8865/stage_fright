@@ -22,6 +22,19 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
+
 
 
     <meta name="description" content="Stage Fright Website">
@@ -146,8 +159,22 @@
     <main class="main">
         <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
-            <div class="merch_img--container">
+            <!-- <div class="merch_img--container">
                 <div class="merch_img--card"><img src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl"></div>
+            </div> -->
+            <div class="merch_img--container">
+                <div class="thumbnails">
+                    <img src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl" class="selected"
+                        onclick="changeImage(this)" role="button">
+                    <img src="/merch/PrometheusvinylCover.webp" alt="Prometheus Vinyl Cover" onclick="changeImage(this)"
+                        role="button">
+                </div>
+                <div class="merch_img--card" style="display: none;">
+                    <img src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/Prometheusvinyl.webp" alt="Prometheus Vinyl">
+                </div>
             </div>
             <div class="merch_content">
                 <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a href="/html/Merch/merch.html">Store</a> </span>
@@ -182,7 +209,9 @@
                 <!-- BOX 1 -->
                 <div class="merch-box">
                     <a href="../Apparel/prometheus_black_hoodie.html"><img src="/merch/Prometheushood.webp"
-                            alt="Prometheus Black Hoodie" class="product-img"></a>
+                            alt="Prometheus Black Hoodie" class="product-img" id="suggestion_1"
+                            onmouseover="document.getElementById('suggestion_3').src='/merch/AcanthaShirtBack.webp'"
+                            onmouseleave="document.getElementById('suggestion_3').src='/merch/AcanthaShirt.webp'"></a>
                     <div class="info-section">
                         <h2 class="product-title">Prometheus Black Hoodie</h2>
                         <span class="product-price">$24.99</span>
