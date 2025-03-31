@@ -161,6 +161,7 @@ input:checked~.accordion_content {
     font-size: 40px;
     text-transform: uppercase;
     padding-bottom: 45px;
+    text-align: center;
     color: var(--clr-red);
 }
 
