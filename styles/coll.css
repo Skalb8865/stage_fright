@@ -1,6 +1,7 @@
-body{
+body {
 	overflow-x: hidden;
 }
+
 .collapsible {
 	background: black;
 	color: white;
@@ -53,4 +54,9 @@ body{
 	text-decoration: none;
 	text-align: center;
 	color: #8b8b8b;
+}
+
+.learn {
+	align-items: center;
+display: flex;
 }
