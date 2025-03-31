@@ -852,11 +852,10 @@ select {
     font-size: 1.125rem;
     text-align: center;
     color: var(--clr-red);
-    border-bottom: 0px solid var(--clr-red);
 }
 
 .member-cards .overlay a:hover {
-    border-bottom: 1px solid var(--clr-red);
+    text-decoration: underline;
 }
 
 /* Changes the height of the overlay making it rise until it hits whatever the height is set at. */
@@ -1157,7 +1156,6 @@ select {
 
 .tour-card:hover .tour-venue {
     color: var(--clr-red);
-    text-decoration: underline;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2496,18 +2494,6 @@ section .image img {
     margin-bottom: 16px;
     padding: 0 8px;
 }
-
-/* 
-.about_card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 8px;
-    color: var(--clr-light);
-} */
-
-/* .about-section {
-    background-color: #474e5d;
-    color: white;
-} */
 
 .about_container {
     padding: 0 16px;
