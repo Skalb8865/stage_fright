@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/res/logo/Stage_Fright_Logo.png">
+    <link rel="icon" type="image/svg+xml" href="/logo/Stage_Fright_Logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage Fright White Hat | Stage Fright</title>
@@ -22,6 +22,18 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
 
 
     <meta name="description" content="Stage Fright Website">
@@ -149,10 +161,22 @@
         <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
             <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/hatMerch.webp" alt="Stage Fright White Hat"></div>
+                <div class="thumbnails">
+                    <img src="/merch/hatMerch.webp" alt="Stage Fright White Hat" class="selected"
+                        onclick="changeImage(this)" role="button">
+                    <img src="/merch/backhat.webp" alt="Stage Fright White Hat Back" onclick="changeImage(this)"
+                        role="button">
+                </div>
+                <div class="merch_img--card" style="display: none;">
+                    <img src="/merch/hatMerch.webp" alt="Stage Fright White Hat">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/hatMerch.webp" alt="Stage Fright White Hat">
+                </div>
             </div>
             <div class="merch_content">
-                <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a href="/html/Merch/merch.html">Store</a> </span>
+                <span><a href="/index.html" aria-label="Homepage">Home</a>&nbsp; > &nbsp;<a
+                        href="/html/Merch/merch.html" aria-label="Merch Page">Store</a></span>
                 <h1 class="product-title">Stage Fright White Hat</h1>
                 <h2 class="product-price">$12.99</h2>
                 <p class="product-description"> A Stage Fright hat is made from durable materials like cotton and
@@ -212,8 +236,8 @@
                 </div>
                 <!-- BOX 3 -->
                 <div class="merch-box">
-                    <a href="../Accessories/logo_white_airpod_case.html"><img src="/merch/backAirpod.webp"
-                            alt="Logo White Airpod Case" class="product-img"></a>
+                    <a href="../Accessories/logo_white_airpod_case.html" aria-label="Logo White Airpod Case"><img
+                            src="/merch/backAirpod.webp" alt="Logo White Airpod Case" class="product-img"></a>
                     <div class="info-section">
                         <h2 class="product-title">Logo White Airpod Case</h2>
                         <span class="product-price">$7.99</span>
@@ -221,8 +245,8 @@
                 </div>
                 <!-- BOX 4 -->
                 <div class="merch-box">
-                    <a href="./nyx_black_hoodie.html"><img src="/merch/Nyxhood.webp" alt="NYX Black Hoodie"
-                            class="product-img"></a>
+                    <a href="./nyx_black_hoodie.html" aria-label="NYX Black Hoodie"><img src="/merch/Nyxhood.webp"
+                            alt="NYX Black Hoodie" class="product-img"></a>
                     <div class="info-section">
                         <h2 class="product-title">NYX Black Hoodie</h2>
                         <span class="product-price">$24.99</span>

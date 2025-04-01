@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/logo/Stage_Fright_Logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticker Set | Stage Fright</title>
+
+    <!-- ========= -->
+    <!-- CSS Links -->
+    <!-- ========= -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    </noscript>
+
+    <!-- ======== -->
+    <!-- JS Links -->
+    <!-- ======== -->
+    <script type="module" src="/src/main.js"></script>
+    <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
+
+
+    <meta name="description" content="Stage Fright Website">
+    <meta name="keywords" content="Web Design, html, css, js">
+</head>
+
+<body>
+    <a class="scroll_up--button" id="scroll_up--button" href="#top" aria-label="Scroll to Top" inert><i
+            class="ri-arrow-up-line"></i></a>
+    <header class="container" id="top">
+        <nav class="navbar">
+            <div class="nav-left--section">
+                <div class="hamburger" id="hamburger" aria-label="open menu" aria-controls="menu" aria-expanded="false"
+                    role="button">
+                    <div class="nav_bar"></div>
+                    <div class="nav_bar"></div>
+                    <div class="nav_bar"></div>
+                </div>
+            </div>
+
+            <div class="nav-center--section">
+                <div class="center-left">
+                    <ul class="center-left--list">
+                        <li class="nav-item"> <a href="/html/About/about.html" aria-label="About Page">About</a></li>
+                        <li class="nav-item"><a href="/html/Music/music.html" aria-label="Music Page">Music</a></li>
+                    </ul>
+                </div>
+
+                <div class="center-logo">
+                    <a href="/index.html" aria-label="Homepage"><img class="logo"
+                            src="/res/logo/Stage_Fright_Logo_no_background.webp" alt="Logo"></a>
+                </div>
+
+                <div class="center-right">
+                    <ul class="center-right--list">
+                        <li class="nav-item"><a href="/html/Merch/merch.html" aria-label="Merch Page">Merch</a>
+                        </li>
+                        <li class="nav-item"><a href="/html/Tours/tour.html" aria-label="Tours Page">Tours</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav-right--section">
+                <button id="cart-icon" aria-label="open cart" aria-controls="cart" aria-expanded="false">
+                    <i class="ri-shopping-bag-line"></i>
+                    <span class="cart-icon-count" id="total-items"></span>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+    <div class="cart-overlay" aria-hidden="true"></div>
+
+    <!-- CART  -->
+    <div class="cart" id="cart" inert>
+        <h2 class="cart-title">Your Cart</h2>
+
+        <!-- CONTENT  -->
+        <div class="cart-content">
+
+
+        </div>
+
+        <!-- TOTAL   -->
+        <div class="total-section">
+            <div class="total">
+                <div class="total-title">Subtotal</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <a href="/html/Contact/checkout.html" class="btn-buy">Checkout</a>
+        </div>
+        <!-- CART CLOSE  -->
+        <i class='ri-close-fill' id="cart-close"></i>
+    </div>
+
+    <!-- Navbar Menu -->
+    <div class="menu" id="menu">
+        <div class="menu_header"></div>
+        <div class="menu-container container">
+            <div class="menu-left">
+                <a href="/index.html" aria-label="Homepage">Home</a>
+                <a href="/html/About/about.html" aria-label="About Page">About</a>
+                <a href="/html/Tours/tour.html" aria-label="Tours Page">Tours</a>
+                <a href="/html/Music/music.html" aria-label="Music Page">Music</a>
+                <a href="/html/Merch/merch.html" aria-label="Merch Page">Merch</a>
+            </div>
+
+            <div class="menu-right">
+                <div class="menu-header">
+                    <a href="/html/Contact/contact.html" aria-label="Contact Page">Contact</a>
+                    <a href="/html/Contact/customer_service.html" aria-label="Customer Support Page">Customer
+                        Support</a>
+                    <a href="/html/Fanclub/fanclub.html" aria-label="Fanclub Page">The Amplified Brigade</a>
+                    <a href="/html/Info/booking.html" aria-label="Booking Page">Book Us</a>
+                    <a href="/html/About/timeline.html" aria-label="Timeline Page">Our History</a>
+                    <a href="/html/Credits/credits.html" aria-label="Credits Page">Credits</a>
+                </div>
+
+                <div class="menu-social">
+                    <a href="https://x.com/StageFrightRB?s=09" aria-label="Our Twitter" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/stagefrightoffical/?igsh=MXJ4MXZsbGtva3JmdQ%3D%3D"
+                        aria-label="Our Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://open.spotify.com/user/31mk4mtczxnuxitto37orbgyps7q?si=X3NFJPe1RW6WBEY4RFS6VQ"
+                        aria-label="Our Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://youtube.com/@stagefrightrb?si=K0BPTB77cNhv7n7M" aria-label="Our Youtube"
+                        target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="http://tiktok.com/@stage.fright.anthem" aria-label="Our Tiktok" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://music.amazon.com/user-playlists/092e4e8fed5a45339069ade2c7e56f59sune?ref=dm_sh_4jvlB3sp4coaZDaqlMoaIlR9z"
+                        aria-label="Our Amazon Music" target="_blank"><i class="fa-brands fa-amazon"></i></a>
+                </div>
+                <div class="menu-address">Stage Fright<br><span>4465 S Hamilton Rd, Columbus, Ohio</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="loader-container" id="loader-container">
+        <div class="loader" id="loader"></div>
+    </div>
+
+
+    <main class="main">
+        <div class="merch-container product-box container">
+            <div class="merch_img--container">
+                <div class="thumbnails">
+                    <img src="/merch/StickerSet.webp" alt="Sticker Set" class="selected" onclick="changeImage(this)"
+                        role="button">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/StickerSet.webp" alt="Sticker Set">
+                </div>
+            </div>
+
+            <div class="merch_content">
+                <span><a href="/index.html" aria-label="Homepage">Home</a>&nbsp; > &nbsp;<a
+                        href="/html/Merch/merch.html" aria-label="Merch Page">Store</a></span>
+                <h1 class="product-title">Sticker Set</h1>
+                <h2 class="product-price">$1.95</h2>
+                <p class="product-description"></p>
+                <div class="quantity-container">
+                    <div class="number-input">
+                        <button class="quantity-btn minus"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                        <input class="quantity" id="quantity" min="1" max="10" name="quantity" value="1" type="number"
+                            aria-label="quantity" disabled>
+                        <button class="quantity-btn plus"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    </div>
+
+                    <button class="add-cart">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SHOP SECTION  -->
+        <section class="shop merch_suggestions--container section">
+            <h2 class="shop-title">You May Also Like</h2>
+            <!-- CONTENT  -->
+            <div class="shop-content">
+                <!-- BOX 1 -->
+                <div class="merch-box">
+                    <a href="./motto_phone_case.html" aria-label="Moto Phone Case<"><img src="/merch/Phone_Case.webp"
+                            alt="Stage Fright Moto Phone Case" class="product-img"></a>
+                    <div class="info-section">
+                        <h2 class="product-title">Black Motto <span style="text-transform: none;">i</span>Phone Case
+                        </h2>
+                        <span class="product-price">$9.99</span>
+                    </div>
+                </div>
+                <!-- BOX 2 -->
+                <div class="merch-box">
+                    <a href="../Media/acantha_vinyl.html"><img src="/merch/Acanthavinyl.webp" alt="Acntha Vinyl"
+                            class="product-img"></a>
+                    <div class="info-section">
+                        <h2 class="product-title">Acantha Vinyl</h2>
+                        <span class="product-price">$27.99</span>
+                    </div>
+                </div>
+                <!-- BOX 3 -->
+                <div class="merch-box">
+                    <a href="../Apparel/white_logo_hat.html" aria-label="Stage Fright White Hat"><img
+                            src="/merch/hatMerch.webp" alt="White Stage Fright Hat" class="product-img"></a>
+                    <div class="info-section">
+                        <h2 class="product-title">Stage Fright White Hat</h2>
+                        <span class="product-price">$12.99</span>
+                    </div>
+                </div>
+                <!-- BOX 4 -->
+                <div class="merch-box">
+                    <a href="../Apparel/white_long_sleeve.html" aria-label="White Long Sleeve Merch Page"><img
+                            src="/merch/SFwhitelongsleeve.webp" alt="White Long Sleeve" class="product-img"></a>
+                    <div class="info-section">
+                        <h2 class="product-title">Stage Fright White Long Sleeve</h2>
+                        <span class="product-price">$22.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Confirmation Modal -->
+        <dialog id="order-modal" class="order-modal">
+            <div class="order_modal--content">
+                <div class="order_checkmark">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <div class="checkmark-background"></div>
+                </div>
+                <h1>Thank You!</h1>
+                <p>Your order has been placed successfully.</p>
+                <button class="order_close--btn" id="order_close--btn">Got it</button>
+                <span class="order_modal--close" id="close-modal">&times;</span>
+            </div>
+        </dialog>
+    </main>
+
+
+    <!-- ============== -->
+    <!-- Footer Section -->
+    <!-- ============== -->
+    <footer class="footer">
+        <p>4465 S Hamilton Rd, Columbus, Ohio</p>
+        <p>(220) 465-1915 | stagefrightrb@gmail.com</p>
+        <div class="footer-socials">
+            <a href="https://x.com/StageFrightRB?s=09" aria-label="Our Twitter" target="_blank"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/stagefrightoffical/?igsh=MXJ4MXZsbGtva3JmdQ%3D%3D"
+                aria-label="Our Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://open.spotify.com/user/31mk4mtczxnuxitto37orbgyps7q?si=X3NFJPe1RW6WBEY4RFS6VQ"
+                aria-label="Our Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://youtube.com/@stagefrightrb?si=K0BPTB77cNhv7n7M" aria-label="Our Youtube" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>Eastland Career Center BPA</p>
+        <p>&copy; Stage Fright 2025. All rights reserved.</p>
+        <p class="made_by">Made By Sean Kalb, Aidien Gooden, Jabari Hill, Gabe Zeigler</p>
+    </footer>
+</body>
+
+</html>

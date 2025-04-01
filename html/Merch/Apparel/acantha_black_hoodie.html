@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/res/logo/Stage_Fright_Logo.png">
+    <link rel="icon" type="image/svg+xml" href="/logo/Stage_Fright_Logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acantha Black Hoodie | Stage Fright</title>
@@ -22,6 +22,18 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
 
 
     <meta name="description" content="Stage Fright Website">
@@ -45,7 +57,7 @@
             <div class="nav-center--section">
                 <div class="center-left">
                     <ul class="center-left--list">
-                        <li class="nav-item">  <a href="/html/About/about.html" aria-label="About Page">About</a></li>
+                        <li class="nav-item"> <a href="/html/About/about.html" aria-label="About Page">About</a></li>
                         <li class="nav-item"><a href="/html/Music/music.html" aria-label="Music Page">Music</a></li>
                     </ul>
                 </div>
@@ -144,13 +156,24 @@
     </div>
 
     <main class="main">
-        <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
             <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/AcanthaHood.webp" alt="Acantha Black Hoodie"></div>
+                <div class="thumbnails">
+                    <img src="/merch/AcanthaHood.webp" alt="Acantha Black Hoodie" class="selected"
+                        onclick="changeImage(this)" role="button">
+                    <img src="/merch/AcanthaHoodFold.webp" alt="Acantha Black Hoodie Alt" onclick="changeImage(this)"
+                        role="button">
+                </div>
+                <div class="merch_img--card" style="display: none;">
+                    <img src="/merch/AcanthaHood.webp" alt="Acantha Black Hoodie">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/AcanthaHood.webp" alt="Acantha Black Hoodie">
+                </div>
             </div>
             <div class="merch_content">
-                <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a href="/html/Merch/merch.html">Store</a> </span>
+                <span><a href="/index.html" aria-label="Homepage">Home</a>&nbsp; > &nbsp;<a
+                        href="/html/Merch/merch.html" aria-label="Merch Page">Store</a></span>
                 <h1 class="product-title">Acantha Black Hoodie</h1>
                 <h2 class="product-price">$24.99</h2>
                 <p class="product-description">The Acantha hoodie is made from soft, comfortable fabric, with a front

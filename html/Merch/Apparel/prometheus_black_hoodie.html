@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/res/logo/Stage_Fright_Logo.png">
+    <link rel="icon" type="image/svg+xml" href="/logo/Stage_Fright_Logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prometheus Black Hoodie | Stage Fright</title>
@@ -22,6 +22,18 @@
     <!-- ======== -->
     <script type="module" src="/src/main.js"></script>
     <script src="https://kit.fontawesome.com/c4fc73ac8f.js" crossorigin="anonymous"></script>
+    <script>
+        function changeImage(selectedImage) {
+            const mainImage = document.getElementById("displayedImage");
+            mainImage.src = selectedImage.src;
+
+            document.querySelectorAll(".thumbnails img").forEach(img => {
+                img.classList.remove("selected");
+            });
+
+            selectedImage.classList.add("selected");
+        }
+    </script>
 
 
     <meta name="description" content="Stage Fright Website">
@@ -144,10 +156,19 @@
     </div>
 
     <main class="main">
-        <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
             <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/Prometheushood.webp" alt="Prometheus Black Hoodie">
+                <div class="thumbnails">
+                    <img src="/merch/Prometheushood.webp" alt="Prometheus Black Hoodie" class="selected"
+                        onclick="changeImage(this)" role="button">
+                    <img src="/merch/PrometheushoodBack.webp" alt="Prometheus Black Hoodie Back"
+                        onclick="changeImage(this)" role="button">
+                </div>
+                <div class="merch_img--card" style="display: none;">
+                    <img src="/merch/Prometheushood.webp" alt="Prometheus Black Hoodie">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/Prometheushood.webp" alt="Prometheus Black Hoodie">
                 </div>
             </div>
             <div class="merch_content">
@@ -208,7 +229,7 @@
             <div class="shop-content">
                 <!-- BOX 1 -->
                 <div class="merch-box">
-                    <a href="./prometheus_T-shirt.html"><img src="/merch/PrometheusShirt.webp"
+                    <a href="./prometheus_T-shirt.html" aria-label="Prometheus Black T-Shirt"><img src="/merch/PrometheusShirt.webp"
                             alt="Prometheus Black T-Shirt" class="product-img"></a>
                     <div class="info-section">
                         <h2 class="product-title">Prometheus Black T-Shirt</h2>

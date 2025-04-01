@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/res/logo/Stage_Fright_Logo.png">
+    <link rel="icon" type="image/svg+xml" href="/logo/Stage_Fright_Logo.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage Fright White Long Sleeve | Stage Fright</title>
@@ -145,14 +145,19 @@
 
 
     <main class="main">
-        <!--ABOUT SECTION-->
         <div class="merch-container product-box container">
             <div class="merch_img--container">
-                <div class="merch_img--card"><img src="/merch/SFwhitelongsleeve.webp"
-                        alt="Stage Fright White Long Sleeve"></div>
+                <div class="thumbnails">
+                    <img src="/merch/SFwhitelongsleeve.webp" alt="Stage Fright White Long Sleeve" class="selected"
+                        onclick="changeImage(this)" role="button">
+                </div>
+                <div class="merch_img--card">
+                    <img id="displayedImage" src="/merch/SFwhitelongsleeve.webp" alt="Stage Fright White Long Sleeve">
+                </div>
             </div>
             <div class="merch_content">
-                <span> <a href="/index.html">Home</a>&nbsp; > &nbsp;<a href="/html/Merch/merch.html">Store</a> </span>
+                <span><a href="/index.html" aria-label="Homepage">Home</a>&nbsp; > &nbsp;<a
+                        href="/html/Merch/merch.html" aria-label="Merch Page">Store</a></span>
                 <h1 class="product-title">Stage Fright White Long Sleeve</h1>
                 <h2 class="product-price">$22.99</h2>
                 <p class="product-description">The Stage Fright long sleeve is made from soft cotton or cotton-blend
