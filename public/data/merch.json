@@ -28,9 +28,9 @@
     "image": "/merch/HephaestusVinyl.webp"
   },
   {
-    "name": "Exclusive Rainbow Stage Fright T-Shirt",
-    "link": "#",
-    "price": "$19.99",
+    "name": "Exclusive Rainbow Logo T-Shirt",
+    "link": "/html/Merch/Apparel/rainbow_logo_T-shirt.html",
+    "price": "$21.99",
     "sort_attribute": "apparel",
     "image": "/merch/ExclusiveShirt.webp"
   },
@@ -56,8 +56,8 @@
     "image": "/merch/pants.webp"
   },
   {
-    "name": "Black Logo Hoodie",
-    "link": "#",
+    "name": "Alternative Black Logo Hoodie",
+    "link": "/html/Merch/Apparel/alt_black_logo_hoodie.html",
     "price": "$24.99",
     "sort_attribute": "apparel",
     "image": "/merch/BlackLogoHoodie.webp"
@@ -71,14 +71,14 @@
   },
   {
     "name": "Hermes Tour Black Hoodie",
-    "link": "#",
+    "link": "/html/Merch/Apparel/hermes_tour_black_hoodie.html",
     "price": "$24.99",
     "sort_attribute": "apparel",
     "image": "/merch/HermesTourHoodie.webp"
   },
   {
     "name": "Hermes Tour Black T-Shirt",
-    "link": "#",
+    "link": "/html/Merch/Apparel/hermes_tour_black_T-shirt.html",
     "price": "$18.99",
     "sort_attribute": "apparel",
     "image": "/merch/HermesTourShirt.webp"
@@ -130,7 +130,8 @@
     "name": "Hephaestus Black Hoodie",
     "link": "/html/Merch/Apparel/hephaestus_black_hoodie.html",
     "price": "$24.99",
-    "sort_attribute": "apparel"
+    "sort_attribute": "apparel",
+    "image": "/merch/HephaestusHoodie.webp"
   },
   {
     "name": "Hephaestus Black T-Shirt",
@@ -150,60 +151,61 @@
     "name": "Black Motto iPhone Case",
     "link": "/html/Merch/Accessories/motto_phone_case.html",
     "price": "$9.99",
-    "sort_attribute": "accessories"
+    "sort_attribute": "accessories",
+    "image": "/merch/Phone_Case.webp"
   },
   {
     "name": "Logo White Airpod Case",
     "link": "/html/Merch/Accessories/logo_white_airpod_case.html",
     "price": "$7.99",
     "sort_attribute": "accessories",
-    "image": "/merch/backAirpod.webp"
+    "image": "/merch/frontairpod.webp"
   },
   {
     "name": "Frenzy Pin",
-    "link": "#",
+    "link": "/html/Merch/Accessories/frenzy_pin.html",
     "price": "$2.25",
     "sort_attribute": "accessories",
     "image": "/merch/frenzyPin.webp"
   },
   {
     "name": "Fury Pin",
-    "link": "#",
+    "link": "/html/Merch/Accessories/fury_pin.html",
     "price": "$2.25",
     "sort_attribute": "accessories",
     "image": "/merch/furyPin.webp"
   },
   {
-    "name": "Prometheus Photo",
-    "link": "#",
+    "name": "Prometheus Picture",
+    "link": "/html/Merch/Accessories/prometheus_picture.html",
     "price": "$26.47",
     "sort_attribute": "accessories",
     "image": "/merch/PrometheusPicture.webp"
   },
   {
-    "name": "Acantha Photo",
-    "link": "#",
+    "name": "Acantha Picture",
+    "link": "/html/Merch/Accessories/acantha_picture.html",
     "price": "$26.47",
     "sort_attribute": "accessories",
     "image": "/merch/AcanthaPicture.webp"
   },
   {
-    "name": "NYX Photo",
-    "link": "#",
+    "name": "NYX Picture",
+    "link": "/html/Merch/Accessories/nyx_picture.html",
     "price": "$26.47",
     "sort_attribute": "accessories",
     "image": "/merch/NYXPicture.webp"
   },
   {
-    "name": "NYX Photo",
-    "link": "#",
+    "name": "Hephaestus Picture",
+    "link": "/html/Merch/Accessories/hephaestus_picture.html",
     "price": "$26.47",
     "sort_attribute": "accessories",
     "image": "/merch/HephaestusPicture.webp"
   },
   {
     "name": "Stage Fright Sticker Set",
-    "link": "#",
+    "link": "/html/Merch/Accessories/sticker_set.html",
     "price": "$1.95",
     "sort_attribute": "accessories",
     "image": "/merch/StickerSet.webp"

@@ -45,10 +45,14 @@ export default defineConfig({
         prometheus_black_hoodie: resolve(__dirname, 'html/Merch/Apparel/prometheus_black_hoodie.html'),
         prometheus_black_tshirt: resolve(__dirname, 'html/Merch/Apparel/prometheus_T-shirt.html'),
         black_logo_hoodie: resolve(__dirname, 'html/Merch/Apparel/black_logo_hoodie.html'),
+        alt_black_logo_hoodie: resolve(__dirname, 'html/Merch/Apparel/alt_black_logo_hoodie.html'),
+        rainbow_logo_Tshirt: resolve(__dirname, 'html/Merch/Apparel/rainbow_logo_T-shirt.html'),
         black_moto_sweatpants: resolve(__dirname, 'html/Merch/Apparel/black_motto_sweatpants.html'),
         black_logo_beanie: resolve(__dirname, 'html/Merch/Apparel/black_logo_beanie.html'),
         hephaestus_black_hoodie: resolve(__dirname, 'html/Merch/Apparel/hephaestus_black_hoodie.html'),
         hephaestus_black_tshirt: resolve(__dirname, 'html/Merch/Apparel/hephaestus_T-shirt.html'),
+        hermes_tour_black_hoodie: resolve(__dirname, 'html/Merch/Apparel/hermes_tour_black_hoodie.html'),
+        hermes_tour_black_Tshirt: resolve(__dirname, 'html/Merch/Apparel/hermes_tour_black_T-shirt.html'),
         // Media
         nyx_vinyl: resolve(__dirname, 'html/Merch/Media/nyx_vinyl.html'),
         prometheus_vinyl: resolve(__dirname, 'html/Merch/Media/prometheus_vinyl.html'),
@@ -57,6 +61,13 @@ export default defineConfig({
         // Accessories
         moto_phone_case: resolve(__dirname, 'html/Merch/Accessories/motto_phone_case.html'),
         logo_white_airpod_case: resolve(__dirname, 'html/Merch/Accessories/logo_white_airpod_case.html'),
+        frenzy_pin: resolve(__dirname, 'html/Merch/Accessories/frenzy_pin.html'),
+        fury_pin: resolve(__dirname, 'html/Merch/Accessories/fury_pin.html'),
+        prometheus_photo: resolve(__dirname, 'html/Merch/Accessories/prometheus_picture.html'),
+        acantha_picture: resolve(__dirname, 'html/Merch/Accessories/acantha_picture.html'),
+        nyx_picture: resolve(__dirname, 'html/Merch/Accessories/nyx_picture.html'),
+        hephaestus_picture: resolve(__dirname, 'html/Merch/Accessories/hephaestus_picture.html'),
+        sticker_set: resolve(__dirname, 'html/Merch/Accessories/sticker_set.html'),
         // Tour Order Pages
         kings_of_clubs: resolve(__dirname, 'html/Tours/tour_order/kings_of_clubs.html'),
         columbus_commons: resolve(__dirname, 'html/Tours/tour_order/columbus_commons.html'),
