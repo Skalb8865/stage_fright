@@ -289,8 +289,9 @@
 }
 
 .add-cart {
-    background: var(--clr-red);
+    background: var(--clr-dark);
     color: var(--clr-light);
+    border: 2px solid var(--clr-light);
     cursor: pointer;
     padding: 0.9em 2.5em;
     width: 200px;
@@ -302,7 +303,8 @@
 }
 
 .add-cart:hover {
-    background: var(--clr-dark-red);
+    background: var(--clr-light);
+    color: var(--clr-dark);
 }
 
 .add-cart.disabled {
