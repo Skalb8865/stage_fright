@@ -6,7 +6,7 @@
         "ticketsPrice": "$15",
         "venue": "The King Of Clubs",
         "bg_identifier": "/tour_images/king.webp",
-        "tour_link": "/html/Tours/tour_order/kings_of_clubs.html"
+        "tour_link": "https://www.eventbrite.com/e/stage-fright-at-the-king-of-clubs-tickets-1307119472529?aff=oddtdtcreator"
     },
     {
         "date": "Jun 1st - 2nd",
@@ -15,7 +15,7 @@
         "ticketsPrice": "$15",
         "venue": "Columbus Commons",
         "bg_identifier": "/tour_images/commons.webp",
-        "tour_link": "/html/Tours/tour_order/columbus_commons.html"
+        "tour_link": "https://www.eventbrite.com/e/1307252640839?aff=oddtdtcreator"
     },
     {
         "date": "Jun 5th - 6th",
@@ -25,7 +25,7 @@
         "venue": "Underground Arts",
         "buttonid": "open-modal3",
         "bg_identifier": "/tour_images/underground.webp",
-        "tour_link": "/html/Tours/tour_order/underground_arts.html"
+        "tour_link": "https://www.eventbrite.com/e/1307252640839?aff=oddtdtcreator"
     },
     {
         "date": "Jun 7th - 8th",
@@ -34,7 +34,7 @@
         "ticketsPrice": "$15",
         "venue": "Franklin Music Hall",
         "bg_identifier": "/tour_images/fmh.webp",
-        "tour_link": "/html/Tours/tour_order/franklin_music_hall.html"
+        "tour_link":"https://www.eventbrite.com/e/1307341988079?aff=oddtdtcreator" 
     },
     {
         "date": "Jun 12th - 13th",
@@ -43,7 +43,7 @@
         "ticketsPrice": "$15",
         "venue": "Brooklyn Paramount",
         "bg_identifier": "/tour_images/paramount.webp",
-        "tour_link": "/html/Tours/tour_order/brooklyn_paramount.html"
+        "tour_link":"https://www.eventbrite.com/e/1307241046159?aff=oddtdtcreator"
     },
     {
         "date": "Jun 15th - 16th",
@@ -52,7 +52,7 @@
         "ticketsPrice": "$15",
         "venue": "Artpark",
         "bg_identifier": "/tour_images/parkart.webp",
-        "tour_link": "/html/Tours/tour_order/artpark.html"
+        "tour_link": "https://www.eventbrite.com/e/1307315187919?aff=oddtdtcreator"
     },
     {
         "date": "Jun 18th - 19th",
@@ -61,7 +61,7 @@
         "ticketsPrice": "$15",
         "venue": "Flagstar at Westbury Music Fair",
         "bg_identifier": "/tour_images/flagstarMF.webp",
-        "tour_link": "/html/Tours/tour_order/flagstar_westbury.html"
+        "tour_link": "https://www.eventbrite.com/e/1307521194089?aff=oddtdtcreator"
     },
     {
         "date": "Jun 21th - 22th",
@@ -70,7 +70,7 @@
         "ticketsPrice": "$15",
         "venue": "Forest Hills Stadium",
         "bg_identifier": "/tour_images/hillsforest.webp",
-        "tour_link": "/html/Tours/tour_order/forest_hills.html"
+        "tour_link": "https://www.eventbrite.com/e/1307346471489?aff=oddtdtcreator" 
     },
     {
         "date": "Jun 24th - 25th",
@@ -80,7 +80,7 @@
         "venue": "Radio City Music Hall",
         "buttonid": "open-modal9",
         "bg_identifier": "/tour_images/radioCMH.webp",
-        "tour_link": "/html/Tours/tour_order/radio_city.html"
+        "tour_link": "https://www.eventbrite.com/e/1307526509989?aff=oddtdtcreator"
     },
     {
         "date": "Jun 29th - Jul 1st",
@@ -89,7 +89,7 @@
         "ticketsPrice": "$15",
         "venue": "The NorVa",
         "bg_identifier": "/tour_images/Underground-Arts-6.jpg",
-        "tour_link": "/html/Tours/tour_order/the_NorVa.html"
+        "tour_link": "https://www.eventbrite.com/e/1307533490869?aff=oddtdtcreator"
     },
     {
         "date": "Jul 3rd - 4th",
@@ -98,7 +98,7 @@
         "ticketsPrice": "$15",
         "venue": "The Summit Music Hall",
         "bg_identifier": "/tour_images/summithall.webp",
-        "tour_link": "/html/Tours/tour_order/summit_music_hall.html"
+        "tour_link": "https://www.eventbrite.com/e/1307542136729?aff=oddtdtcreator"
     },
     {
         "date": "Jul 6th - 7th",
@@ -107,6 +107,6 @@
         "ticketsPrice": "$15",
         "venue": "KEMBA Live!",
         "bg_identifier": "/tour_images/live.webp",
-        "tour_link": "/html/Tours/tour_order/kemba_live.html"
+        "tour_link": "https://www.eventbrite.com/e/stage-fright-at-kemba-live-tickets-1307549689319?aff=oddtdtcreator"
     }
 ]

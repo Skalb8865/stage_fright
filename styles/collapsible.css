@@ -1,7 +1,7 @@
 .collapsible {
-	background: black;
-	color: white;
-	border: 2px solid white;
+	background: var(--clr-red);
+    color: var(--clr-light);
+	border: 2px solid rgb(255, 0, 0);
 	cursor: pointer;
 	padding: 0.75em 2.5em;
 	width: 200px;
@@ -12,12 +12,13 @@
 	letter-spacing: 0.3px;
 	padding: 18px;
 	overflow-x: hidden;
+	margin-bottom: 10px;
 }
 
 .collapsible.active,
 .collapsible:hover {
-	background-color: #ffffff;
-	color: #000000;
+	background: var(--clr-dark-red);
+    color: var(--clr-light);
 }
 
 .collapsible:after {
@@ -30,7 +31,7 @@
 
 .active:after {
 	content: "\2212";
-	color: #000000;
+	color: #ffffff;
 }
 
 .content {

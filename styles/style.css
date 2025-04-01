@@ -563,9 +563,9 @@ select {
 /* Btn Section */
 /* *********** */
 .btn {
-    background: var(--clr-dark);
+    background: var(--clr-red);
     color: var(--clr-light);
-    border: 2px solid var(--clr-light);
+    border: 2px solid var(--clr-red);
     cursor: pointer;
     padding: 1em 2.5em;
     width: 200px;
@@ -578,8 +578,8 @@ select {
 }
 
 .btn:hover {
-    background: var(--clr-light);
-    color: var(--clr-dark-grey);
+    background: var(--clr-dark-red);
+    color: var(--clr-light);
 }
 
 #btn {
@@ -1350,7 +1350,7 @@ select {
 }
 
 .indie_btn {
-    background: var(--clr-dark);
+    background: var(--clr-red);
     color: var(--clr-light);
     cursor: pointer;
     padding: 13px;
