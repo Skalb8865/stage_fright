@@ -31,9 +31,6 @@
 
 .about-section .image-column {
 	position: relative;
-	display: grid;
-	justify-content: center;
-	align-items: center;
 	margin-bottom: 50px;
 }
 
@@ -66,16 +63,6 @@
 .learn_more--button:hover{
 	background: var(--clr-dark-red);
 }
-
-/* .about-section .image-column .inner-column .image:before {
-	position: absolute;
-	content: '';
-	left: -50px;
-	bottom: -50px;
-	width: 299px;
-	height: 299px;
-	background: url(img/pattern-2.png) no-repeat;
-} */
 
 .about-section .image-column .inner-column .image img {
 	position: relative;
