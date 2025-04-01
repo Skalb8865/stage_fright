@@ -1,7 +1,11 @@
+body{
+    overflow-x: hidden;
+}
 .toggle {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
 }
 
 #hide {
@@ -38,6 +42,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .flex-container>div {
@@ -47,6 +52,7 @@
     background-color: #000000;
     align-items: center;
     border: 2px solid rgb(255, 0, 0);
+    overflow-x: hidden;
 }
 
 .card {
