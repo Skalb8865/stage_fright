@@ -31,6 +31,9 @@
 
 .about-section .image-column {
 	position: relative;
+	display: grid;
+	justify-content: center;
+	align-items: center;
 	margin-bottom: 50px;
 }
 
@@ -44,6 +47,24 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
+}
+
+.learn_more--button{
+	position: relative;
+    background: var(--clr-red);
+    color: var(--clr-light);
+    cursor: pointer;
+    padding: 1em 2.5em;
+    width: 250px;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.learn_more--button:hover{
+	background: var(--clr-dark-red);
 }
 
 /* .about-section .image-column .inner-column .image:before {
