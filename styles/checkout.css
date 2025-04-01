@@ -1,107 +1,149 @@
-.row {
-    display: -ms-flexbox;
-    /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap;
-    /* IE10 */
-    flex-wrap: wrap;
-    margin: 0 -16px;
-    color: white;
+.checkout-wrapper {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(15, 15, 15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.col-25 {
-    -ms-flex: 25%;
-    /* IE10 */
-    flex: 25%;
+h2,
+h3 {
+    color: var(--clr-red);
+    text-align: center;
 }
 
-.col-50 {
-    -ms-flex: 50%;
-    /* IE10 */
-    flex: 50%;
-}
-
-.col-75 {
-    -ms-flex: 75%;
-    /* IE10 */
-    flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-    padding: 0 16px;
-}
-
-.checkout_container {
-    /* background-color: #f2f2f2; */
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
-
-.order_items {
-    /* background-color: #f2f2f2; */
-    padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-}
-
-input[type=text] {
-    width: 100%;
+.billing-details,
+.payment-details {
     margin-bottom: 20px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
 }
 
 label {
-    margin-bottom: 10px;
     display: block;
+    margin: 10px 0 5px;
+    color: var(--clr-light);
 }
 
-.icon-container {
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.required {
+    color: var(--clr-red);
+}
+
+/* Flexbox layout for Address, City, and ZIP fields */
+.address-row {
+    display: flex;
+    gap: 10px;
+}
+
+.address-field {
+    flex: 2;
+    /* Address takes more space */
+}
+
+.city-field {
+    flex: 1;
+}
+
+.zip-field {
+    flex: 0.8;
+}
+
+/* Flexbox layout for Card Number, Expiry, and CVV */
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-number-field {
+    flex: 2;
+    min-width: 60%;
+    /* Ensures enough space for card number */
+}
+
+.expiry-field {
+    flex: 1;
+    min-width: 25%;
+    /* Prevents expiration date from getting squished */
+}
+
+.cvv-field {
+    flex: 0.8;
+    min-width: 20%;
+    /* Adjusts CVV width for readability */
+}
+
+.order-summary {
+    text-align: center;
     margin-bottom: 20px;
-    padding: 7px 0;
-    font-size: 24px;
 }
 
 .checkout_btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
     width: 100%;
-    border-radius: 3px;
+    padding: 10px;
+    background: var(--clr-red);
+    color: var(--clr-light);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-    font-size: 17px;
 }
 
 .checkout_btn:hover {
-    background-color: #45a049;
+    background: var(--clr-dark-red);
 }
 
-a {
-    color: #2196F3;
+
+input:invalid:not(:placeholder-shown) {
+    border-color: red;
+    background-image: url(/res/form_validation/red-x.png);
 }
 
-hr {
-    border: 1px solid lightgrey;
+input:valid:not(:placeholder-shown) {
+    background-image: url(/res/form_validation/checked_green.png);
 }
 
-span.checkout_price {
-    float: right;
-    color: lightgray;
+input:invalid:not(:placeholder-shown),
+input:valid:not(:placeholder-shown) {
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px);
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
-@media (max-width: 800px) {
-    .row {
-        flex-direction: column-reverse;
+input:invalid:not(:placeholder-shown)+p {
+    color: #a20e0e;
+}
+
+input:invalid~button[type="submit"] {
+    opacity: .6;
+    pointer-events: none;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .checkout-wrapper {
+        width: 90%;
     }
 
-    .col-25 {
-        margin-bottom: 20px;
+    .address-row {
+        flex-direction: column;
+    }
+
+    .card-row {
+        flex-direction: column;
+    }
+
+    .card-number-field,
+    .expiry-field,
+    .cvv-field {
+        min-width: 100%;
+        /* Ensures full width for each field */
     }
 }
