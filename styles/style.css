@@ -564,9 +564,8 @@ select {
 /* *********** */
 .btn {
     background: var(--clr-red);
-    background: var(--clr-red);
     color: var(--clr-light);
-    border: 2px solid var(--clr-red);
+    border: 2px solid var(--clr-light);
     cursor: pointer;
     padding: 1em 2.5em;
     width: 200px;
