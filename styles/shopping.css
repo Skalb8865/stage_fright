@@ -445,31 +445,10 @@
     gap: 15px;
 }
 
-
 .btn_section {
     display: flex;
     gap: 15px;
 }
-
-/* .sort_box {
-    min-width: 250px;
-    text-align: left;
-    background: none;
-    border: 1px solid var(--clr-light);
-    padding: 0.75rem;
-    display: flex;
-    color: var(--clr-light);
-    justify-content: space-between;
-    background: var(--clr-dark);
-    background-image: url(/res/_MG_9323.png);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: calc(100% - 10px);
-}
-
-.sort_box:focus {
-    background-image: url(/res/fanclub/fanclub_logo.png);
-} */
 
 .category_box {
     min-width: 250px;
@@ -477,9 +456,11 @@
     background: none;
     padding: 0.75rem;
     display: flex;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     justify-content: space-between;
-    background: var(--clr-light);
+    background: var(--clr-red);
+    outline: none;
+    text-align: center;
     background-image: url(/res/down_arrow.png);
     background-size: 10px;
     background-repeat: no-repeat;
@@ -500,30 +481,19 @@
     display: none;
 }
 
-/* ::picker(.sort_box) {
-    border: 1px solid var(--clr-grey);
-    margin-top: -1px;
-    padding: 0;
-    box-shadow: none;
-    background: var(--clr-light);
-} */
-
 ::picker(.category_box) {
     /* border: 1px solid var(--clr-dark); */
     margin-top: -1px;
     padding: 0;
     box-shadow: none;
     background: var(--clr-dark);
+    outline: none;
 }
 
-/* .sort_box option {
+.category_box option {
     color: var(--clr-light);
     padding: 0.75rem 1.5rem 0.75rem 2.5rem;
-} */
-
-.category_box option {
-    color: var(--clr-dark);
-    padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+    outline: none;
 }
 
 .checkout-btn {

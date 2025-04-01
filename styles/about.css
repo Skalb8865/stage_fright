@@ -46,15 +46,23 @@
 	height: 100%;
 }
 
-/* .about-section .image-column .inner-column .image:before {
-	position: absolute;
-	content: '';
-	left: -50px;
-	bottom: -50px;
-	width: 299px;
-	height: 299px;
-	background: url(img/pattern-2.png) no-repeat;
-} */
+.learn_more--button{
+	position: relative;
+    background: var(--clr-red);
+    color: var(--clr-light);
+    cursor: pointer;
+    padding: 1em 2.5em;
+    width: 250px;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.learn_more--button:hover{
+	background: var(--clr-dark-red);
+}
 
 .about-section .image-column .inner-column .image img {
 	position: relative;

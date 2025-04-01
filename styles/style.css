@@ -564,6 +564,7 @@ select {
 /* *********** */
 .btn {
     background: var(--clr-red);
+    background: var(--clr-red);
     color: var(--clr-light);
     border: 2px solid var(--clr-red);
     cursor: pointer;
@@ -578,14 +579,13 @@ select {
 }
 
 .btn:hover {
-    background: var(--clr-dark-red);
-    color: var(--clr-light);
+    background: var(--clr-light);
+    color: var(--clr-dark-grey);
 }
 
 #btn {
     text-decoration: none;
-    border: 2px solid var(--clr-light);
-    background: var(--clr-dark);
+    background: var(--clr-red);
     color: var(--clr-light);
     padding: 1em 2.5em;
     font-size: 0.875rem;
@@ -596,9 +596,7 @@ select {
 }
 
 #btn:hover {
-    border: 2px solid var(--clr-dark);
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark-red);
 }
 
 
